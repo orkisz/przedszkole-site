@@ -22,5 +22,12 @@ module.exports = {
       },
       __key: "images",
     },
+    {
+      resolve: `gatsby-source-drupal`,
+      options: {
+        baseUrl: `http://localhost:8080/`,
+        // apiBase: `api`, // optional, defaults to `jsonapi`
+      },
+    }
   ],
 };
