@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "przedszkole-site",
+    title: "Niepubliczne Przedszkole Sióstr Służebniczek NMP NP"
   },
   plugins: [
     "gatsby-plugin-sass",
