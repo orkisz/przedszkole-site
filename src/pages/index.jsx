@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { graphql, StaticQuery } from 'gatsby';
+import { graphql, Link, StaticQuery } from 'gatsby';
 
 const pageStyles = {
   color: '#232129',
@@ -16,7 +16,7 @@ const IndexPage = () => {
                 title
               }
             }
-            allNodeArticle(limit: 4, sort: {fields: created, order: DESC}) {
+            allNodeArticle(limit: 3, sort: {fields: created, order: DESC}) {
               edges {
                 node {
                   id
@@ -29,9 +29,13 @@ const IndexPage = () => {
                       uri {
                         url
                       }
+                      status
                     }
                   }
                   title
+                  field_image {
+                    alt
+                  }
                 }
               }
             }
@@ -44,15 +48,17 @@ const IndexPage = () => {
                      </main>
                      <ul>
                        {data.allNodeArticle.edges.map(article => (
-                         <li>
-                           <h3>{article.node.title}</h3>
+                         <li key={article.node.id}
+                             id={article.node.id}>
+                           <h3><Link to={article.node.id}>{article.node.title}</Link></h3>
                            <div>
                              Zajawka:
                              <br/>
-                             { article.node.body.processed.replace(/(<([^>]+)>)/gi, "").substr(0, 50) + '...' }
+                             {article.node.body.processed.replace(/(<([^>]+)>)/gi, '').substr(0, 50) + '...'}
                            </div>
-                           <div dangerouslySetInnerHTML={{__html: article.node.body.processed}} />
-                           <img src={'http://localhost:8080' + article.node.relationships.field_image.uri.url}/>
+                           <div dangerouslySetInnerHTML={{ __html: article.node.body.processed }}/>
+                           <img src={'http://localhost:8080' + article.node.relationships.field_image.uri.url}
+                                alt={article.node.field_image.alt}/>
                          </li>
                        ))
                        }
