@@ -28,6 +28,7 @@ module.exports = {
         baseUrl: `http://localhost:8080/`,
         // apiBase: `api`, // optional, defaults to `jsonapi`
       },
-    }
+    },
+    'gatsby-plugin-netlify-cms'
   ],
 };
