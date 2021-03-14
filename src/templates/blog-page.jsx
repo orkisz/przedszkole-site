@@ -1,17 +1,22 @@
 import React from 'react';
 import { graphql } from 'gatsby';
+import Layout from '../layouts/layout';
 
 const BlogPage = ({ data }) => {
   const item = data.markdownRemark;
   return (
-    <article>
-      {item.frontmatter.image && (
-        <img src={item.frontmatter.image.publicURL}
-             alt="TODO"/>
-      )}
-      <h3>{item.title}</h3>
-      <div dangerouslySetInnerHTML={{ __html: item.html }}/>
-    </article>
+    <Layout>
+      <section className="container">
+        <article>
+          {item.frontmatter.image && (
+            <img src={item.frontmatter.image.publicURL}
+                 alt="TODO"/>
+          )}
+          <h3>{item.title}</h3>
+          <div dangerouslySetInnerHTML={{ __html: item.html }}/>
+        </article>
+      </section>
+    </Layout>
   )
 }
 

@@ -1,7 +1,6 @@
-import react from 'react';
-import * as React from 'react';
+import React from 'react';
 
-class Navigation extends react.Component {
+class Navigation extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -28,7 +27,7 @@ class Navigation extends react.Component {
         <div className="container">
           <div className="navbar-brand">
             <a className="navbar-item"
-               href="../">
+               href="../../pages">
               <img src="http://bulma.io/images/bulma-type-white.png"
                    alt="Logo"/>
             </a>

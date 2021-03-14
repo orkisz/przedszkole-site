@@ -1,8 +1,8 @@
 import React from 'react';
+import Link from 'gatsby-link';
 
-const BlogCard = ({ data }) => {
-  const item = data.node;
-  const heading = (item.frontmatter.description || item.html || '').replace(/(<([^>]+)>)/gi, '').substr(0, 500) + '...';
+const BlogCard = ({ node }) => {
+  const heading = (node.frontmatter.description || node.html || '').replace(/(<([^>]+)>)/gi, '').substr(0, 500) + '...';
 
   return (
       <div className="column is-4">
@@ -12,10 +12,10 @@ const BlogCard = ({ data }) => {
           </div>
           <div className="card-content">
             <div className="content">
-              <h4>{item.frontmatter.title}</h4>
+              <h4>{node.frontmatter.title}</h4>
               <p>{heading}</p>
               <p>
-                <a href={item.fields.slug}>Learn more</a>
+                <Link to={node.fields.slug}>Learn more</Link>
               </p>
             </div>
           </div>

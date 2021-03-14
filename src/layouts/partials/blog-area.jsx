@@ -26,7 +26,7 @@ const BlogArea = () => {
                  render={data => (
                    <div className="columns features">
                      {data.allMarkdownRemark.edges.map(edge => (
-                       <BlogCard data={edge}
+                       <BlogCard node={edge.node}
                                  key={edge.node.id}/>
                      ))}
                    </div>
