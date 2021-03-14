@@ -393,7 +393,6 @@ const IndexPage = () => {
             </div>
           </div>
         </div>
-        <script src="../js/bulma.js"></script>
       </footer>
     </>
   )
