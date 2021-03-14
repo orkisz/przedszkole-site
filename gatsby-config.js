@@ -1,34 +1,44 @@
+const path = require(`path`);
+
 module.exports = {
   siteMetadata: {
-    title: "Niepubliczne Przedszkole Sióstr Służebniczek NMP NP"
+    title: 'Niepubliczne Przedszkole Sióstr Służebniczek NMP NP'
   },
   plugins: [
-    "gatsby-plugin-sass",
-    "gatsby-plugin-image",
-    "gatsby-plugin-react-helmet",
+    'gatsby-plugin-sass',
+    'gatsby-plugin-image',
+    'gatsby-plugin-react-helmet',
+    'gatsby-transformer-remark',
     {
-      resolve: "gatsby-plugin-manifest",
+      resolve: 'gatsby-plugin-manifest',
       options: {
-        icon: "src/images/icon.png",
-      },
+        icon: 'src/images/icon.png'
+      }
     },
-    "gatsby-plugin-sharp",
-    "gatsby-transformer-sharp",
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
+    // {
+    //   resolve: 'gatsby-source-filesystem',
+    //   options: {
+    //     name: 'images',
+    //     path: './src/images/',
+    //   },
+    //   __key: 'images',
+    // },
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: "images",
-        path: "./src/images/",
-      },
-      __key: "images",
+        name: 'pages',
+        path: path.join(__dirname, 'content/blog')
+      }
     },
     {
       resolve: `gatsby-source-drupal`,
       options: {
-        baseUrl: `http://localhost:8080/`,
+        baseUrl: `http://localhost:8080/`
         // apiBase: `api`, // optional, defaults to `jsonapi`
-      },
+      }
     },
     'gatsby-plugin-netlify-cms'
-  ],
+  ]
 };
