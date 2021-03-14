@@ -32,13 +32,13 @@ module.exports = {
         path: path.join(__dirname, 'content/blog')
       }
     },
-    {
-      resolve: `gatsby-source-drupal`,
-      options: {
-        baseUrl: `http://localhost:8080/`
-        // apiBase: `api`, // optional, defaults to `jsonapi`
-      }
-    },
+    // {
+    //   resolve: `gatsby-source-drupal`,
+    //   options: {
+    //     baseUrl: `http://localhost:8080/`
+    //     // apiBase: `api`, // optional, defaults to `jsonapi`
+    //   }
+    // },
     'gatsby-plugin-netlify-cms'
   ]
 };

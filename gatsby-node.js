@@ -3,27 +3,27 @@ const { createFilePath } = require(`gatsby-source-filesystem`)
 
 
 exports.createPages = async ({ actions, graphql }) => {
-  const { createPage } = actions
-  const result = await graphql(`
-    {
-     allNodeArticle {
-       edges {
-         node {
-           id
-         }
-       }
-     }
-    }
-  `);
-  result.data.allNodeArticle.edges.forEach(({ node }) => {
-    createPage({
-      path: node.id,
-      component: path.resolve(`./src/templates/news-item.jsx`),
-      context: {
-        id: node.id
-      }
-    })
-  });
+  // const { createPage } = actions
+  // const result = await graphql(`
+  //   {
+  //    allNodeArticle {
+  //      edges {
+  //        node {
+  //          id
+  //        }
+  //      }
+  //    }
+  //   }
+  // `);
+  // result.data.allNodeArticle.edges.forEach(({ node }) => {
+  //   createPage({
+  //     path: node.id,
+  //     component: path.resolve(`./src/templates/news-item.jsx`),
+  //     context: {
+  //       id: node.id
+  //     }
+  //   })
+  // });
 }
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
