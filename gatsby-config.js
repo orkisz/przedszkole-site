@@ -17,14 +17,14 @@ module.exports = {
     },
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
-    // {
-    //   resolve: 'gatsby-source-filesystem',
-    //   options: {
-    //     name: 'images',
-    //     path: './src/images/',
-    //   },
-    //   __key: 'images',
-    // },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'images',
+        path: './src/images/',
+      },
+      __key: 'images',
+    },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -32,13 +32,6 @@ module.exports = {
         path: path.join(__dirname, 'content/blog')
       }
     },
-    // {
-    //   resolve: `gatsby-source-drupal`,
-    //   options: {
-    //     baseUrl: `http://localhost:8080/`
-    //     // apiBase: `api`, // optional, defaults to `jsonapi`
-    //   }
-    // },
     'gatsby-plugin-netlify-cms'
   ]
 };
