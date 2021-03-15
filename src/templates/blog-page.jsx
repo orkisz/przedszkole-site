@@ -7,12 +7,12 @@ const BlogPage = ({ data }) => {
   return (
     <Layout>
       <section className="container">
-        <article>
+        <article className="content">
           {item.frontmatter.image && (
             <img src={item.frontmatter.image.publicURL}
                  alt="TODO"/>
           )}
-          <h3>{item.title}</h3>
+          <h3>{item.frontmatter.title}</h3>
           <div dangerouslySetInnerHTML={{ __html: item.html }}/>
         </article>
       </section>
