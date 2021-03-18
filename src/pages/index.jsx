@@ -3,10 +3,31 @@ import * as React from 'react'
 import '../styles/styles.scss';
 import BlogArea from '../layouts/partials/blog-area';
 import Layout from '../layouts/layout';
+import * as styles from './index.module.css';
 
 const IndexPage = () => {
   return (
     <Layout>
+      <section className={`hero is-large ${styles.hero}`}>
+        <div className="hero-body">
+          <div className="container">
+            <h3>
+              Witamy w naszym przedszkolu
+            </h3>
+            <h1>
+              Razem bawimy się, uczymy i rośniemy!
+            </h1>
+            <button className="button is-primary is-large is-rounded">Dowiedz się wiecej</button>
+          </div>
+        </div>
+      </section>
+      <div className="box cta">
+        <p className="has-text-centered">
+          <span className="tag is-primary">New</span> Ut enim ad minim veniam, quis nostrud exercitation
+                                                      ullamco laboris
+                                                      nisi ut aliquip ex ea commodo consequat.
+        </p>
+      </div>
       <section className="container">
         <BlogArea/>
         <div className="intro column is-8 is-offset-2">

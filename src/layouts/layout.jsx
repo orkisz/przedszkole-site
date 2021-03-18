@@ -2,7 +2,7 @@ import * as React from 'react'
 import { graphql, StaticQuery } from 'gatsby';
 
 import '../styles/styles.scss';
-import Navigation from './partials/nav';
+import Navigation from './partials/navigation/nav';
 import { Helmet } from 'react-helmet';
 
 const Layout = ({ children }) => {
@@ -19,33 +19,9 @@ const Layout = ({ children }) => {
                  render={data => (
                    <>
                      <Helmet title={data.site.siteMetadata.title}
+                             bodyAttributes={{ class: 'has-navbar-fixed-top' }}
                              defer={false}/>
-                     <section className="hero is-info is-medium is-bold">
-                       <div className="hero-head">
-                         <Navigation/>
-                       </div>
-                       <div className="hero-body">
-                         <div className="container has-text-centered">
-                           <h1 className="title">
-                             The new standard in &lt;insert industry here&gt;
-                           </h1>
-                           <h2 className="subtitle">
-                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                             ut labore et
-                             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                             nisi ut aliquip ex
-                             ea commodo consequat.
-                           </h2>
-                         </div>
-                       </div>
-                     </section>
-                     <div className="box cta">
-                       <p className="has-text-centered">
-                         <span className="tag is-primary">New</span> Ut enim ad minim veniam, quis nostrud exercitation
-                                                                     ullamco laboris
-                                                                     nisi ut aliquip ex ea commodo consequat.
-                       </p>
-                     </div>
+                     <Navigation/>
                      {children}
                      <footer className="footer">
                        <div className="container">
