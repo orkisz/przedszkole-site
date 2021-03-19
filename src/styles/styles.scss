@@ -1,6 +1,17 @@
 $purple: #000564;
 $pink: #FF4880;
 $primary: $pink !default;
+$blue: #3E90E8;
+$blue-darken: #136AC7;
+$yellow: #FFC61D;
+$yellow-darken: #EAB003;
+$red: #FB4E5F;
+$red-darken: #D82B3C;
+$green: #3BB156;
+$green-darken: #0F8D2C;
+
+$my-custom-colors: ("blue": ($blue, $blue-darken), "yellow": ($yellow, $yellow-darken), "red": ($red, $red-darken), "green": ($green, $green-darken));
+
 $navbar-item-color: $purple;
 $navbar-item-hover-color: $purple;
 $navbar-height: 5rem !default;
@@ -36,4 +47,17 @@ h4 {
   font-family: 'Patrick Hand', sans-serif;
   font-size: 1.875rem;
   color: $pink;
+}
+
+@each $name, $pair in $my-custom-colors {
+  $color: nth($pair, 1);
+  $darkColor: nth($pair, 2);
+
+  .my-custom-background-#{$name} {
+    background-color: $color;
+  }
+
+  .my-custom-background-#{$name}-darken {
+    background-color: $darkColor;
+  }
 }

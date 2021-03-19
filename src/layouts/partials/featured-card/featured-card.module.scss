@@ -1,0 +1,35 @@
+$card-height: 612px;
+$dark-bg-height: 18px;
+
+.featured-card {
+  color: white;
+}
+
+.outer-card, .inner-card {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.outer-card {
+  height: $card-height;
+}
+
+.inner-card {
+  height: $card-height - $dark-bg-height;
+  padding: 40px;
+}
+
+.image {
+  padding-bottom: 40px;
+}
+
+.title {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 2.1875rem;
+}
+
+.text {
+  font-size: 1.125rem;
+}
