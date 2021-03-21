@@ -19,8 +19,13 @@ $dark-bg-height: 18px;
   padding: 40px;
 }
 
+.figure {
+  margin-bottom: 40px;
+}
+
 .image {
-  padding-bottom: 40px;
+  border: 2px dashed white;
+  padding: 5px;
 }
 
 .title {
@@ -28,6 +33,7 @@ $dark-bg-height: 18px;
   font-size: 2rem;
   font-weight: bold;
   line-height: 2.1875rem;
+  margin-bottom: 40px;
 }
 
 .text {

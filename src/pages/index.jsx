@@ -25,34 +25,38 @@ const IndexPage = () => {
                 </div>
               </div>
             </section>
+            <section className="container has-text-centered">
+              <h4>Poznajmy się lepiej</h4>
+              <h2>Naszym priorytetem jest <br/>wszechstronny rozwój każdego dziecka</h2>
+            </section>
             <section className="container">
               <div className="columns">
                 <FeaturedCard className="column is-one-quarter"
-                              title="Wartości chrześcijańskie"
                               color="blue"
                               image={valuesImage}>
+                  <header>Wartości chrześcijańskie</header>
                   Program nauczania opieramy na&nbsp;koncepcji pedagogicznej naszego patrona bł.&nbsp;Edmunda
                   Bojanowskiego
                 </FeaturedCard>
                 <FeaturedCard className="column is-one-quarter"
-                              title="Nauka i zabawa"
                               color="yellow"
                               image={learnByPlayImage}>
+                  <header>Nauka <br/>i zabawa</header>
                   Poprzez zabawę dzieci poznają świat i&nbsp;budują relacje z&nbsp;rówieśnikami. Zajęcia dostosowujemy
                   do&nbsp;Ich
                   możliwości i&nbsp;zainteresowań
                 </FeaturedCard>
                 <FeaturedCard className="column is-one-quarter"
-                              title="Troskliwi nauczyciele"
                               color="red"
                               image={teachersImage}>
+                  <header>Troskliwi nauczyciele</header>
                   Nasi wychowawcy to nie&nbsp;tylko pedagodzy z&nbsp;doświadczeniem w&nbsp;pracy zvdziećmi,
                   ale&nbsp;osoby pełne empatii i&nbsp;zaangażowania
                 </FeaturedCard>
                 <FeaturedCard className="column is-one-quarter"
-                              title="Przyjazne otoczenie"
                               color="green"
                               image={surroundingsImage}>
+                  <header>Przyjazne otoczenie</header>
                   Kolorowe sale, piękny, duży plac zabaw, zaciszna kaplica to&nbsp;wszystko buduje poczucie
                   bezpieczeństwa i&nbsp;pobudza do&nbsp;aktywności
                 </FeaturedCard>
