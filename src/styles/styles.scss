@@ -1,20 +1,4 @@
-$purple: #000564;
-$pink: #FF4880;
-$primary: $pink !default;
-$blue: #3E90E8;
-$blue-darken: #136AC7;
-$yellow: #FFC61D;
-$yellow-darken: #EAB003;
-$red: #FB4E5F;
-$red-darken: #D82B3C;
-$green: #3BB156;
-$green-darken: #0F8D2C;
-
-$my-custom-colors: ("blue": ($blue, $blue-darken), "yellow": ($yellow, $yellow-darken), "red": ($red, $red-darken), "green": ($green, $green-darken));
-
-$navbar-item-color: $purple;
-$navbar-item-hover-color: $purple;
-$navbar-height: 5rem !default;
+@import "variables";
 
 @import "~bulma";
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Patrick+Hand&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
