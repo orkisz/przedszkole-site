@@ -98,6 +98,13 @@ const IndexPage = () => {
                 </AccordionItem>
               </Accordion>
             </section>
+            {/*<section className={`hero is-large`}>*/}
+            {/*  <div className="hero-body">*/}
+            {/*    <div className="container">*/}
+
+            {/*    </div>*/}
+            {/*  </div>*/}
+            {/*</section>*/}
           </Layout>
   )
 }
