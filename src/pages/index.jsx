@@ -74,53 +74,47 @@ const IndexPage = () => {
                     <h4>Poznajmy się lepiej</h4>
                     <h2>Podział na grupy <br/>2020/2021</h2>
                     <Accordion>
-                      <AccordionItem>
-                        <div>
-                          <img src={sloneczkaImg} alt="Odkrywcy"/>
-                          Odkrywcy
-                        </div>
-                        <div>Jesteśmy najmłodszą grupą i właśnie rozpoczynamy naszą przygodę z przedszkolem. Nazywamy
-                             się
-                             Odkrywcy – a nazwa przecież zobowiązuje. Pełni zapału i ciekawi świata zamierzamy odkrywać
-                             coraz
-                             to nowe rzeczy. Lubimy się bawić i uczyć, a każdy kolejny dzień wydaje się być coraz
-                             ciekawszy.
-                             Często chodzimy na spacery i bawimy się na placu zabaw. Bardzo lubimy kontakt z przyrodą.
-                             Chociaż
-                             czasem trudno nam się rozstać z rodzicami, to wiemy, że w przedszkolu czekają na nas
-                             niezwykłe
-                             przygody
-                        </div>
+                      <AccordionItem title="Odkrywcy"
+                                     image={sloneczkaImg}>
+                        Jesteśmy najmłodszą grupą i właśnie rozpoczynamy naszą przygodę z przedszkolem. Nazywamy
+                        się
+                        Odkrywcy – a nazwa przecież zobowiązuje. Pełni zapału i ciekawi świata zamierzamy odkrywać
+                        coraz
+                        to nowe rzeczy. Lubimy się bawić i uczyć, a każdy kolejny dzień wydaje się być coraz
+                        ciekawszy.
+                        Często chodzimy na spacery i bawimy się na placu zabaw. Bardzo lubimy kontakt z przyrodą.
+                        Chociaż
+                        czasem trudno nam się rozstać z rodzicami, to wiemy, że w przedszkolu czekają na nas
+                        niezwykłe
+                        przygody
                       </AccordionItem>
-                      <AccordionItem>
-                        <span>Odkrywcy</span>
-                        <div>Jesteśmy najmłodszą grupą i właśnie rozpoczynamy naszą przygodę z przedszkolem. Nazywamy
-                             się
-                             Odkrywcy – a nazwa przecież zobowiązuje. Pełni zapału i ciekawi świata zamierzamy odkrywać
-                             coraz
-                             to nowe rzeczy. Lubimy się bawić i uczyć, a każdy kolejny dzień wydaje się być coraz
-                             ciekawszy.
-                             Często chodzimy na spacery i bawimy się na placu zabaw. Bardzo lubimy kontakt z przyrodą.
-                             Chociaż
-                             czasem trudno nam się rozstać z rodzicami, to wiemy, że w przedszkolu czekają na nas
-                             niezwykłe
-                             przygody
-                        </div>
+                      <AccordionItem title="Bystrzaki"
+                                     image={sloneczkaImg}>
+                        Jesteśmy najmłodszą grupą i właśnie rozpoczynamy naszą przygodę z przedszkolem. Nazywamy
+                        się
+                        Odkrywcy – a nazwa przecież zobowiązuje. Pełni zapału i ciekawi świata zamierzamy odkrywać
+                        coraz
+                        to nowe rzeczy. Lubimy się bawić i uczyć, a każdy kolejny dzień wydaje się być coraz
+                        ciekawszy.
+                        Często chodzimy na spacery i bawimy się na placu zabaw. Bardzo lubimy kontakt z przyrodą.
+                        Chociaż
+                        czasem trudno nam się rozstać z rodzicami, to wiemy, że w przedszkolu czekają na nas
+                        niezwykłe
+                        przygody
                       </AccordionItem>
-                      <AccordionItem>
-                        <span>Odkrywcy</span>
-                        <div>Jesteśmy najmłodszą grupą i właśnie rozpoczynamy naszą przygodę z przedszkolem. Nazywamy
-                             się
-                             Odkrywcy – a nazwa przecież zobowiązuje. Pełni zapału i ciekawi świata zamierzamy odkrywać
-                             coraz
-                             to nowe rzeczy. Lubimy się bawić i uczyć, a każdy kolejny dzień wydaje się być coraz
-                             ciekawszy.
-                             Często chodzimy na spacery i bawimy się na placu zabaw. Bardzo lubimy kontakt z przyrodą.
-                             Chociaż
-                             czasem trudno nam się rozstać z rodzicami, to wiemy, że w przedszkolu czekają na nas
-                             niezwykłe
-                             przygody
-                        </div>
+                      <AccordionItem title="Słoneczka"
+                                     image={sloneczkaImg}>
+                        Jesteśmy najmłodszą grupą i właśnie rozpoczynamy naszą przygodę z przedszkolem. Nazywamy
+                        się
+                        Odkrywcy – a nazwa przecież zobowiązuje. Pełni zapału i ciekawi świata zamierzamy odkrywać
+                        coraz
+                        to nowe rzeczy. Lubimy się bawić i uczyć, a każdy kolejny dzień wydaje się być coraz
+                        ciekawszy.
+                        Często chodzimy na spacery i bawimy się na placu zabaw. Bardzo lubimy kontakt z przyrodą.
+                        Chociaż
+                        czasem trudno nam się rozstać z rodzicami, to wiemy, że w przedszkolu czekają na nas
+                        niezwykłe
+                        przygody
                       </AccordionItem>
                     </Accordion>
                   </div>
