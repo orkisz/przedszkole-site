@@ -1,29 +1,19 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby minimal starter
-</h1>
+# Przedszkole Sióstr Służebniczek w Rudawie
+[![Netlify Status](https://api.netlify.com/api/v1/badges/59d55900-1a4a-468a-bebc-06bee3fb82bc/deploy-status)](https://app.netlify.com/sites/epic-easley-d99b2b/deploys)
 
 ## 🚀 Quick start
 
-1.  **Create a Gatsby site.**
+1.  **Install dependencies**
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
-
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+    * NodeJS
+    * IDE like VS Code / WebStorm / Atom
 
 2.  **Start developing.**
 
     Navigate into your new site’s directory and start it up.
 
     ```shell
-    cd my-gatsby-site/
+    cd przedszkole-site/
     npm run develop
     ```
 
