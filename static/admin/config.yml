@@ -5,6 +5,7 @@ backend:
   name: github
   repo: orkisz/przedszkole-site
 
+locale: pl
 
 media_folder: static/img
 public_folder: /img
@@ -27,7 +28,7 @@ collections:
       - { label: 'Treść', name: 'body', widget: 'markdown' }
       - { label: 'Obraz', name: 'image', widget: 'image', required: false }
   - name: 'group'
-    label: 'Group'
+    label: 'Grupa'
     folder: 'content/group'
     create: true
     slug: 'index'

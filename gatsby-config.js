@@ -21,9 +21,9 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'images',
-        path: './src/images/',
+        path: './src/images/'
       },
-      __key: 'images',
+      __key: 'images'
     },
     {
       resolve: 'gatsby-source-filesystem',
@@ -32,6 +32,11 @@ module.exports = {
         path: path.join(__dirname, 'content/blog')
       }
     },
-    'gatsby-plugin-netlify-cms'
+    {
+      resolve: 'gatsby-plugin-netlify-cms',
+      options: {
+        modulePath: `${__dirname}/src/cms/netlifycms-init.js`,
+      }
+    }
   ]
 };
