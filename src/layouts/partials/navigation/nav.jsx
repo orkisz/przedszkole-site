@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import * as styles from './nav.module.css';
-import logo from './logo.jpg';
+import logo from './logo.png';
 
 class Navigation extends React.Component {
   constructor(props) {

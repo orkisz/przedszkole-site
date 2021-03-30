@@ -1,17 +1,20 @@
-$purple: #000564;
-$pink: #FF4880;
-$primary: $pink !default;
+@import "~bulma/sass/utilities/initial-variables";
+
+$mainAccent: #014186;
 $blue: #3E90E8;
 $blue-darken: #136AC7;
 $yellow: #FFC61D;
 $yellow-darken: #EAB003;
-$red: #FB4E5F;
-$red-darken: #D82B3C;
+$red: #FF4F41;
+$red-darken: #F03E30;
 $green: #3BB156;
 $green-darken: #0F8D2C;
+$primary: $red-darken !default;
 
 $my-custom-colors: ("blue": ($blue, $blue-darken), "yellow": ($yellow, $yellow-darken), "red": ($red, $red-darken), "green": ($green, $green-darken));
 
-$navbar-item-color: $purple;
-$navbar-item-hover-color: $purple;
+$navbar-item-color: $mainAccent;
+$navbar-item-hover-color: $mainAccent;
 $navbar-height: 5rem !default;
+
+$border: $grey-light;

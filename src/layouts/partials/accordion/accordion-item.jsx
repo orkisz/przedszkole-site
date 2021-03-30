@@ -1,8 +1,8 @@
 import React from 'react';
 import * as styles from './accordion-item.module.scss';
 
-const AccordionItem = ({ title, image, children, opened, onClick }) => {
-  let accordionItemClassName = '';
+const AccordionItem = ({ title, image, children, opened, onClick, className, headClassName, contentClassName }) => {
+  let accordionItemClassName = `${styles.accordionItem} ${className ?? ''}`;
   if (opened) {
     accordionItemClassName += ` ${styles.accordionItemOpened}`;
   }
@@ -10,7 +10,7 @@ const AccordionItem = ({ title, image, children, opened, onClick }) => {
           <li>
             <div className={accordionItemClassName}
                  onClick={onClick}>
-              <div className={styles['accordionItem__line']}>
+              <div className={`${headClassName} ${styles['accordionItem__line']}`}>
                 <img className={styles['accordionItem__image']}
                      src={image}
                      alt={title}/>
@@ -19,10 +19,8 @@ const AccordionItem = ({ title, image, children, opened, onClick }) => {
                 </div>
               </div>
               <div className={styles['accordionItem__inner']}>
-                <div className={styles['accordionItem__content']}>
-                  <div className={styles['accordionItem__paragraph']}>
-                    {children}
-                  </div>
+                <div className={`${contentClassName} ${styles['accordionItem__content']}`}>
+                  {children}
                 </div>
               </div>
             </div>

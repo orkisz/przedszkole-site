@@ -1,0 +1,22 @@
+@import "src/styles/variables";
+
+$alpha: .3;
+@mixin bgColor($baseColor) {
+  background-color: rgba($baseColor, $alpha);
+}
+
+.accordion-item-1 {
+  @include bgColor($blue);
+}
+
+.accordion-item-2 {
+  @include bgColor($green);
+}
+
+.accordion-item-3 {
+  @include bgColor($yellow);
+}
+
+.accordion {
+  max-width: 37rem;
+}
