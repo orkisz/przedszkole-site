@@ -68,10 +68,12 @@ const IndexPage = () => {
               <div className={styles.rightBg}/>
               <div className="container">
                 <div className="columns">
-                  <div className="column is-half">
-                    <h4 className="mt-6">Poznajmy się lepiej</h4>
-                    <h2 className="my-4">Podział na grupy <br/>2020/2021</h2>
-                    <GroupsAccordion/>
+                  <div className="column is-half-desktop is-flex is-flex-direction-column is-align-items-center">
+                    <div>
+                      <h4 className="mt-6">Poznajmy się lepiej</h4>
+                      <h2 className="my-4">Podział na grupy <br/>2020/2021</h2>
+                      <GroupsAccordion/>
+                    </div>
                   </div>
                 </div>
               </div>
