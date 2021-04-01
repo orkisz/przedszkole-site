@@ -26,11 +26,11 @@ const IndexPage = () => {
                 </div>
               </div>
             </section>
-            <section className="container has-text-centered">
+            <section className="container has-text-centered my-6">
               <h4>Poznajmy się lepiej</h4>
-              <h2>Naszym priorytetem jest <br/>wszechstronny rozwój każdego dziecka</h2>
+              <h2 className="mt-4">Naszym priorytetem jest <br/>wszechstronny rozwój każdego dziecka</h2>
             </section>
-            <section className="container">
+            <section className="container mb-6">
               <div className="columns">
                 <FeaturedCard className="column is-one-quarter"
                               color="blue"
@@ -69,8 +69,8 @@ const IndexPage = () => {
               <div className="container">
                 <div className="columns">
                   <div className="column is-half">
-                    <h4>Poznajmy się lepiej</h4>
-                    <h2>Podział na grupy <br/>2020/2021</h2>
+                    <h4 className="mt-6">Poznajmy się lepiej</h4>
+                    <h2 className="my-4">Podział na grupy <br/>2020/2021</h2>
                     <GroupsAccordion/>
                   </div>
                 </div>

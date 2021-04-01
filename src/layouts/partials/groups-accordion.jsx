@@ -5,7 +5,6 @@ import AccordionItem from './accordion/accordion-item';
 import * as styles from './groups-accordion.module.scss';
 
 const GroupsAccordion = () => {
-  console.log(styles);
   return (
           <StaticQuery query={graphql`
           query GroupsQuery {
@@ -30,7 +29,7 @@ const GroupsAccordion = () => {
           }
           `}
                        render={data => (
-                               <Accordion className={styles.accordion}>
+                               <Accordion className={`${styles.accordion} mb-6`}>
                                  {data.allMarkdownRemark.edges.map((edge, index) => (
                                          <AccordionItem key={edge.node.id}
                                                         title={edge.node.frontmatter.name}
