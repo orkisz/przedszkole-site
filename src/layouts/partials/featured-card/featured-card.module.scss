@@ -1,3 +1,5 @@
+@import "~bulma/sass/utilities/mixins";
+
 $card-height: 612px;
 $dark-bg-height: 18px;
 
@@ -30,12 +32,30 @@ $dark-bg-height: 18px;
 
 .title {
   font-family: 'Ubuntu', sans-serif;
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: bold;
-  line-height: 2.1875rem;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .text {
   font-size: 1.125rem;
+}
+
+@include desktop() {
+  .title {
+    font-size: 1.3rem;
+  }
+}
+
+//@include widescreen() {
+//  .title {
+//  }
+//}
+
+@include fullhd() {
+  .title {
+    font-size: 2rem;
+    line-height: 2.1875rem;
+    margin-bottom: 40px;
+  }
 }
