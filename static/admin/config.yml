@@ -24,7 +24,6 @@ collections:
     fields:
       - { label: 'Tytuł', name: 'title', widget: 'string' }
       - { label: 'Data publikacji', name: 'date', widget: 'datetime' }
-      - { label: 'Opis/zajawka', name: 'description', widget: 'string' }
       - { label: 'Treść', name: 'body', widget: 'markdown' }
       - { label: 'Obraz', name: 'image', widget: 'image', required: false }
   - name: 'group'

@@ -1,18 +1,25 @@
 import React from 'react';
 import { graphql, StaticQuery } from 'gatsby';
-import BlogCard from './blog-card';
+import BlogCard from './blog-card/blog-card';
 
 const BlogArea = () => {
   return (
-    <StaticQuery query={graphql`
+          <StaticQuery query={graphql`
       query BlogQuery {
-        allMarkdownRemark(sort: {fields: frontmatter___date, order: DESC}, limit: 3) {
+        allMarkdownRemark(
+            sort: {fields: frontmatter___date, order: DESC}
+            filter: {fields: {category: {eq: "blog"}}}
+            limit: 3
+          ) {
           edges {
             node {
               id
               frontmatter {
                 title
-                description
+                description,
+                image {
+                  publicURL
+                }
               }
               fields {
                 slug
@@ -23,14 +30,14 @@ const BlogArea = () => {
         }
       }
     `}
-                 render={data => (
-                   <div className="columns features">
-                     {data.allMarkdownRemark.edges.map(edge => (
-                       <BlogCard node={edge.node}
-                                 key={edge.node.id}/>
-                     ))}
-                   </div>
-                 )}/>
+                       render={data => (
+                               <div className="columns features">
+                                 {data.allMarkdownRemark.edges.map(edge => (
+                                         <BlogCard node={edge.node}
+                                                   key={edge.node.id}/>
+                                 ))}
+                               </div>
+                       )}/>
   );
 }
 

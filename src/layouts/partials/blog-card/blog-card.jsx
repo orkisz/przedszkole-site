@@ -2,18 +2,22 @@ import React from 'react';
 import { Link } from 'gatsby';
 
 const BlogCard = ({ node }) => {
-  const heading = (node.frontmatter.description || node.html || '').replace(/(<([^>]+)>)/gi, '').substr(0, 500) + '...';
-
+  let heading = (node.html || '').replace(/(<([^>]+)>)/gi, '');
+  const spaceIdx = heading.substr(0, 100).lastIndexOf(' ');
+  heading = heading.substring(0, spaceIdx).trim() + '...';
+  console.log(node);
   return (
       <div className="column is-4">
-        <div className="card is-shady">
+        <div className="card">
           <div className="card-image has-text-centered">
-            <i className="fa fa-paw"/>
+            <figure className="image">
+              {node.frontmatter.image && <img src={node.frontmatter.image.publicURL}/>}
+            </figure>
           </div>
           <div className="card-content">
             <div className="content">
               <h4>{node.frontmatter.title}</h4>
-              <p>{heading}</p>
+         i     <p>{heading}</p>
               <p>
                 <Link to={node.fields.slug}>Learn more</Link>
               </p>

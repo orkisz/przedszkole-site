@@ -8,6 +8,7 @@ import teachersImage from './teachers.png';
 import learnByPlayImage from './learn-by-play.png';
 import FeaturedCard from '../layouts/partials/featured-card/featured-card';
 import GroupsAccordion from '../layouts/partials/groups-accordion';
+import BlogArea from '../layouts/partials/blog-area';
 
 const Features = [
   {
@@ -85,6 +86,11 @@ const IndexPage = () => {
                     </div>
                   </div>
                 </div>
+              </div>
+            </section>
+            <section>
+              <div className="container">
+                <BlogArea/>
               </div>
             </section>
           </Layout>
