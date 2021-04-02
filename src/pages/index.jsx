@@ -1,5 +1,4 @@
 import * as React from 'react'
-
 import '../styles/styles.scss';
 import Layout from '../layouts/layout';
 import * as styles from './index.module.scss';
@@ -9,6 +8,37 @@ import teachersImage from './teachers.png';
 import learnByPlayImage from './learn-by-play.png';
 import FeaturedCard from '../layouts/partials/featured-card/featured-card';
 import GroupsAccordion from '../layouts/partials/groups-accordion';
+
+const Features = [
+  {
+    header: <>Wartości chrześcijańskie</>,
+    body: <>Program nauczania opieramy na&nbsp;koncepcji pedagogicznej naszego patrona bł.&nbsp;Edmunda
+            Bojanowskiego</>,
+    color: 'blue',
+    image: valuesImage
+  },
+  {
+    header: <>Nauka <br className={styles.featureCardLineBreak}/>i zabawa</>,
+    body: <>Poprzez zabawę dzieci poznają świat i&nbsp;budują relacje z&nbsp;rówieśnikami. Zajęcia dostosowujemy
+            do&nbsp;Ich
+            możliwości i&nbsp;zainteresowań</>,
+    color: 'yellow',
+    image: learnByPlayImage
+  },
+  {
+    header: <>Troskliwi nauczyciele</>,
+    body: <>Nasi wychowawcy to nie&nbsp;tylko pedagodzy z&nbsp;doświadczeniem w&nbsp;pracy z&nbsp;dziećmi,
+            ale&nbsp;osoby pełne empatii i&nbsp;zaangażowania</>,
+    color: 'red',
+    image: teachersImage
+  }, {
+    header: <>Przyjazne otoczenie</>,
+    body: <>Kolorowe sale, piękny, duży plac zabaw, zaciszna kaplica to&nbsp;wszystko buduje poczucie
+            bezpieczeństwa i&nbsp;pobudza do&nbsp;aktywności</>,
+    color: 'green',
+    image: surroundingsImage
+  }
+];
 
 const IndexPage = () => {
   return (
@@ -31,36 +61,15 @@ const IndexPage = () => {
               <h2 className="mt-4">Naszym priorytetem jest <br/>wszechstronny rozwój każdego dziecka</h2>
             </section>
             <section className="container mb-6">
-              <div className="columns">
-                <FeaturedCard className="column is-one-quarter"
-                              color="blue"
-                              image={valuesImage}>
-                  <header>Wartości chrześcijańskie</header>
-                  Program nauczania opieramy na&nbsp;koncepcji pedagogicznej naszego patrona bł.&nbsp;Edmunda
-                  Bojanowskiego
-                </FeaturedCard>
-                <FeaturedCard className="column is-one-quarter"
-                              color="yellow"
-                              image={learnByPlayImage}>
-                  <header>Nauka <br/>i zabawa</header>
-                  Poprzez zabawę dzieci poznają świat i&nbsp;budują relacje z&nbsp;rówieśnikami. Zajęcia dostosowujemy
-                  do&nbsp;Ich
-                  możliwości i&nbsp;zainteresowań
-                </FeaturedCard>
-                <FeaturedCard className="column is-one-quarter"
-                              color="red"
-                              image={teachersImage}>
-                  <header>Troskliwi nauczyciele</header>
-                  Nasi wychowawcy to nie&nbsp;tylko pedagodzy z&nbsp;doświadczeniem w&nbsp;pracy zvdziećmi,
-                  ale&nbsp;osoby pełne empatii i&nbsp;zaangażowania
-                </FeaturedCard>
-                <FeaturedCard className="column is-one-quarter"
-                              color="green"
-                              image={surroundingsImage}>
-                  <header>Przyjazne otoczenie</header>
-                  Kolorowe sale, piękny, duży plac zabaw, zaciszna kaplica to&nbsp;wszystko buduje poczucie
-                  bezpieczeństwa i&nbsp;pobudza do&nbsp;aktywności
-                </FeaturedCard>
+              <div className="columns is-desktop">
+                {Features.map(featureDef => (
+                        <FeaturedCard className="column is-full-touch is-one-quarter-desktop"
+                                      color={featureDef.color}
+                                      image={featureDef.image}>
+                          <header>{featureDef.header}</header>
+                          <>{featureDef.body}</>
+                        </FeaturedCard>
+                ))}
               </div>
             </section>
             <section className={styles.groupsSection}>

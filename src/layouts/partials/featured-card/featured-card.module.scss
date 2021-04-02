@@ -8,21 +8,16 @@ $dark-bg-height: 18px;
 }
 
 .outer-card, .inner-card {
-  border-radius: 20px;
   overflow: hidden;
 }
 
-.outer-card {
-  height: $card-height;
-}
-
 .inner-card {
-  height: $card-height - $dark-bg-height;
-  padding: 40px;
+  display: flex;
+  padding: 20px;
 }
 
 .figure {
-  margin-bottom: 40px;
+  flex-shrink: 0;
 }
 
 .image {
@@ -30,9 +25,16 @@ $dark-bg-height: 18px;
   padding: 5px;
 }
 
+.wrapper {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+}
+
 .title {
   font-family: 'Ubuntu', sans-serif;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 20px;
 }
@@ -42,15 +44,38 @@ $dark-bg-height: 18px;
 }
 
 @include desktop() {
+  .figure {
+    margin-bottom: 40px;
+  }
+
+  .wrapper {
+    padding: 0;
+  }
+
   .title {
     font-size: 1.3rem;
   }
+
+  .outer-card {
+    height: $card-height;
+  }
+
+  .inner-card {
+    flex-direction: column;
+    height: $card-height - $dark-bg-height;
+    padding: 40px;
+  }
+
+  .outer-card, .inner-card {
+    border-radius: 20px;
+  }
 }
 
-//@include widescreen() {
-//  .title {
-//  }
-//}
+@include touch() {
+  .figure {
+    width: 30vw;
+  }
+}
 
 @include fullhd() {
   .title {

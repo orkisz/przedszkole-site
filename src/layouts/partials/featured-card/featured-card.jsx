@@ -10,14 +10,17 @@ const FeaturedCard = ({ className, color, image, title, children }) => {
             <div className={`my-custom-background-${color}-darken ${styles.outerCard}`}>
               <div className={`my-custom-background-${color} ${styles.innerCard} has-text-centered`}>
                 <figure className={`image is-1-by-1 ${styles.figure}`}>
-                  <img className={`is-rounded ${styles.image}`} src={image}
+                  <img className={`is-rounded ${styles.image}`}
+                       src={image}
                        alt={title}/>
                 </figure>
-                <div className={styles.title}>
-                  {header}
-                </div>
-                <div className={styles.text}>
-                  {rest}
+                <div className={styles.wrapper}>
+                  <div className={styles.title}>
+                    {header}
+                  </div>
+                  <div className={styles.text}>
+                    {rest}
+                  </div>
                 </div>
               </div>
             </div>

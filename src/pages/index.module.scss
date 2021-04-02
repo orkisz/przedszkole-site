@@ -47,3 +47,13 @@
     color: white;
   }
 }
+
+.feature-card-line-break {
+  display: none;
+}
+
+@include desktop() {
+  .feature-card-line-break {
+    display: inline;
+  }
+}
