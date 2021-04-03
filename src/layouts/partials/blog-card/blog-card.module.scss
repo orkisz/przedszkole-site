@@ -1,0 +1,16 @@
+@import "src/styles/variables";
+
+.datestamp {
+  background-color: #FFC61D;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  border-radius: 20px;
+  padding: 6px 10px;
+  font-size: 16px;
+  color: $black-ter;
+}
+
+.title {
+  color: $mainAccent;
+}

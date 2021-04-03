@@ -17,6 +17,7 @@ const BlogArea = () => {
               frontmatter {
                 title
                 description,
+                date
                 image {
                   publicURL
                 }

@@ -1,4 +1,6 @@
+@import "src/styles/variables";
+
 .list {
-  border-radius: 15px;
+  border-radius: $radius-x-large;
   overflow: hidden;
 }
