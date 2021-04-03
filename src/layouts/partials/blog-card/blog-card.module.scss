@@ -14,3 +14,12 @@
 .title {
   color: $mainAccent;
 }
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.link {
+  align-self: flex-end;
+}

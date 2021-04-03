@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import { Link, navigate } from 'gatsby';
 import * as styles from './blog-card.module.scss';
 
 const BlogCard = ({ node }) => {
@@ -22,12 +22,15 @@ const BlogCard = ({ node }) => {
                       dateTime={node.frontmatter.date}>{formattedDate}</time>
               </div>
               }
-              <div className="card-content">
-                <h4 className={`${styles.title} my-3`}>{node.frontmatter.title}</h4>
+              <div className={`${styles.contentWrapper} card-content`}>
+                <h4 className={`${styles.title} my-3`}
+                    role="link"
+                    onClick={() => navigate(node.fields.slug)}>{node.frontmatter.title}</h4>
                 <div className="content mb-5">
                   <p>{heading}</p>
                 </div>
-                <Link to={node.fields.slug}>Learn more</Link>
+                <Link className={styles.link}
+                      to={node.fields.slug}>Learn more</Link>
               </div>
             </div>
           </div>

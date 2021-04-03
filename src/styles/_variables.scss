@@ -10,6 +10,8 @@ $red-darken: #F03E30;
 $green: #3BB156;
 $green-darken: #0F8D2C;
 $primary: $red-darken !default;
+$link: $primary;
+$link-hover: $red;
 
 $my-custom-colors: ("blue": ($blue, $blue-darken), "yellow": ($yellow, $yellow-darken), "red": ($red, $red-darken), "green": ($green, $green-darken));
 

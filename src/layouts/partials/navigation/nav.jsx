@@ -15,11 +15,15 @@ class Navigation extends React.Component {
   }
 
   componentWillMount() {
-    window.addEventListener('click', this.windowClick);
+    if (typeof window !== 'undefined') {
+      window.addEventListener('click', this.windowClick);
+    }
   }
 
   componentWillUnmount() {
-    window.removeEventListener('click', this.windowClick);
+    if (typeof window !== 'undefined') {
+      window.removeEventListener('click', this.windowClick);
+    }
   }
 
   windowClick(event) {
