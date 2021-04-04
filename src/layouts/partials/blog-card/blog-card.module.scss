@@ -1,5 +1,9 @@
 @import "src/styles/variables";
 
+.card {
+  height: 100%;
+}
+
 .datestamp {
   background-color: #FFC61D;
   position: absolute;
@@ -15,11 +19,8 @@
   color: $mainAccent;
 }
 
-.content-wrapper {
-  display: flex;
-  flex-direction: column;
-}
-
 .link {
-  align-self: flex-end;
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1.5rem;
 }
