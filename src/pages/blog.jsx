@@ -1,7 +1,7 @@
-import * as React from 'react';
 import { graphql, StaticQuery } from 'gatsby';
-import BlogCard from '../layouts/partials/blog-card/blog-card';
+import * as React from 'react';
 import Layout from '../layouts/layout';
+import BlogCard from '../layouts/partials/blog-card/blog-card';
 
 const Blog = () => {
   return (

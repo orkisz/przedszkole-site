@@ -1,14 +1,14 @@
 import * as React from 'react'
-import '../styles/styles.scss';
 import Layout from '../layouts/layout';
-import * as styles from './index.module.scss';
-import valuesImage from './values.png';
-import surroundingsImage from './surroundings.png';
-import teachersImage from './teachers.png';
-import learnByPlayImage from './learn-by-play.png';
+import BlogArea from '../layouts/partials/blog-area';
 import FeaturedCard from '../layouts/partials/featured-card/featured-card';
 import GroupsAccordion from '../layouts/partials/groups-accordion';
-import BlogArea from '../layouts/partials/blog-area';
+import '../styles/styles.scss';
+import * as styles from './index.module.scss';
+import learnByPlayImage from './learn-by-play.png';
+import surroundingsImage from './surroundings.png';
+import teachersImage from './teachers.png';
+import valuesImage from './values.png';
 
 const Features = [
   {
