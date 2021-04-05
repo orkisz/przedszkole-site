@@ -15,6 +15,17 @@
   color: $black-ter;
 }
 
+.border-effect {
+  background-color: transparent;
+  height: 0;
+  margin: 0;
+  border-bottom: 1px dashed $white;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 5px;
+}
+
 .title {
   color: $mainAccent;
 }

@@ -14,9 +14,10 @@ const BlogCard = ({ node }) => {
             <div className={`${styles.card} card`}>
               {node.frontmatter.image &&
               <div className="card-image">
-                <figure className="image is-16by9">
+                <figure className="image is-5by3">
                   <img src={node.frontmatter.image.publicURL}
                        alt="TODO"/>
+                  <hr className={styles.borderEffect}/>
                 </figure>
                 <time className={styles.datestamp}
                       dateTime={node.frontmatter.date}>{formattedDate}</time>
@@ -30,7 +31,7 @@ const BlogCard = ({ node }) => {
                   <p>{heading}</p>
                 </div>
                 <Link className={styles.link}
-                      to={node.fields.slug}>Learn more</Link>
+                      to={node.fields.slug}>czytaj więcej</Link>
               </div>
             </div>
           </div>
