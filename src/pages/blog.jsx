@@ -6,31 +6,31 @@ import Layout from '../layouts/layout';
 const Blog = () => {
   return (
           <StaticQuery query={graphql`
-      query AllBlogQuery {
-        allMarkdownRemark(
-            sort: {fields: frontmatter___date, order: ASC}
-            filter: {fields: {category: {eq: "blog"}}}
-          ) {
-          edges {
-            node {
-              id
-              frontmatter {
-                title
-                description,
-                date
-                image {
-                  publicURL
+            query AllBlogQuery {
+              allMarkdownRemark(
+                  sort: {fields: frontmatter___date, order: ASC}
+                  filter: {fields: {category: {eq: "blog"}}}
+                ) {
+                edges {
+                  node {
+                    id
+                    frontmatter {
+                      title
+                      description,
+                      date
+                      image {
+                        publicURL
+                      }
+                    }
+                    fields {
+                      slug
+                    }
+                    html
+                  }
                 }
               }
-              fields {
-                slug
-              }
-              html
             }
-          }
-        }
-      }
-    `}
+          `}
                        render={data => (
                                <Layout>
                                  <div className="container has-text-centered">

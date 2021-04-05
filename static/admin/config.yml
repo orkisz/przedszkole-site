@@ -10,6 +10,12 @@ locale: pl
 media_folder: static/img
 public_folder: /img
 
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: dswesmbkz
+    api_key: 145566431588812
+
 collections:
   - name: 'blog'
     label: 'Blog'
@@ -22,10 +28,24 @@ collections:
     editor:
       preview: false
     fields:
-      - { label: 'Tytuł', name: 'title', widget: 'string' }
-      - { label: 'Data publikacji', name: 'date', widget: 'datetime' }
-      - { label: 'Treść', name: 'body', widget: 'markdown' }
-      - { label: 'Obraz', name: 'image', widget: 'image', required: false }
+      - label: 'Tytuł'
+        name: 'title'
+        widget: 'string'
+      - label: 'Data publikacji'
+        name: 'date'
+        widget: 'datetime'
+      - label: 'Treść'
+        name: 'body'
+        widget: 'markdown'
+      - label: 'Obraz'
+        name: 'image'
+        widget: 'image'
+        required: false
+        allow_multiple: true
+        media_library:
+          config:
+            multiple: true
+
   - name: 'group'
     label: 'Grupa'
     folder: 'content/group'
