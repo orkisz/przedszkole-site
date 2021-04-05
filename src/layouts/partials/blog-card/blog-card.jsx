@@ -14,7 +14,7 @@ const BlogCard = ({ node }) => {
             <div className={`${styles.card} card`}>
               {node.frontmatter.image &&
               <div className="card-image">
-                <figure className="image is-4by3">
+                <figure className="image is-16by9">
                   <img src={node.frontmatter.image.publicURL}
                        alt="TODO"/>
                 </figure>

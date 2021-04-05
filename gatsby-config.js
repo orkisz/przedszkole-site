@@ -9,6 +9,7 @@ module.exports = {
     'gatsby-plugin-image',
     'gatsby-plugin-react-helmet',
     'gatsby-transformer-remark',
+    'gatsby-plugin-fontawesome-css',
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
