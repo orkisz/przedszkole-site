@@ -1,6 +1,7 @@
 import React from 'react';
 import { graphql, StaticQuery } from 'gatsby';
 import BlogCard from './blog-card/blog-card';
+import * as styles from './blog-area.module.scss';
 
 const BlogArea = () => {
   return (
@@ -34,7 +35,7 @@ const BlogArea = () => {
                        render={data => (
                                <div className="container">
                                  <div className="has-text-centered">
-                                   <h4 className="mt-6">
+                                   <h4 className={styles.header}>
                                      Co nowego w przedszkolu?
                                    </h4>
                                    <h2 className="my-3">

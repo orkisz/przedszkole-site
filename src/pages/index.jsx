@@ -47,13 +47,17 @@ const IndexPage = () => {
             <section className={`hero is-large ${styles.hero}`}>
               <div className="hero-body">
                 <div className="container">
-                  <h3>
-                    Witamy w naszym przedszkolu
-                  </h3>
-                  <h1>
-                    Razem bawimy się, uczymy i rośniemy!
-                  </h1>
-                  <button className="button is-primary is-large is-rounded">Dowiedz się wiecej</button>
+                  <div className="columns">
+                    <div className="column is-half-desktop is-full-touch">
+                      <h4>
+                        Witamy w naszym przedszkolu
+                      </h4>
+                      <h1 className="mt-3 mb-6">
+                        Razem bawimy się, uczymy i rośniemy!
+                      </h1>
+                      <button className="button is-primary is-medium is-rounded">Dowiedz się wiecej</button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </section>
