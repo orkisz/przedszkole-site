@@ -32,11 +32,24 @@ const BlogArea = () => {
       }
     `}
                        render={data => (
-                               <div className="columns features">
-                                 {data.allMarkdownRemark.edges.map(edge => (
-                                         <BlogCard node={edge.node}
-                                                   key={edge.node.id}/>
-                                 ))}
+                               <div className="container">
+                                 <div className="has-text-centered">
+                                   <h4 className="mt-6">
+                                     Co nowego w przedszkolu?
+                                   </h4>
+                                   <h2 className="my-3">
+                                     Aktualności
+                                   </h2>
+                                   <strong className="is-block is-size-6 mb-6">
+                                     Zapraszamy do zapoznania się z ostatnimi wydarzeniami z życia przedszkola
+                                   </strong>
+                                 </div>
+                                 <div className="columns features">
+                                   {data.allMarkdownRemark.edges.map(edge => (
+                                           <BlogCard node={edge.node}
+                                                     key={edge.node.id}/>
+                                   ))}
+                                 </div>
                                </div>
                        )}/>
   );

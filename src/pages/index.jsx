@@ -89,9 +89,7 @@ const IndexPage = () => {
               </div>
             </section>
             <section>
-              <div className="container">
-                <BlogArea/>
-              </div>
+              <BlogArea/>
             </section>
           </Layout>
   )

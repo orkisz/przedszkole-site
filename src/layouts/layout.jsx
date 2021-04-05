@@ -24,7 +24,7 @@ const Layout = ({ children }) => {
                                          defer={false}/>
                                  <Navigation/>
                                  {children}
-                                 <footer className="site-footer has-text-centered">
+                                 <footer className="site-footer has-text-centered mt-6">
                                    <span>Copyright &copy; 2021 Niepubliczne Przedszkole Sióstr Służebniczek Zgromadzenia NMP NP</span>
                                    <hr/>
                                    <a className="plain"
