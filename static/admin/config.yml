@@ -15,6 +15,7 @@ media_library:
   config:
     cloud_name: dswesmbkz
     api_key: 145566431588812
+    multiple: true
 
 collections:
   - name: 'blog'
@@ -38,7 +39,7 @@ collections:
         name: 'body'
         widget: 'markdown'
       - label: 'Obraz'
-        name: 'image'
+        name: 'images'
         widget: 'image'
         required: false
         allow_multiple: true

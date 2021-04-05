@@ -18,9 +18,7 @@ const Blog = () => {
                       title
                       description,
                       date
-                      image {
-                        publicURL
-                      }
+                      images
                     }
                     fields {
                       slug

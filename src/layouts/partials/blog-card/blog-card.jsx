@@ -12,10 +12,10 @@ const BlogCard = ({ node }) => {
   return (
           <div className="column is-4">
             <div className={`${styles.card} card`}>
-              {node.frontmatter.image &&
+              {node.frontmatter.images.length &&
               <div className="card-image">
                 <figure className="image is-5by3">
-                  <img src={node.frontmatter.image.publicURL}
+                  <img src={node.frontmatter.images[0]}
                        alt="TODO"/>
                   <hr className={styles.borderEffect}/>
                 </figure>

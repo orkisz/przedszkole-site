@@ -2,7 +2,7 @@
 title: Post taki, że mucha nie siada
 date: 2021-04-05T20:05:34.837Z
 description: dsadsadsadas
-image:
+images:
   - https://res.cloudinary.com/dswesmbkz/image/upload/v1617653103/P1010199_su2s53.jpg
   - https://res.cloudinary.com/dswesmbkz/image/upload/v1617653074/P1010214_pl8pwm.jpg
   - https://res.cloudinary.com/dswesmbkz/image/upload/v1617652993/IMG_8249_klgut4.jpg

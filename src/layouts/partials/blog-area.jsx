@@ -19,9 +19,7 @@ const BlogArea = () => {
                 title
                 description,
                 date
-                image {
-                  publicURL
-                }
+                images
               }
               fields {
                 slug

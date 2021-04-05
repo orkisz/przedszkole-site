@@ -1,5 +1,7 @@
-import React from 'react';
 import { graphql } from 'gatsby';
+import React from 'react';
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
 import Layout from '../layouts/layout';
 
 const BlogPage = ({ data }) => {
@@ -10,9 +12,18 @@ const BlogPage = ({ data }) => {
               <div className="columns">
                 <div className="column is-8 is-offset-2">
                   <article className="content">
-                    {item.frontmatter.image && (
-                            <img src={item.frontmatter.image.publicURL}
+                    {item.frontmatter.images.length === 1 && (
+                            <img src={item.frontmatter.images[0]}
                                  alt="TODO"/>
+                    )}
+                    {item.frontmatter.images.length > 1 && (
+                            <Carousel>
+                              {item.frontmatter.images.map(image => (
+                                      <div key={image}>
+                                        <img src={image}/>
+                                      </div>
+                              ))}
+                            </Carousel>
                     )}
                     <h3>{item.frontmatter.title}</h3>
                     <div dangerouslySetInnerHTML={{ __html: item.html }}/>
@@ -34,9 +45,7 @@ export const query = graphql`
       frontmatter {
         title
         date
-        image {
-          publicURL
-        }
+        images
       }
     }
   }
