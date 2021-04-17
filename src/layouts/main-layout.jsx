@@ -6,7 +6,7 @@ import { Helmet } from 'react-helmet';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF } from '@fortawesome/free-brands-svg-icons';
 
-const Layout = ({ children }) => {
+const MainLayout = ({ children }) => {
   return (
           <StaticQuery query={graphql`
           query MainQuery {
@@ -38,4 +38,4 @@ const Layout = ({ children }) => {
   )
 }
 
-export default Layout;
+export default MainLayout;

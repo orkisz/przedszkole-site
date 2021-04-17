@@ -1,6 +1,6 @@
 import { graphql, StaticQuery } from 'gatsby';
 import * as React from 'react';
-import Layout from '../layouts/layout';
+import MainLayout from '../layouts/main-layout';
 import BlogCard from '../layouts/partials/blog-card/blog-card';
 
 const Blog = () => {
@@ -30,7 +30,7 @@ const Blog = () => {
             }
           `}
                        render={data => (
-                               <Layout>
+                               <MainLayout>
                                  <div className="container has-text-centered">
                                    <h2 className="my-6">Aktualności</h2>
                                    <div className="columns is-multiline features">
@@ -40,7 +40,7 @@ const Blog = () => {
                                      ))}
                                    </div>
                                  </div>
-                               </Layout>
+                               </MainLayout>
                        )}/>
   );
 }

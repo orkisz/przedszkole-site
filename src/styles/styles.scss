@@ -35,6 +35,18 @@ h4 {
   color: $primary;
 }
 
+p {
+  margin-bottom: 1rem;
+}
+
+figure.image {
+  figcaption {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+}
+
 [role=button],[role=link] {
   cursor: pointer;
 }

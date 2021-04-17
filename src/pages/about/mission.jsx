@@ -1,13 +1,13 @@
 import * as React from 'react';
-import Layout from '../../layouts/layout';
+import MainLayout from '../../layouts/main-layout';
 
 const Blog = () => {
   return (
-          <Layout>
+          <MainLayout>
             <div className="container has-text-centered">
               <h2 className="my-6">Misja</h2>
             </div>
-          </Layout>
+          </MainLayout>
   );
 }
 

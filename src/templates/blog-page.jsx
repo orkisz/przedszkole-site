@@ -2,12 +2,12 @@ import { graphql } from 'gatsby';
 import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
-import Layout from '../layouts/layout';
+import MainLayout from '../layouts/main-layout';
 
 const BlogPage = ({ data }) => {
   const item = data.markdownRemark;
   return (
-          <Layout>
+          <MainLayout>
             <section className="container">
               <div className="columns">
                 <div className="column is-8 is-offset-2">
@@ -31,7 +31,7 @@ const BlogPage = ({ data }) => {
                 </div>
               </div>
             </section>
-          </Layout>
+          </MainLayout>
   )
 }
 

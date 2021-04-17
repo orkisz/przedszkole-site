@@ -1,5 +1,5 @@
 import * as React from 'react'
-import Layout from '../layouts/layout';
+import MainLayout from '../layouts/main-layout';
 import BlogArea from '../layouts/partials/blog-area';
 import FeaturedCard from '../layouts/partials/featured-card/featured-card';
 import GroupsAccordion from '../layouts/partials/groups-accordion';
@@ -43,7 +43,7 @@ const Features = [
 
 const IndexPage = () => {
   return (
-          <Layout>
+          <MainLayout>
             <section className={`hero is-large ${styles.hero}`}>
               <div className="hero-body">
                 <div className="container">
@@ -95,7 +95,7 @@ const IndexPage = () => {
             <section>
               <BlogArea/>
             </section>
-          </Layout>
+          </MainLayout>
   )
 }
 
