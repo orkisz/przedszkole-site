@@ -1,7 +1,7 @@
-import React from 'react';
 import { Link } from 'gatsby';
-import * as styles from './nav.module.css';
+import React from 'react';
 import logo from './logo.png';
+import * as styles from './nav.module.css';
 
 class Navigation extends React.Component {
   constructor(props) {
@@ -68,12 +68,49 @@ class Navigation extends React.Component {
                 <div id="navbarMenu"
                      className={navbarMenuClassNames}>
                   <div className="navbar-end">
-                    <a className="navbar-item"
-                       href="Javascript:void(0)">O nas
-                    </a>
-                    <a className="navbar-item"
-                       href="Javascript:void(0)">Z życia przedszkola
-                    </a>
+                    <div className="navbar-item has-dropdown is-hoverable">
+                      <a className="navbar-link">
+                        O nas
+                      </a>
+
+                      <div className="navbar-dropdown">
+                        <Link className="navbar-item" to="/about/history">
+                          Historia
+                        </Link>
+                        <Link className="navbar-item" to="/about/patron">
+                          Patron
+                        </Link>
+                        <Link className="navbar-item" to="/about/statutory">
+                          Statut
+                        </Link>
+                        <Link className="navbar-item" to="/about/mission">
+                          Misja
+                        </Link>
+                        <Link className="navbar-item" to="/about/personnel">
+                          Kadra
+                        </Link>
+                      </div>
+                    </div>
+                    <div className="navbar-item has-dropdown is-hoverable">
+                      <a className="navbar-link">
+                        Z życia przedszkola
+                      </a>
+
+                      <div className="navbar-dropdown">
+                        <Link className="navbar-item" to="/everyday/groups">
+                          Grupy
+                        </Link>
+                        <Link className="navbar-item" to="/everyday/plan">
+                          Plan dnia
+                        </Link>
+                        <Link className="navbar-item" to="/everyday/additional-lessons">
+                          Zajęcia dodatkowe
+                        </Link>
+                        <Link className="navbar-item" to="/everyday/payments">
+                          Opłaty
+                        </Link>
+                      </div>
+                    </div>
                     <a className="navbar-item"
                        href="Javascript:void(0)">Strefa rodzica
                     </a>
