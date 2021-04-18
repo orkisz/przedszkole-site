@@ -64,20 +64,6 @@ figure.image {
   }
 }
 
-footer.site-footer {
-  background-color: $mainAccent;
-  color: $white;
-  padding: .7rem 0;
-
-  > hr {
-    border-width: 0 1px 0 0;
-    border-color: $white;
-    border-style: solid;
-    margin: 0 1rem;
-    display: inline;
-  }
-}
-
 a.plain {
   color: inherit;
 }

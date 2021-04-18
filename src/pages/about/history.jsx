@@ -1,5 +1,5 @@
 import * as React from 'react';
-import MainLayout from '../../layouts/main-layout';
+import MainLayout from '../../layouts/main-layout/main-layout';
 import SimpleTwoColumnLayout from '../../layouts/simple-two-column-layout';
 import img1 from './history-1.png';
 import img2 from './history-2.png';

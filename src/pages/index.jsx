@@ -1,5 +1,5 @@
 import * as React from 'react'
-import MainLayout from '../layouts/main-layout';
+import MainLayout from '../layouts/main-layout/main-layout';
 import BlogArea from '../layouts/partials/blog-area';
 import FeaturedCard from '../layouts/partials/featured-card/featured-card';
 import GroupsAccordion from '../layouts/partials/groups-accordion';

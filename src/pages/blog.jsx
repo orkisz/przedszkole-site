@@ -1,6 +1,6 @@
 import { graphql, StaticQuery } from 'gatsby';
 import * as React from 'react';
-import MainLayout from '../layouts/main-layout';
+import MainLayout from '../layouts/main-layout/main-layout';
 import BlogCard from '../layouts/partials/blog-card/blog-card';
 
 const Blog = () => {

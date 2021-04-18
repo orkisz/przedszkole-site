@@ -2,7 +2,7 @@ import { graphql } from 'gatsby';
 import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
-import MainLayout from '../layouts/main-layout';
+import MainLayout from '../layouts/main-layout/main-layout';
 
 const BlogPage = ({ data }) => {
   const item = data.markdownRemark;
