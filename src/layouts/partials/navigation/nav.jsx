@@ -1,13 +1,14 @@
 import { Link } from 'gatsby';
 import React from 'react';
 import logo from './logo.png';
-import * as styles from './nav.module.css';
+import * as styles from './nav.module.scss';
 
 class Navigation extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      isActive: false
+      isActive: false,
+      expandedDropdowns: {}
     }
     this.toggleIsActive = this.toggleIsActive.bind(this);
     this.windowClick = this.windowClick.bind(this);
@@ -37,9 +38,27 @@ class Navigation extends React.Component {
 
   toggleIsActive() {
     this.setState(state => {
+      let dropdownStates = state.expandedDropdowns;
+      if (state.isActive) {
+        dropdownStates = {};
+      }
       return {
-        isActive: !state.isActive
+        isActive: !state.isActive,
+        expandedDropdowns: dropdownStates
       };
+    });
+  }
+
+  toggleDropdown(key) {
+    this.setState(state => {
+      const currentDropdownState = state.expandedDropdowns[key];
+      return {
+        ...state,
+        expandedDropdowns: {
+          ...state.expandedDropdowns,
+          [key]: !currentDropdownState
+        }
+      }
     });
   }
 
@@ -48,6 +67,7 @@ class Navigation extends React.Component {
     if (this.state.isActive) {
       navbarMenuClassNames += ' is-active';
     }
+    const ddState = this.state.expandedDropdowns;
     return (
             <nav className={`navbar is-fixed-top ${styles.navigation}`}
                  ref={this.navRef}>
@@ -69,44 +89,55 @@ class Navigation extends React.Component {
                      className={navbarMenuClassNames}>
                   <div className="navbar-end">
                     <div className="navbar-item has-dropdown is-hoverable">
-                      <a className="navbar-link">
+                      <a className="navbar-link"
+                         onClick={() => this.toggleDropdown('about')}>
                         O nas
                       </a>
 
-                      <div className="navbar-dropdown">
-                        <Link className="navbar-item" to="/about/history">
+                      <div className={`${styles.dropdown} ${ ddState['about'] ? styles.dropdownExpanded : '' } navbar-dropdown`}>
+                        <Link className="navbar-item"
+                              to="/about/history">
                           Historia
                         </Link>
-                        <Link className="navbar-item" to="/about/patron">
+                        <Link className="navbar-item"
+                              to="/about/patron">
                           Patron
                         </Link>
-                        <Link className="navbar-item" to="/about/statutory">
+                        <Link className="navbar-item"
+                              to="/about/statutory">
                           Statut
                         </Link>
-                        <Link className="navbar-item" to="/about/mission">
+                        <Link className="navbar-item"
+                              to="/about/mission">
                           Misja
                         </Link>
-                        <Link className="navbar-item" to="/about/personnel">
+                        <Link className="navbar-item"
+                              to="/about/personnel">
                           Kadra
                         </Link>
                       </div>
                     </div>
                     <div className="navbar-item has-dropdown is-hoverable">
-                      <a className="navbar-link">
+                      <a className="navbar-link"
+                         onClick={() => this.toggleDropdown('everyday')}>
                         Z życia przedszkola
                       </a>
 
-                      <div className="navbar-dropdown">
-                        <Link className="navbar-item" to="/everyday/groups">
+                      <div className={`${styles.dropdown} ${ ddState['everyday'] ? styles.dropdownExpanded : '' } navbar-dropdown`}>
+                        <Link className="navbar-item"
+                              to="/everyday/groups">
                           Grupy
                         </Link>
-                        <Link className="navbar-item" to="/everyday/plan">
+                        <Link className="navbar-item"
+                              to="/everyday/plan">
                           Plan dnia
                         </Link>
-                        <Link className="navbar-item" to="/everyday/additional-lessons">
+                        <Link className="navbar-item"
+                              to="/everyday/additional-lessons">
                           Zajęcia dodatkowe
                         </Link>
-                        <Link className="navbar-item" to="/everyday/payments">
+                        <Link className="navbar-item"
+                              to="/everyday/payments">
                           Opłaty
                         </Link>
                       </div>

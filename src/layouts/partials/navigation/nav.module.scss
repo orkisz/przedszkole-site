@@ -1,0 +1,15 @@
+@import "~bulma/sass/utilities/mixins.sass";
+
+.navigation {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+@include touch() {
+  .dropdown {
+    display: none;
+
+    &-expanded {
+      display: block;
+    }
+  }
+}

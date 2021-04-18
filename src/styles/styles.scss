@@ -81,3 +81,17 @@ footer.site-footer {
 a.plain {
   color: inherit;
 }
+
+@include touch() {
+  p {
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+
+  figure.image {
+    figcaption {
+      margin-right: 1rem;
+      margin-left: 1rem;
+    }
+  }
+}
