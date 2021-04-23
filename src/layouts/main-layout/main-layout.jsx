@@ -41,38 +41,41 @@ const MainLayout = ({ children }) => {
                                      <div className="container">
                                        <div className="columns">
                                          <div className="column is-half-desktop is-flex is-flex-direction-column is-align-items-center">
-                                           <figure className="image">
-                                             <image src={logoImage}/>
+                                           <figure className={`${styles.logoImage} image mt-6`}>
+                                             <img src={logoImage}
+                                                  alt="Logo przedszkola"/>
                                            </figure>
-                                           <h2 className={`${styles.contact} mt-5`}>Kontakt</h2>
-                                           <ul className="mt-4 mb-6">
-                                             <li className={styles.contactsListItem}>
-                                               <FontAwesomeIcon icon={faPhone}
-                                                                size="2x"
-                                                                listItem/>
-                                               <span>+48 12 283 80 50</span>
-                                             </li>
-                                             <li className={styles.contactsListItem}>
-                                               <FontAwesomeIcon icon={faEnvelope}
-                                                                size="2x"
-                                                                listItem/>
-                                               <span>
+                                           <div>
+                                             <h2 className={`${styles.contact} mt-5`}>Kontakt</h2>
+                                             <ul className="mt-4 mb-6">
+                                               <li className={styles.contactsListItem}>
+                                                 <FontAwesomeIcon icon={faPhone}
+                                                                  size="2x"
+                                                                  listItem/>
+                                                 <span>+48 12 283 80 50</span>
+                                               </li>
+                                               <li className={styles.contactsListItem}>
+                                                 <FontAwesomeIcon icon={faEnvelope}
+                                                                  size="2x"
+                                                                  listItem/>
+                                                 <span>
                                                <a href="mailto:przedszkole.rudawa@sluzebniczkikr.pl">przedszkole.rudawa@sluzebniczkikr.pl</a>
                                                </span>
-                                             </li>
-                                             <li className={styles.contactsListItem}>
-                                               <FontAwesomeIcon icon={faMapMarkerAlt}
-                                                                size="2x"
-                                                                listItem/>
-                                               <span>ul. Polaczka 27, 32-064 Rudawa</span>
-                                             </li>
-                                             <li className={styles.contactsListItem}>
-                                               <FontAwesomeIcon icon={faClock}
-                                                                size="2x"
-                                                                listItem/>
-                                               <span>6:30 - 16:30 (od poniedziałku do piątku)</span>
-                                             </li>
-                                           </ul>
+                                               </li>
+                                               <li className={styles.contactsListItem}>
+                                                 <FontAwesomeIcon icon={faMapMarkerAlt}
+                                                                  size="2x"
+                                                                  listItem/>
+                                                 <span>ul. Polaczka 27, 32-064 Rudawa</span>
+                                               </li>
+                                               <li className={styles.contactsListItem}>
+                                                 <FontAwesomeIcon icon={faClock}
+                                                                  size="2x"
+                                                                  listItem/>
+                                                 <span>6:30 - 16:30 (od poniedziałku do piątku)</span>
+                                               </li>
+                                             </ul>
+                                           </div>
                                          </div>
                                        </div>
                                      </div>

@@ -1,4 +1,5 @@
 @import "src/styles/variables";
+@import "~bulma/sass/utilities/mixins";
 
 .bottom-footer {
   background-color: #0050A7;
@@ -16,12 +17,10 @@
 .top-footer {
   overflow: hidden;
   position: relative;
-  //min-height: 500px;
   background-color: $mainAccent;
   color: $white;
 
   .left-bg {
-    //background-color: $mainAccent;
     position: absolute;
     left: 0;
     width: 100%;
@@ -35,35 +34,48 @@
     background-position-x: left;
     background-position-y: center;
     background-size: cover;
-    //position: absolute;
-    //right: 0;
-    //width: 50%;
-    //left: 0;
     height: 500px;
-    //display: none;
     cursor: pointer;
+    z-index: 1;
+    transition: opacity .5s ease-in-out;
+
+    &:hover {
+      opacity: .8;
+      transition: opacity .5s ease-in-out;
+    }
+  }
+
+  @include desktop() {
+    .right-bg {
+      position: absolute;
+      width: 50%;
+      height: 100%;
+      right: 0;
+    }
   }
 
   .contact {
     color: inherit;
   }
 
+  .logo-image {
+    width: 23rem;
+  }
+
+  .contact, .logo-image {
+    margin-left: -3.8rem;
+  }
+
   .contacts-list {
     &--item {
       padding: 1rem 0;
       position: relative;
-      //display: flex;
-      //align-content: center;
-
-      //&--icon {
-      //  margin-right: 1rem;
-      //}
 
       > span {
         padding-top: 4px;
 
         a, a:hover, a:visited {
-          color: inherit;
+          color: $lightBlue;
         }
       }
     }
