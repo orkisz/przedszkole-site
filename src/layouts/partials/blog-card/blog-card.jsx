@@ -1,13 +1,12 @@
 import React from 'react';
 import { Link, navigate } from 'gatsby';
+import { formatDate } from '../../../utils/date';
 import * as styles from './blog-card.module.scss';
 
 const BlogCard = ({ node }) => {
   let heading = (node.html || '').replace(/(<([^>]+)>)/gi, '');
   const spaceIdx = heading.substr(0, 200).lastIndexOf(' ');
   heading = heading.substring(0, spaceIdx).replace(/\W+$/, '').trim() + '...';
-
-  const formattedDate = new Date(node.frontmatter.date).toLocaleDateString();
 
   return (
           <div className="column is-4">
@@ -20,7 +19,7 @@ const BlogCard = ({ node }) => {
                   <hr className={styles.borderEffect}/>
                 </figure>
                 <time className={styles.datestamp}
-                      dateTime={node.frontmatter.date}>{formattedDate}</time>
+                      dateTime={node.frontmatter.date}>{formatDate(node.frontmatter.date)}</time>
               </div>
               }
               <div className={`card-content`}>
