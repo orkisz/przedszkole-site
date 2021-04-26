@@ -3,9 +3,9 @@ const { createFilePath } = require(`gatsby-source-filesystem`)
 
 exports.createPages = async ({ actions, graphql }) => {
   const { createPage } = actions;
-  const pageTemplate = path.resolve(`./src/templates/blog-page.jsx`);
+  const blogTemplate = path.resolve(`./src/templates/blog-page.jsx`);
 
-  const result = await graphql(`
+  const blogs = await graphql(`
     query {
       allMarkdownRemark(filter: {fields: {category: {eq: "blog"}}}) {
         edges {
@@ -19,12 +19,41 @@ exports.createPages = async ({ actions, graphql }) => {
     }
   `);
 
-  result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+  blogs.data.allMarkdownRemark.edges.forEach(({ node }) => {
     const { slug } = node.fields;
 
     createPage({
       path: slug,
-      component: pageTemplate,
+      component: blogTemplate,
+      context: {
+        slug,
+      },
+    });
+  });
+
+
+  const galleryTemplate = path.resolve(`./src/templates/gallery-page.jsx`);
+
+  const galleries = await graphql(`
+    query {
+      allMarkdownRemark(filter: {fields: {category: {eq: "gallery"}}}) {
+        edges {
+          node {
+            fields {
+              slug
+            }
+          }
+        }
+      }
+    }
+  `);
+
+  galleries.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    const { slug } = node.fields;
+
+    createPage({
+      path: slug,
+      component: galleryTemplate,
       context: {
         slug,
       },
@@ -50,6 +79,21 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
         node,
         getNode,
         basePath: 'content/blog'
+      });
+
+      // Creates new query'able field with name of 'slug'
+      createNodeField({
+        node,
+        name: 'slug',
+        value: relativeFilePath
+      });
+    }
+
+    if (nodeCategory === 'gallery') {
+      const relativeFilePath = createFilePath({
+        node,
+        getNode,
+        basePath: 'content/gallery'
       });
 
       // Creates new query'able field with name of 'slug'
