@@ -81,7 +81,7 @@ collections:
         name: 'date'
         widget: 'datetime'
       - label: 'Obrazy'
-        name: 'images'
+        name: 'imagesList'
         widget: 'list'
         summary: '{{fields.image}}'
         field: { label: 'Obraz', name: image, widget: image }
