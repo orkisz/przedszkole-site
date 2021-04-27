@@ -1,5 +1,4 @@
 import * as React from 'react';
-import * as styles from './simple-two-column-layout.module.scss';
 
 const SimpleTwoColumnLayout = ({ title, subtitle, children }) => {
   const [left, right] = React.Children.toArray(children);

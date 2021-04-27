@@ -1,26 +1,15 @@
 import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import { formatDate } from '../utils/date'; // requires a loader
-import * as styles from './blog-like-layout.module.scss';
+import { formatDate } from '../utils/date';
+import { getTransformedImg } from '../utils/image'; // requires a loader
 
 const BlogLikeLayout = ({ title, subtitle, date, images, children }) => {
   const thumbWidth = 80;
-  const applyTransform = (imgElem, transformation) => {
-    const imgUrl = imgElem.key;
-    const parts = imgUrl.split('/');
-    const baseUrl = parts.slice(0, -2).join('/'); // get all before /someid/img-name.ext
-    const imgName = parts.slice(-1)[0]; // get just last url part
-    const thumbUrl = `${baseUrl}/${transformation}/${imgName}`; // create new url
-    return (
-            <img key={thumbUrl}
-                 src={thumbUrl}/>
-    );
-  }
   const renderThumbs = (children) => {
-    return children.map(imgElem => applyTransform(imgElem, `w_${thumbWidth},c_scale`));
+    return children.map(imgElem => getTransformedImg(imgElem.key, `w_${thumbWidth},c_scale`));
   }
-  const renderItem = (item) => applyTransform(item, `w_872,c_scale`);
+  const renderItem = (item) => getTransformedImg(item.key, `w_872,c_scale`);
   return (
           <article className="container">
             <div className="columns">

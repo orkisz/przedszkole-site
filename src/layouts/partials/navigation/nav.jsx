@@ -145,9 +145,9 @@ class Navigation extends React.Component {
                     <a className="navbar-item"
                        href="Javascript:void(0)">Strefa rodzica
                     </a>
-                    <a className="navbar-item"
-                       href="Javascript:void(0)">Galeria
-                    </a>
+                    <Link className="navbar-item" to="/gallery">
+                      Galeria
+                    </Link>
                     <a className="navbar-item"
                        href="Javascript:void(0)">Kontakt
                     </a>
