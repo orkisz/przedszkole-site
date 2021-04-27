@@ -1,10 +1,29 @@
+@import "src/styles/variables";
+
 .card {
+  $self: &;
+
   height: 100%;
   display: flex;
   flex-direction: column;
 
+  &:hover {
+    #{ $self }--image {
+      img {
+        transform: scale(1.1);
+        transition: all 1s ease-in-out;
+      }
+    }
+  }
+
   &--image {
+    border-radius: $radius-x-large $radius-x-large 0 0;
     flex-grow: 0;
+    overflow: hidden;
+
+    img {
+      transition: all 1s ease-in-out;
+    }
   }
 
   &--content {

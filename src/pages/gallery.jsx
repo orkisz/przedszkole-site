@@ -1,4 +1,4 @@
-import { graphql, StaticQuery } from 'gatsby';
+import { graphql, Link, StaticQuery } from 'gatsby';
 import * as React from 'react';
 import MainLayout from '../layouts/main-layout/main-layout';
 import { applyTransform } from '../utils/image';
@@ -34,12 +34,14 @@ const Gallery = () => {
                                    <h2 className="my-6">Galeria</h2>
                                    <div className="columns is-multiline">
                                      {data.allMarkdownRemark.edges.map(edge => {
-                                       const { title, date, imagesList } = edge.node.frontmatter;
+                                       const { node } = edge;
+                                       const { title, date, imagesList } = node.frontmatter;
                                        const firstImg = imagesList[0][0];
                                        const transformedUrl = applyTransform(firstImg, `w_872,c_scale`);
                                        return (
-                                               <div className="column is-4"
-                                                    key={edge.node.id}>
+                                               <Link className="column is-4"
+                                                     key={node.id}
+                                                     to={node.fields.slug}>
                                                  <div className={`${styles.card} card`}>
                                                    <div className={`${styles.cardImage} card-image`}>
                                                      <figure className="image is-4by3">
@@ -51,7 +53,7 @@ const Gallery = () => {
                                                      <div className="title is-4">{title}</div>
                                                    </div>
                                                  </div>
-                                               </div>
+                                               </Link>
                                        );
                                      })}
                                    </div>
