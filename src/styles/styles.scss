@@ -82,3 +82,14 @@ a.plain {
     }
   }
 }
+
+.header {
+  margin-top: 100px;
+  text-align: center;
+
+  &--subtitle {
+    display: block;
+    font-size: 1.25rem;
+    margin: 40px auto 60px auto;
+  }
+}

@@ -23,32 +23,34 @@ const BlogLikeLayout = ({ title, subtitle, date, images, children }) => {
   const renderItem = (item) => applyTransform(item, `w_872,c_scale`);
   return (
           <article className="container">
-            <div className="column is-8 is-offset-2">
-              <header className={`${styles.header} has-text-centered`}>
-                <h2>{title}</h2>
-                <strong className={styles.subtitle}>{subtitle}</strong>
-                {date && (
-                        <aside className="mb-5 is-size-7">{formatDate(date)}</aside>
-                )}
-              </header>
-              <div className={`${styles.images} mb-6`}>
-                {((typeof images === 'string') || (Array.isArray(images) && images.length === 1)) && (
-                        <img src={images}
-                             alt="TODO"/>
-                )}
-                {Array.isArray(images) && images.length > 1 && (
-                        <Carousel renderThumbs={renderThumbs}
-                                  renderItem={renderItem}>
-                          {images.map(image => (
-                                  <img key={image}
-                                       src={image}/>
-                          ))}
-                        </Carousel>
-                )}
+            <div className="columns">
+              <div className="column is-8 is-offset-2">
+                <header className="header">
+                  <h2>{title}</h2>
+                  <strong className="header--subtitle">{subtitle}</strong>
+                  {date && (
+                          <aside className="mb-5 is-size-7">{formatDate(date)}</aside>
+                  )}
+                </header>
+                <div className={`mb-6`}>
+                  {((typeof images === 'string') || (Array.isArray(images) && images.length === 1)) && (
+                          <img src={images}
+                               alt="TODO"/>
+                  )}
+                  {Array.isArray(images) && images.length > 1 && (
+                          <Carousel renderThumbs={renderThumbs}
+                                    renderItem={renderItem}>
+                            {images.map(image => (
+                                    <img key={image}
+                                         src={image}/>
+                            ))}
+                          </Carousel>
+                  )}
+                </div>
+                <article className="content">
+                  {children}
+                </article>
               </div>
-              <article className="content">
-                {children}
-              </article>
             </div>
           </article>
   )

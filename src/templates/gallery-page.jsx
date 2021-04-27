@@ -1,14 +1,27 @@
 import { graphql } from 'gatsby';
 import React from 'react';
-import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
 import MainLayout from '../layouts/main-layout/main-layout';
+import { formatDate } from '../utils/date';
 
 const GalleryPage = ({ data }) => {
   const item = data.markdownRemark;
   const { title, date, imagesList } = item.frontmatter;
   return (
           <MainLayout>
-            <pre>{JSON.stringify(item)}</pre>
+            {/*<article className="container">*/}
+            {/*  <div className="column is-8 is-offset-2">*/}
+            {/*    <header className={`${styles.header} has-text-centered`}>*/}
+            {/*      <h2>{title}</h2>*/}
+            {/*      <strong className={styles.subtitle}>{subtitle}</strong>*/}
+            {/*      {date && (*/}
+            {/*              <aside className="mb-5 is-size-7">{formatDate(date)}</aside>*/}
+            {/*      )}*/}
+            {/*    </header>*/}
+            {/*    <article className="content">*/}
+            {/*      {children}*/}
+            {/*    </article>*/}
+            {/*  </div>*/}
+            {/*</article>*/}
           </MainLayout>
   )
 }
