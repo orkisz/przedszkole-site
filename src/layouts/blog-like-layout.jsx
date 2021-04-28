@@ -18,7 +18,7 @@ const BlogLikeLayout = ({ title, subtitle, date, images, children }) => {
                   <h2>{title}</h2>
                   <strong className="header--subtitle">{subtitle}</strong>
                   {date && (
-                          <aside className="mb-5 is-size-7">{formatDate(date)}</aside>
+                          <aside className="mb-5 is-size-6">{formatDate(date)}</aside>
                   )}
                 </header>
                 <div className={`mb-6`}>

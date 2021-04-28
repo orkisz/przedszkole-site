@@ -1,27 +1,56 @@
 import { graphql } from 'gatsby';
-import React from 'react';
+import React, { useState } from 'react';
+import Lightbox from 'react-image-lightbox';
+import 'react-image-lightbox/style.css';
 import MainLayout from '../layouts/main-layout/main-layout';
 import { formatDate } from '../utils/date';
+import { applyTransform } from '../utils/image';
+import * as styles from './gallery-page.module.scss';
 
 const GalleryPage = ({ data }) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [currentIndex, setCurrentIndex] = useState(0);
   const item = data.markdownRemark;
-  const { title, date, imagesList } = item.frontmatter;
+  const { title, date } = item.frontmatter;
+  const imagesList = item.frontmatter.imagesList.map(i => i[0]);
   return (
           <MainLayout>
-            {/*<article className="container">*/}
-            {/*  <div className="column is-8 is-offset-2">*/}
-            {/*    <header className={`${styles.header} has-text-centered`}>*/}
-            {/*      <h2>{title}</h2>*/}
-            {/*      <strong className={styles.subtitle}>{subtitle}</strong>*/}
-            {/*      {date && (*/}
-            {/*              <aside className="mb-5 is-size-7">{formatDate(date)}</aside>*/}
-            {/*      )}*/}
-            {/*    </header>*/}
-            {/*    <article className="content">*/}
-            {/*      {children}*/}
-            {/*    </article>*/}
-            {/*  </div>*/}
-            {/*</article>*/}
+            <div className="container has-text-centered">
+              <h2 className="header">{title}</h2>
+              <aside className="mb-6 mt-3 is-size-6">{formatDate(date)}</aside>
+              <div className="columns is-multiline">
+                {imagesList.map((image, index) => {
+                  const transformedUrl = applyTransform(image, `w_500,h_375,c_fill`);
+                  return (
+                          <div className="column is-4"
+                               key={image}>
+                            <div className={`${styles.card} card`}
+                                 onClick={() => {
+                                   setCurrentIndex(index);
+                                   setIsOpen(true);
+                                 }}>
+                              <div className={`${styles.cardImage} card-image`}>
+                                <figure className="image is-4by3">
+                                  <img src={transformedUrl}
+                                       alt={title}/>
+                                </figure>
+                              </div>
+                            </div>
+                          </div>
+                  );
+                })}
+              </div>
+            </div>
+            {isOpen && (
+                    <Lightbox
+                            mainSrc={imagesList[currentIndex]}
+                            nextSrc={imagesList[(currentIndex + 1) % imagesList.length]}
+                            prevSrc={imagesList[(currentIndex + imagesList.length - 1) % imagesList.length]}
+                            onCloseRequest={() => setIsOpen(false)}
+                            onMovePrevRequest={() => setCurrentIndex((currentIndex + imagesList.length - 1) % imagesList.length)}
+                            onMoveNextRequest={() => setCurrentIndex((currentIndex + 1) % imagesList.length)}
+                    />
+            )}
           </MainLayout>
   )
 }

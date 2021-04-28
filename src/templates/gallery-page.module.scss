@@ -1,0 +1,25 @@
+@import "src/styles/variables";
+
+.card {
+  $self: &;
+
+  height: 100%;
+
+  &:hover {
+    #{ $self }--image {
+      img {
+        transform: scale(1.1);
+        transition: all 1s ease-in-out;
+      }
+    }
+  }
+
+  &--image {
+    border-radius: $radius-x-large;
+    overflow: hidden;
+
+    img {
+      transition: all 1s ease-in-out;
+    }
+  }
+}

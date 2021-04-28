@@ -37,7 +37,7 @@ const Gallery = () => {
                                        const { node } = edge;
                                        const { title, date, imagesList } = node.frontmatter;
                                        const firstImg = imagesList[0][0];
-                                       const transformedUrl = applyTransform(firstImg, `w_872,c_scale`);
+                                       const transformedUrl = applyTransform(firstImg, `w_500,c_scale`);
                                        return (
                                                <Link className="column is-4"
                                                      key={node.id}
