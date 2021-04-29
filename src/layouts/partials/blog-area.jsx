@@ -31,7 +31,7 @@ const BlogArea = () => {
       }
     `}
                        render={data => (
-                               <div className="container">
+                               <div className="container pb-6">
                                  <div className="has-text-centered">
                                    <h4 className={styles.header}>
                                      Co nowego w przedszkolu?

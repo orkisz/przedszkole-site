@@ -9,7 +9,7 @@ import Navigation from '../partials/navigation/nav';
 import logoImage from './logo.png';
 import * as styles from './main-layout.module.scss';
 
-const MainLayout = ({ children }) => {
+const MainLayout = ({ footerClassName = 'mt-6', children }) => {
   const navigateToMap = () => {
     if (window) {
       window.open('https://www.google.pl/maps/place/Przedszkole+Niepubliczne+Si%C3%B3str+S%C5%82u%C5%BCebniczek+NMP+NP/@50.1232534,19.7048713,17z/data=!3m1!4b1!4m5!3m4!1s0x4716f700c80eeafd:0xb6cfd60f7e175d3a!8m2!3d50.12325!4d19.70706', 'blank');
@@ -32,7 +32,7 @@ const MainLayout = ({ children }) => {
                                          defer={false}/>
                                  <Navigation/>
                                  {children}
-                                 <footer className="mt-6">
+                                 <footer className={footerClassName}>
                                    <section className={styles.topFooter}>
                                      <div className={styles.leftBg}/>
                                      <div className={styles.rightBg}

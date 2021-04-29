@@ -43,7 +43,7 @@ const Features = [
 
 const IndexPage = () => {
   return (
-          <MainLayout>
+          <MainLayout footerClassName="">
             <section className={`hero is-large ${styles.hero}`}>
               <div className="hero-body">
                 <div className="container">
@@ -92,7 +92,7 @@ const IndexPage = () => {
                 </div>
               </div>
             </section>
-            <section>
+            <section className="dark-background">
               <BlogArea/>
             </section>
           </MainLayout>
