@@ -1,10 +1,11 @@
 import { graphql } from 'gatsby';
+import partialRight from 'lodash/partialRight';
 import React, { useState } from 'react';
 import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css';
 import MainLayout from '../layouts/main-layout/main-layout';
 import { formatDate } from '../utils/date';
-import { applyTransform, TRANSFORMATION_4BY3 } from '../utils/image';
+import { applyTransform, TRANSFORMATION_4BY3, TRANSFORMATION_FULL_SCREEN } from '../utils/image';
 import * as styles from './gallery-page.module.scss';
 
 const GalleryPage = ({ data }) => {
@@ -13,6 +14,7 @@ const GalleryPage = ({ data }) => {
   const item = data.markdownRemark;
   const { title, date } = item.frontmatter;
   const imagesList = item.frontmatter.imagesList.map(i => i[0]);
+  const fullScreenTransform = partialRight(applyTransform, TRANSFORMATION_FULL_SCREEN);
   return (
           <MainLayout>
             <div className="container has-text-centered">
@@ -43,9 +45,9 @@ const GalleryPage = ({ data }) => {
             </div>
             {isOpen && (
                     <Lightbox
-                            mainSrc={imagesList[currentIndex]}
-                            nextSrc={imagesList[(currentIndex + 1) % imagesList.length]}
-                            prevSrc={imagesList[(currentIndex + imagesList.length - 1) % imagesList.length]}
+                            mainSrc={fullScreenTransform(imagesList[currentIndex])}
+                            nextSrc={fullScreenTransform(imagesList[(currentIndex + 1) % imagesList.length])}
+                            prevSrc={fullScreenTransform(imagesList[(currentIndex + imagesList.length - 1) % imagesList.length])}
                             onCloseRequest={() => setIsOpen(false)}
                             onMovePrevRequest={() => setCurrentIndex((currentIndex + imagesList.length - 1) % imagesList.length)}
                             onMoveNextRequest={() => setCurrentIndex((currentIndex + 1) % imagesList.length)}
