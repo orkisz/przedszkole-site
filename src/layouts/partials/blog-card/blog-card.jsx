@@ -1,6 +1,7 @@
-import React from 'react';
 import { Link, navigate } from 'gatsby';
+import React from 'react';
 import { formatDate } from '../../../utils/date';
+import { applyTransform, TRANSFORMATION_5BY3 } from '../../../utils/image';
 import * as styles from './blog-card.module.scss';
 
 const BlogCard = ({ node }) => {
@@ -14,7 +15,7 @@ const BlogCard = ({ node }) => {
               {node.frontmatter.images.length &&
               <div className="card-image">
                 <figure className="image is-5by3">
-                  <img src={node.frontmatter.images[0]}
+                  <img src={applyTransform(node.frontmatter.images[0], TRANSFORMATION_5BY3)}
                        alt="TODO"/>
                   <hr className={styles.borderEffect}/>
                 </figure>

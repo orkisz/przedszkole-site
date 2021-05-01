@@ -4,7 +4,7 @@ import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css';
 import MainLayout from '../layouts/main-layout/main-layout';
 import { formatDate } from '../utils/date';
-import { applyTransform } from '../utils/image';
+import { applyTransform, TRANSFORMATION_4BY3 } from '../utils/image';
 import * as styles from './gallery-page.module.scss';
 
 const GalleryPage = ({ data }) => {
@@ -20,7 +20,7 @@ const GalleryPage = ({ data }) => {
               <aside className="mb-6 mt-3 is-size-6">{formatDate(date)}</aside>
               <div className="columns is-multiline">
                 {imagesList.map((image, index) => {
-                  const transformedUrl = applyTransform(image, `w_500,h_375,c_fill`);
+                  const transformedUrl = applyTransform(image, TRANSFORMATION_4BY3);
                   return (
                           <div className="column is-4"
                                key={image}>

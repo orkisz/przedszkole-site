@@ -1,7 +1,7 @@
 import { graphql, Link, StaticQuery } from 'gatsby';
 import * as React from 'react';
 import MainLayout from '../layouts/main-layout/main-layout';
-import { applyTransform } from '../utils/image';
+import { applyTransform, TRANSFORMATION_4BY3 } from '../utils/image';
 import * as styles from './gallery.module.scss';
 
 const Gallery = () => {
@@ -37,7 +37,7 @@ const Gallery = () => {
                                        const { node } = edge;
                                        const { title, date, imagesList } = node.frontmatter;
                                        const firstImg = imagesList[0][0];
-                                       const transformedUrl = applyTransform(firstImg, `w_500,c_scale`);
+                                       const transformedUrl = applyTransform(firstImg, TRANSFORMATION_4BY3);
                                        return (
                                                <Link className="column is-4"
                                                      key={node.id}

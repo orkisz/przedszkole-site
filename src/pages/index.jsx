@@ -1,3 +1,4 @@
+import { Link } from 'gatsby';
 import * as React from 'react'
 import MainLayout from '../layouts/main-layout/main-layout';
 import BlogArea from '../layouts/partials/blog-area';
@@ -75,6 +76,33 @@ const IndexPage = () => {
                           <>{featureDef.body}</>
                         </FeaturedCard>
                 ))}
+              </div>
+            </section>
+            <section className="py-6 dark-background">
+              <div className="has-text-centered">
+                <h4>Nasza misja</h4>
+                <h2 className="mt-4">Wychowanie w duchu wartości chrześcijańskich</h2>
+              </div>
+              <div className="container py-6">
+                <div className="columns">
+                  <div className="column is-5-desktop"></div>
+                  <div className="column is-7-desktop">
+                    Nasze Przedszkole wspiera rodziców w integralnym wychowaniu dzieci w duchu
+                    wartości chrześcijańskich wg koncepcji pedagogicznej bł. Edmunda Bojanowskiego.
+                    Wychowawcy i cała społeczność przedszkola dbają o rodzinną atmosferę w
+                    placówce, w której dzieci wychowywane są w oparciu o patriotyzm i szacunek dla
+                    tradycji, oraz poprzez bezpośrednie doświadczenia i działania.
+                    Indywidualne podejście do dziecka pomaga nam odkryć jego zdolności,
+                    wspomagać w trudnościach i wychowywać do twórczej współpracy z innymi.
+                    Pragniemy wychować dzieci świadome własnej wartości i wrażliwe na potrzeby
+                    innych. Wysoka jakość kształcenia, prymat zabawy i ruchu oraz ciekawe metody i
+                    formy zajęć sprawiają, że dzieci czują się u nas bezpieczne i szczęśliwe.
+                    <div className="mt-6">
+                      <Link className="button is-primary is-large is-rounded"
+                            to="/about/mission">Misja przedszkola</Link>
+                    </div>
+                  </div>
+                </div>
               </div>
             </section>
             <section className={styles.groupsSection}>

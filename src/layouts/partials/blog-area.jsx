@@ -1,7 +1,7 @@
+import { graphql, Link, StaticQuery } from 'gatsby';
 import React from 'react';
-import { graphql, StaticQuery } from 'gatsby';
-import BlogCard from './blog-card/blog-card';
 import * as styles from './blog-area.module.scss';
+import BlogCard from './blog-card/blog-card';
 
 const BlogArea = () => {
   return (
@@ -48,6 +48,12 @@ const BlogArea = () => {
                                            <BlogCard node={edge.node}
                                                      key={edge.node.id}/>
                                    ))}
+                                 </div>
+                                 <div className="has-text-centered mt-6 mb-3">
+                                   <Link className="button is-primary is-large is-rounded"
+                                         to="/blog">
+                                     Zobacz wszystkie artykuły
+                                   </Link>
                                  </div>
                                </div>
                        )}/>
