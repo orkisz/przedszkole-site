@@ -1,6 +1,5 @@
+import partialRight from 'lodash/partialRight';
 import React, { useState } from 'react';
-import Lightbox from 'react-image-lightbox';
-import 'react-image-lightbox/style.css';
 import { formatDate } from '../utils/date';
 import {
   applyTransform,
@@ -8,10 +7,9 @@ import {
   TRANSFORMATION_FULL_BLOG,
   TRANSFORMATION_FULL_SCREEN
 } from '../utils/image';
-import partialRight from 'lodash/partialRight';
+import Lightbox from './partials/lightbox/lightbox';
 
 const BlogLikeLayout = ({ title, subtitle, date, images, children }) => {
-
   const [isOpen, setIsOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [firstImage, ...restImages] = (images || []);
@@ -28,7 +26,8 @@ const BlogLikeLayout = ({ title, subtitle, date, images, children }) => {
                   )}
                 </header>
                 {firstImage && (
-                        <img src={applyTransform(firstImage, TRANSFORMATION_FULL_BLOG)}
+                        <img className="mb-5"
+                             src={applyTransform(firstImage, TRANSFORMATION_FULL_BLOG)}
                              alt={`${title}: Obraz nr 1`}
                              onClick={() => {
                                setCurrentIndex(0);
@@ -56,16 +55,11 @@ const BlogLikeLayout = ({ title, subtitle, date, images, children }) => {
                 )}
               </div>
             </div>
-            {isOpen && !!images.length && (
-                    <Lightbox
-                            mainSrc={fullScreenTransform(images[currentIndex])}
-                            nextSrc={fullScreenTransform(images[(currentIndex + 1) % images.length])}
-                            prevSrc={fullScreenTransform(images[(currentIndex + images.length - 1) % images.length])}
-                            onCloseRequest={() => setIsOpen(false)}
-                            onMovePrevRequest={() => setCurrentIndex((currentIndex + images.length - 1) % images.length)}
-                            onMoveNextRequest={() => setCurrentIndex((currentIndex + 1) % images.length)}
-                    />
-            )}
+            <Lightbox images={images.map(image => fullScreenTransform(image))}
+                      onClose={() => setIsOpen(false)}
+                      isOpen={isOpen}
+                      currentIndex={currentIndex}
+                      onCurrentIndexChange={idx => setCurrentIndex(idx)}/>
           </article>
   )
 }

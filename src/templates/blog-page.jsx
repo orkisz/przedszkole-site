@@ -1,6 +1,5 @@
 import { graphql } from 'gatsby';
 import React from 'react';
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import BlogLikeLayout from '../layouts/blog-like-layout'; // requires a loader
 import MainLayout from '../layouts/main-layout/main-layout';
 
