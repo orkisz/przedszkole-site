@@ -59,7 +59,7 @@ collections:
       preview: false
     fields:
       - { label: 'Nazwa grupy', name: 'name', widget: 'string' }
-      - { label: 'Opis', name: 'description', widget: 'string' }
+      - { label: 'Opis', name: 'description', widget: 'text' }
       - { label: 'Obrazek', name: 'image', widget: 'image', required: true }
       - { label: 'Nr porządkowy', name: 'order',  widget: 'number', value_type: 'int', min: 1, max: 3, required: true }
 

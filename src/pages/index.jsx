@@ -7,6 +7,7 @@ import GroupsAccordion from '../layouts/partials/groups-accordion';
 import '../styles/styles.scss';
 import * as styles from './index.module.scss';
 import learnByPlayImage from './learn-by-play.png';
+import missionImage from './mission.jpg';
 import surroundingsImage from './surroundings.png';
 import teachersImage from './teachers.png';
 import valuesImage from './values.png';
@@ -85,7 +86,11 @@ const IndexPage = () => {
               </div>
               <div className="container py-6">
                 <div className="columns">
-                  <div className="column is-5-desktop"></div>
+                  <div className="column is-5-desktop">
+                    <figure className="image is-4by3 fancy-image blue">
+                      <img                           src={missionImage}/>
+                    </figure>
+                  </div>
                   <div className="column is-7-desktop">
                     Nasze Przedszkole wspiera rodziców w integralnym wychowaniu dzieci w duchu
                     wartości chrześcijańskich wg koncepcji pedagogicznej bł. Edmunda Bojanowskiego.

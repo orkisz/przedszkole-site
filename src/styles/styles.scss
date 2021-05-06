@@ -48,7 +48,7 @@ figure.image {
   }
 }
 
-[role=button],[role=link] {
+[role=button], [role=link] {
   cursor: pointer;
 }
 
@@ -96,4 +96,43 @@ a.plain {
 
 .dark-background {
   background-color: $darkBg;
+}
+
+@include desktop() {
+  figure.fancy-image {
+    &:before {
+      content: "";
+      position: absolute;
+      top: 4.7%;
+      left: -4.7%;
+      height: 100%;
+      width: 100%;
+      display: block;
+      transform: rotate(358deg);
+    }
+
+    &.blue {
+      &:before {
+        background-color: $blue-darken;
+      }
+    }
+
+    &.yellow {
+      &:before {
+        background-color: $yellow-darken;
+      }
+    }
+
+    &.green {
+      &:before {
+        background-color: $green-darken;
+      }
+    }
+
+    &.red {
+      &:before {
+        background-color: $red-darken;
+      }
+    }
+  }
 }

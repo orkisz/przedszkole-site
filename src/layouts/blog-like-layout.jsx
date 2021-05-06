@@ -9,10 +9,10 @@ import {
 } from '../utils/image';
 import Lightbox from './partials/lightbox/lightbox';
 
-const BlogLikeLayout = ({ title, subtitle, date, images, children }) => {
+const BlogLikeLayout = ({ title, subtitle, date, images = [], children }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [firstImage, ...restImages] = (images || []);
+  const [firstImage, ...restImages] = images;
   const fullScreenTransform = partialRight(applyTransform, TRANSFORMATION_FULL_SCREEN);
   return (
           <article className="container">
