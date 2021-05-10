@@ -8,13 +8,16 @@ description: Jesteśmy najmłodszą grupą i właśnie rozpoczynamy naszą przyg
   przyrodą. Chociaż czasem trudno nam się rozstać z rodzicami, to wiemy, że w
   przedszkolu czekają na nas niezwykłe przygody
 image: sloneczka.png
+photo:
+  - https://res.cloudinary.com/dswesmbkz/image/upload/v1620679675/grupy/image_2_tr8lau.png
 order: 2
 ---
 Nazwa naszej grupy nie jest przypadkowa. Jesteśmy bystrymi,
 pomysłowymi i kreatywnymi czterolatkami. Lubimy zajęcia pozwalające
 nam doświadczać, próbować, być aktywnymi. Najczęściej budujemy z
-klocków, bawimy się samochodami, gamy w gry planszowe. Bardzo
-szybko uczymy się nowych umiejętności, interesuje nas wszystko co
+klocków, bawimy się samochodami, gamy w gry planszowe. 
+
+Bardzo szybko uczymy się nowych umiejętności, interesuje nas wszystko co
 wokół, potrafimy zachowywać się kulturalnie, słuchać się wzajemnie,
 służyć sobie pomocą.
 

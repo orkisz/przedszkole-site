@@ -1,11 +1,12 @@
 import { Link, navigate } from 'gatsby';
 import React from 'react';
 import { formatDate } from '../../../utils/date';
+import { stripHtmlTags } from '../../../utils/html';
 import { applyTransform, TRANSFORMATION_5BY3 } from '../../../utils/image';
 import * as styles from './blog-card.module.scss';
 
 const BlogCard = ({ node }) => {
-  let heading = (node.html || '').replace(/(<([^>]+)>)/gi, '');
+  let heading = stripHtmlTags(node.html);
   const spaceIdx = heading.substr(0, 200).lastIndexOf(' ');
   heading = heading.substring(0, spaceIdx).replace(/\W+$/, '').trim() + '...';
 
