@@ -111,6 +111,13 @@ a.plain {
       transform: rotate(358deg);
     }
 
+    &.fancy-reverse {
+      &:before {
+        left: 4.7%;
+        transform: rotate(2deg);
+      }
+    }
+
     &.blue {
       &:before {
         background-color: $blue-darken;

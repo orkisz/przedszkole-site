@@ -88,7 +88,7 @@ const IndexPage = () => {
                 <div className="columns">
                   <div className="column is-5-desktop">
                     <figure className="image is-4by3 fancy-image blue">
-                      <img                           src={missionImage}/>
+                      <img src={missionImage}/>
                     </figure>
                   </div>
                   <div className="column is-7-desktop">

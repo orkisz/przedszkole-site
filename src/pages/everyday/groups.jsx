@@ -1,8 +1,11 @@
 import { graphql, StaticQuery } from 'gatsby';
 import * as React from 'react';
 import MainLayout from '../../layouts/main-layout/main-layout';
+import { applyTransform, TRANSFORMATION_4BY3 } from '../../utils/image';
 
 const Groups = () => {
+  const fancyImageColors = ['blue', 'green', 'yellow'];
+
   return (
           <StaticQuery query={graphql`
           query GroupsDetailsQuery {
@@ -18,6 +21,7 @@ const Groups = () => {
                     image {
                       publicURL
                     }
+                    photo
                   }
                   html
                   id
@@ -45,14 +49,15 @@ const Groups = () => {
                                      {data.allMarkdownRemark.edges.map((edge, index) => {
                                        const even = index % 2 === 0;
                                        const text = (
-                                               <div className="column is-7">
+                                               <div className={`column is-7 ${even ? 'pl-6' : 'pr-6'}`}>
                                                  <div dangerouslySetInnerHTML={{ __html: edge.node.html }}/>
                                                </div>
                                        );
                                        const img = (
                                                <div className="column is-5">
-                                                 <figure className="image fancy-image blue">
-                                                   <img src={edge.node.frontmatter.image.publicURL} alt={edge.node.frontmatter.name}/>
+                                                 <figure className={`image is-4by3 fancy-image ${fancyImageColors[index]} ${even ? '' : 'fancy-reverse'}`}>
+                                                   <img src={applyTransform(edge.node.frontmatter.photo[0], TRANSFORMATION_4BY3)}
+                                                        alt={edge.node.frontmatter.name}/>
                                                  </figure>
                                                </div>
                                        );
@@ -62,9 +67,14 @@ const Groups = () => {
                                        }
 
                                        return (
-                                               <div className="columns">
-                                                 {elements}
-                                               </div>
+                                               <>
+                                                 <div className="has-text-centered is-uppercase my-6">
+                                                   {edge.node.frontmatter.name}
+                                                 </div>
+                                                 <div className="columns is-8">
+                                                   {elements}
+                                                 </div>
+                                               </>
                                        )
                                      })}
                                    </div>
