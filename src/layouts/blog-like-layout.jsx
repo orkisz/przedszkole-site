@@ -34,7 +34,7 @@ const BlogLikeLayout = ({ title, subtitle, date, images = [], children }) => {
                                setIsOpen(true);
                              }}/>
                 )}
-                <article className="content">
+                <article className="content has-text-justified">
                   {children}
                 </article>
                 {!!restImages.length && (

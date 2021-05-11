@@ -63,6 +63,14 @@ figure.image {
   .my-custom-background-#{$name}-darken {
     background-color: $darkColor;
   }
+
+  .my-custom-color-#{$name} {
+    color: $color;
+  }
+
+  .my-custom-color-#{$name}-darken {
+    color: $darkColor;
+  }
 }
 
 a.plain {

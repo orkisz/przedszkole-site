@@ -13,10 +13,10 @@ const SimpleTwoColumnLayout = ({ title, subtitle, children }) => {
               </div>
             </div>
             <div className="columns is-variable is-8">
-              <div className="column is-half">
+              <div className="column is-half has-text-justified">
                 {left}
               </div>
-              <div className="column is-half">
+              <div className="column is-half has-text-justified">
                 {right}
               </div>
             </div>
