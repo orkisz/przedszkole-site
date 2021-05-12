@@ -1,0 +1,62 @@
+@import "src/styles/variables";
+@import "~bulma/sass/utilities/mixins";
+
+.full-width {
+  position: relative;
+
+  .left-bg {
+    background-color: $mainAccent;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .right-bg {
+    background-color: $darkBg;
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    display: none;
+  }
+
+  @include tablet() {
+    .left-bg {
+      width: 50%;
+    }
+
+    .right-bg {
+      display: block;
+    }
+  }
+}
+
+.has-desktop-left-padding-5 {
+  @include desktop() {
+    padding-left: 1.5rem;
+  }
+}
+
+.has-text-default-tablet {
+  @include tablet() {
+    color: inherit !important;
+  }
+}
+
+.lesson {
+  .lesson-description {
+    header {
+      font-family: 'Patrick Hand', sans-serif;
+      font-size: 2rem;
+    }
+  }
+}
+
+.image-column {
+  display: none;
+
+  @include desktop() {
+    display: block;
+  }
+}

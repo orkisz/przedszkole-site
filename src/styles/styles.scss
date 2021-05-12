@@ -106,6 +106,29 @@ a.plain {
   background-color: $darkBg;
 }
 
+ul.round {
+  margin-left: 15px;
+
+  li {
+    list-style: none;
+    position: relative;
+    padding: 0 0 0 20px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: .5rem;
+      width: 10px;
+      height: 10px;
+      background-color: $bullets;
+      border-radius: 50%;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+    }
+  }
+}
+
 @include desktop() {
   figure.fancy-image {
     &:before {
