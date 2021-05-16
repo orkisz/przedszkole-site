@@ -25,7 +25,7 @@ const AdditionalLessons = () => {
               </div>
             </div>
             <div className="container">
-              <div className="columns">
+              <div className="columns is-variable is-8">
                 <div className="column is-5-desktop is-full-touch is-offset-1-desktop">
                   <p>
                     Zajęcia dodatkowe mają za zadanie:
@@ -92,7 +92,7 @@ const AdditionalLessons = () => {
                       następujące zajęcia dodatkowe:</h2>
                 </div>
               </div>
-              <div className={`columns is-8 mb-6 ${styles.lesson}`}>
+              <div className={`columns is-variable is-8 mb-6 ${styles.lesson}`}>
                 <div className={`column is-7-desktop is-full-touch ${styles.lessonDescription}`}>
                   <article>
                     <header className="my-custom-color-blue"><p>Religia</p></header>
@@ -114,7 +114,7 @@ const AdditionalLessons = () => {
                   </figure>
                 </div>
               </div>
-              <div className={`columns is-8 mb-6 ${styles.lesson}`}>
+              <div className={`columns is-variable is-8 mb-6 ${styles.lesson}`}>
                 <div className={`column is-5-desktop ${styles.imageColumn}`}>
                   <figure className="image is-4by3 fancy-image yellow">
                     <img src={image3}
@@ -139,7 +139,7 @@ const AdditionalLessons = () => {
                   </article>
                 </div>
               </div>
-              <div className={`columns is-8 mb-6 ${styles.lesson}`}>
+              <div className={`columns is-variable is-8 mb-6 ${styles.lesson}`}>
                 <div className={`column is-7-desktop is-full-touch ${styles.lessonDescription}`}>
                   <article>
                     <header className="my-custom-color-red"><p>Gimnastyka</p></header>
@@ -159,7 +159,7 @@ const AdditionalLessons = () => {
                   </figure>
                 </div>
               </div>
-              <div className={`columns is-8 mb-6 ${styles.lesson}`}>
+              <div className={`columns is-variable is-8 mb-6 ${styles.lesson}`}>
                 <div className={`column is-5-desktop ${styles.imageColumn}`}>
                   <figure className="image is-4by3 fancy-image green">
                     <img src={image5}
@@ -186,7 +186,7 @@ const AdditionalLessons = () => {
                   </article>
                 </div>
               </div>
-              <div className={`columns is-8 mb-6 ${styles.lesson}`}>
+              <div className={`columns is-variable is-8 mb-6 ${styles.lesson}`}>
                 <div className={`column is-7-desktop is-full-touch ${styles.lessonDescription}`}>
                   <article>
                     <header className="my-custom-color-blue"><p>Arteterapia</p></header>
@@ -210,37 +210,6 @@ const AdditionalLessons = () => {
                 </div>
               </div>
             </div>
-            {/*{data.allMarkdownRemark.edges.map((edge, index) => {*/}
-            {/*  const even = index % 2 !== 0;*/}
-            {/*  const text = (*/}
-            {/*          <div className={`column has-text-justified is-7 ${even ? 'pl-6' : 'pr-6'}`}>*/}
-            {/*            <div dangerouslySetInnerHTML={{ __html: edge.node.html }}/>*/}
-            {/*          </div>*/}
-            {/*  );*/}
-            {/*  const img = (*/}
-            {/*          <div className="column is-5">*/}
-            {/*            <figure className={`image is-4by3 fancy-image ${groupColors[index]} ${even ? '' : 'fancy-reverse'}`}>*/}
-            {/*              <img src={applyTransform(edge.node.frontmatter.photo[0], TRANSFORMATION_4BY3)}*/}
-            {/*                   alt={edge.node.frontmatter.name}/>*/}
-            {/*            </figure>*/}
-            {/*          </div>*/}
-            {/*  );*/}
-            {/*  let elements = [text, img];*/}
-            {/*  if (even) {*/}
-            {/*    elements = elements.reverse();*/}
-            {/*  }*/}
-
-            {/*  return (*/}
-            {/*          <>*/}
-            {/*            <div className={`has-text-centered is-uppercase my-6 is-size-3 has-text-weight-bold my-custom-color-${groupColors[index]}`}>*/}
-            {/*              {edge.node.frontmatter.name}*/}
-            {/*            </div>*/}
-            {/*            <div className="columns is-8">*/}
-            {/*              {elements}*/}
-            {/*            </div>*/}
-            {/*          </>*/}
-            {/*  )*/}
-            {/*})}*/}
           </MainLayout>
   );
 }
