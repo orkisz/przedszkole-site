@@ -77,3 +77,7 @@
     }
   }
 }
+
+.content-wrapper {
+  min-height: calc(100vh - 80px - 565px - 2rem);
+}

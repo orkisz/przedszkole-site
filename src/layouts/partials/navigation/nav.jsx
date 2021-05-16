@@ -95,7 +95,7 @@ class Navigation extends React.Component {
                         O nas
                       </a>
 
-                      <div className={`${styles.dropdown} ${ ddState['about'] ? styles.dropdownExpanded : '' } navbar-dropdown`}>
+                      <div className={`${styles.dropdown} ${ddState['about'] ? styles.dropdownExpanded : ''} navbar-dropdown`}>
                         <Link className="navbar-item"
                               to="/about/history">
                           Historia
@@ -124,7 +124,7 @@ class Navigation extends React.Component {
                         Z życia przedszkola
                       </a>
 
-                      <div className={`${styles.dropdown} ${ ddState['everyday'] ? styles.dropdownExpanded : '' } navbar-dropdown`}>
+                      <div className={`${styles.dropdown} ${ddState['everyday'] ? styles.dropdownExpanded : ''} navbar-dropdown`}>
                         <Link className="navbar-item"
                               to="/everyday/groups">
                           Grupy
@@ -146,12 +146,13 @@ class Navigation extends React.Component {
                     <a className="navbar-item"
                        href="Javascript:void(0)">Strefa rodzica
                     </a>
-                    <Link className="navbar-item" to="/gallery">
+                    <Link className="navbar-item"
+                          to="/gallery">
                       Galeria
                     </Link>
-                    <a className="navbar-item"
-                       href="Javascript:void(0)">Kontakt
-                    </a>
+                    <Link className="navbar-item"
+                          to="/contact">Kontakt
+                    </Link>
                   </div>
                 </div>
               </div>

@@ -31,7 +31,9 @@ const MainLayout = ({ footerClassName = 'mt-6', children }) => {
                                          bodyAttributes={{ class: 'has-navbar-fixed-top' }}
                                          defer={false}/>
                                  <Navigation/>
-                                 {children}
+                                 <div className={styles.contentWrapper}>
+                                   {children}
+                                 </div>
                                  <footer className={footerClassName}>
                                    <section className={styles.topFooter}>
                                      <div className={styles.leftBg}/>
