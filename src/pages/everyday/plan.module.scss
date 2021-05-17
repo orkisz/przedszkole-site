@@ -1,0 +1,45 @@
+@import "src/styles/variables";
+
+.day-part {
+  display: block;
+
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  .part-heading {
+    color: $black-bis;
+    padding: 1rem 3rem;
+    border-radius: $radius-x-large;
+    font-weight: 500;
+  }
+
+  .details {
+    padding: 0 1rem;
+    margin-top: 1rem;
+  }
+
+  &.blue {
+    .part-heading {
+      background-color: rgba($blue, 50%);
+    }
+  }
+
+  &.yellow {
+    .part-heading {
+      background-color: rgba($yellow, 50%);
+    }
+  }
+
+  &.red {
+    .part-heading {
+      background-color: rgba($red, 50%);
+    }
+  }
+
+  &.green {
+    .part-heading {
+      background-color: rgba($green, 50%);
+    }
+  }
+}

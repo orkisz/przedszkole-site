@@ -68,14 +68,14 @@ const Groups = () => {
                                        }
 
                                        return (
-                                               <>
+                                               <div key={edge.node.frontmatter.name}>
                                                  <div className={`has-text-centered is-uppercase my-6 is-size-3 has-text-weight-bold my-custom-color-${groupColors[index]}`}>
                                                    {edge.node.frontmatter.name}
                                                  </div>
                                                  <div className="columns is-variable is-8">
                                                    {elements}
                                                  </div>
-                                               </>
+                                               </div>
                                        )
                                      })}
                                    </div>

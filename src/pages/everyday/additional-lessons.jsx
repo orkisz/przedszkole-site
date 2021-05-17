@@ -29,16 +29,16 @@ const AdditionalLessons = () => {
                 <div className="column is-5-desktop is-full-touch is-offset-1-desktop">
                   <p>
                     Zajęcia dodatkowe mają za zadanie:
-                    <ul className="round mt-3">
-                      <li>Stymulowanie harmonijnego rozwoju dziecka.</li>
-                      <li>Przygotowanie do efektywnego przyswajania wiedzy poprzez pobudzanie zmysłów dziecka.</li>
-                      <li>Wspomaganie rozwoju ruchowego, nauka koncentracji,
-                          logicznego myślenia i ćwiczenie pamięci.
-                      </li>
-                      <li>Zabawa i kontakt z rówieśnikami.</li>
-                      <li>Kształtowanie osobowości dziecka.</li>
-                    </ul>
                   </p>
+                  <ul className="round mt-3">
+                    <li>Stymulowanie harmonijnego rozwoju dziecka.</li>
+                    <li>Przygotowanie do efektywnego przyswajania wiedzy poprzez pobudzanie zmysłów dziecka.</li>
+                    <li>Wspomaganie rozwoju ruchowego, nauka koncentracji,
+                        logicznego myślenia i ćwiczenie pamięci.
+                    </li>
+                    <li>Zabawa i kontakt z rówieśnikami.</li>
+                    <li>Kształtowanie osobowości dziecka.</li>
+                  </ul>
                 </div>
                 <div className={`column is-5-desktop ${styles.imageColumn}`}>
                   <figure className="image fancy-image yellow fancy-reverse is-4by3">
@@ -56,30 +56,30 @@ const AdditionalLessons = () => {
                   <div className="column is-5 is-offset-1 has-text-white">
                     <p>
                       Ponadto organizujemy dla dzieci:
-                      <ul className="round mt-5">
-                        <li>teatrzyki</li>
-                        <li>warsztaty ceramiczne</li>
-                        <li>doświadczenia, pokazy</li>
-                        <li>wycieczki do ciekawych miejsc w regionie</li>
-                        <li>spotkania ze zwierzętami</li>
-                        <li>konkursy</li>
-                        <li>bale</li>
-                      </ul>
                     </p>
+                    <ul className="round mt-5">
+                      <li>teatrzyki</li>
+                      <li>warsztaty ceramiczne</li>
+                      <li>doświadczenia, pokazy</li>
+                      <li>wycieczki do ciekawych miejsc w regionie</li>
+                      <li>spotkania ze zwierzętami</li>
+                      <li>konkursy</li>
+                      <li>bale</li>
+                    </ul>
                   </div>
                   <div className={`column is-5 has-text-white ${styles.hasTextDefaultTablet}`}>
                     <div className={`${styles.hasDesktopLeftPadding5}`}>
                       <p>
                         W naszym przedszkolu ważni są także rodzice, mogą uczestniczyć w życiu Ochronki poprzez:
-                        <ul className="round mt-5">
-                          <li>zebrania</li>
-                          <li>dni i zajęcia otwarte</li>
-                          <li>skupienia</li>
-                          <li>akademie i występy</li>
-                          <li>pikniki rodzinne</li>
-                          <li>prowadzenie zajęć dla dzieci</li>
-                        </ul>
                       </p>
+                      <ul className="round mt-5">
+                        <li>zebrania</li>
+                        <li>dni i zajęcia otwarte</li>
+                        <li>skupienia</li>
+                        <li>akademie i występy</li>
+                        <li>pikniki rodzinne</li>
+                        <li>prowadzenie zajęć dla dzieci</li>
+                      </ul>
                     </div>
                   </div>
                 </div>
