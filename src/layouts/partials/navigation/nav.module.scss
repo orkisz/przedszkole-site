@@ -4,6 +4,10 @@
   font-family: 'Ubuntu', sans-serif;
 }
 
+img.logo {
+  max-height: 3rem;
+}
+
 @include touch() {
   .dropdown {
     display: none;

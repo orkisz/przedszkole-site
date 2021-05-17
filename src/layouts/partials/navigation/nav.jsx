@@ -75,7 +75,8 @@ class Navigation extends React.Component {
                 <div className="navbar-brand">
                   <Link className="navbar-item"
                         to={'/'}>
-                    <img src={logo}
+                    <img className={styles.logo}
+                         src={logo}
                          alt="Logo"/>
                   </Link>
                   <span className="navbar-burger burger"
