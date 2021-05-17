@@ -92,17 +92,18 @@ const IndexPage = () => {
                     </figure>
                   </div>
                   <div className="column is-7-desktop">
-                    Nasze Przedszkole wspiera rodziców w integralnym wychowaniu dzieci w duchu
-                    wartości chrześcijańskich wg koncepcji pedagogicznej bł. Edmunda Bojanowskiego.
-                    Wychowawcy i cała społeczność przedszkola dbają o rodzinną atmosferę w
-                    placówce, w której dzieci wychowywane są w oparciu o patriotyzm i szacunek dla
-                    tradycji, oraz poprzez bezpośrednie doświadczenia i działania.
-                    Indywidualne podejście do dziecka pomaga nam odkryć jego zdolności,
-                    wspomagać w trudnościach i wychowywać do twórczej współpracy z innymi.
-                    Pragniemy wychować dzieci świadome własnej wartości i wrażliwe na potrzeby
-                    innych. Wysoka jakość kształcenia, prymat zabawy i ruchu oraz ciekawe metody i
-                    formy zajęć sprawiają, że dzieci czują się u nas bezpieczne i szczęśliwe.
-                    <div className="mt-6">
+                    <p> Nasze Przedszkole wspiera rodziców w integralnym wychowaniu dzieci w duchu
+                        wartości chrześcijańskich wg koncepcji pedagogicznej bł. Edmunda Bojanowskiego.
+                        Wychowawcy i cała społeczność przedszkola dbają o rodzinną atmosferę w
+                        placówce, w której dzieci wychowywane są w oparciu o patriotyzm i szacunek dla
+                        tradycji, oraz poprzez bezpośrednie doświadczenia i działania.
+                        Indywidualne podejście do dziecka pomaga nam odkryć jego zdolności,
+                        wspomagać w trudnościach i wychowywać do twórczej współpracy z innymi.
+                        Pragniemy wychować dzieci świadome własnej wartości i wrażliwe na potrzeby
+                        innych. Wysoka jakość kształcenia, prymat zabawy i ruchu oraz ciekawe metody i
+                        formy zajęć sprawiają, że dzieci czują się u nas bezpieczne i szczęśliwe.
+                    </p>
+                    <div className="mt-6 has-text-centered-mobile">
                       <Link className="button is-primary is-large is-rounded"
                             to="/about/mission">Misja przedszkola</Link>
                     </div>

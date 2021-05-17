@@ -31,7 +31,16 @@ const Gallery = () => {
                        render={data => (
                                <MainLayout>
                                  <div className="container has-text-centered">
-                                   <h2 className="my-6">Galeria</h2>
+                                   <div className="columns">
+                                     <div className="column is-8 is-offset-2">
+                                       <header className="header">
+                                         <h2>Galeria</h2>
+                                         <strong className="header--subtitle">
+                                           &nbsp;
+                                         </strong>
+                                       </header>
+                                     </div>
+                                   </div>
                                    <div className="columns is-multiline">
                                      {data.allMarkdownRemark.edges.map(edge => {
                                        const { node } = edge;

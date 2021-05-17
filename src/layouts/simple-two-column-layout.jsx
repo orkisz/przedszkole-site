@@ -8,7 +8,9 @@ const SimpleTwoColumnLayout = ({ title, subtitle, children }) => {
               <div className="column is-8 is-offset-2">
                 <header className="header">
                   <h2>{title}</h2>
-                  <strong className="header--subtitle">{subtitle}</strong>
+                  <strong className="header--subtitle">
+                    <p>{subtitle}</p>
+                  </strong>
                 </header>
               </div>
             </div>

@@ -1,26 +1,39 @@
 @import "variables";
 
 @import "~bulma";
+@import "~bulma/sass/utilities/mixins";
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Patrick+Hand&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-body {
+html {
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.125rem;
+  font-size: .875rem;
+
+  @include tablet() {
+    font-size: 1.125rem;
+  }
 }
 
 h1 {
   font-family: 'Ubuntu', sans-serif;
-  font-size: 3.125rem;
+  font-size: 2.5rem;
   font-weight: bold;
   color: $mainAccent;
   line-height: 1.2;
+
+  @include tablet() {
+    font-size: 3.125rem;
+  }
 }
 
 h2 {
   font-family: 'Ubuntu', sans-serif;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bold;
   color: $mainAccent;
+
+  @include tablet() {
+    font-size: 2.5rem;
+  }
 }
 
 h3 {

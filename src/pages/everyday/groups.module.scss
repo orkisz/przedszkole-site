@@ -1,0 +1,9 @@
+@import "~bulma/sass/utilities/mixins";
+
+.image-column {
+  display: none;
+
+  @include desktop() {
+    display: block;
+  }
+}

@@ -20,7 +20,9 @@ const BlogLikeLayout = ({ title, subtitle, date, images = [], children }) => {
               <div className="column is-8 is-offset-2">
                 <header className="header">
                   <h2>{title}</h2>
-                  <strong className="header--subtitle">{subtitle}</strong>
+                  <strong className="header--subtitle">
+                    <p>{subtitle}</p>
+                  </strong>
                   {date && (
                           <aside className="mb-5 is-size-6">{formatDate(date)}</aside>
                   )}
