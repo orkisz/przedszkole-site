@@ -1,5 +1,5 @@
 ---
-title: Post taki, że mucha nie siada
+title: Post taki, że mucha nie siada :)
 date: 2021-04-05T20:05:34.837Z
 description: dsadsadsadas
 images:
