@@ -35,7 +35,7 @@ const handler = async (event) => {
       method: 'POST'
     });
     const captchaResponseBody = await captchaResponse.json();
-    if (!captchaResponse.success || captchaResponseBody.action !== 'email') {
+    if (!captchaResponseBody.success || captchaResponseBody.action !== 'email') {
       console.error('captcha validation', captchaResponseBody);
       return {
         statusCode: 400,
