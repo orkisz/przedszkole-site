@@ -1,7 +1,7 @@
 backend:
-#  name: test-repo
-#  name: git-gateway
-#  branch: master
+  #  name: test-repo
+  #  name: git-gateway
+  #  branch: master
   name: github
   repo: orkisz/przedszkole-site
 
@@ -104,3 +104,30 @@ collections:
         widget: 'list'
         summary: '{{fields.image}}'
         field: { label: 'Obraz', name: image, widget: image }
+
+  - name: 'pages'
+    label: 'Strony specjalne'
+    files:
+      - name: 'personnel'
+        label: 'Kadra'
+        file: 'content/pages/personnel.yml'
+        fields:
+          - name: 'person'
+            label: 'Osoba'
+            widget: 'list'
+            summary: '{{fields.name}}'
+            fields:
+              - name: 'name'
+                label: 'Imię i nazwisko'
+                widget: 'string'
+              - name: 'description'
+                label: 'Opis'
+                widget: 'text'
+              - name: 'role'
+                label: 'Rola'
+                widget: 'string'
+              - name: 'photo'
+                label: 'Zdjęcie'
+                widget: 'image'
+                required: false
+

@@ -42,7 +42,8 @@ const Groups = () => {
                                        const even = index % 2 !== 0;
                                        const text = (
                                                <div className={`column has-text-justified is-7-desktop is-full-touch`}>
-                                                 <div dangerouslySetInnerHTML={{ __html: edge.node.html }}/>
+                                                 <div className="content"
+                                                      dangerouslySetInnerHTML={{ __html: edge.node.html }}/>
                                                </div>
                                        );
                                        const img = (

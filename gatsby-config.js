@@ -9,6 +9,14 @@ module.exports = {
     'gatsby-plugin-image',
     'gatsby-plugin-react-helmet',
     'gatsby-transformer-remark',
+    {
+      resolve: `gatsby-transformer-yaml`,
+      options: {
+        typeName: ({ node, object, isArray }) => {
+          return node.name;
+        }
+      },
+    },
     'gatsby-plugin-fontawesome-css',
     {
       resolve: 'gatsby-plugin-manifest',

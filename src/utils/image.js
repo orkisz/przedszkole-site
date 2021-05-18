@@ -1,5 +1,6 @@
 import React from 'react';
 
+export const TRANSFORMATION_PERSONNEL_1BY1 = `w_600,h_600,c_fill`;
 export const TRANSFORMATION_4BY3 = `w_500,h_375,c_fill`;
 export const TRANSFORMATION_5BY3 = `w_500,h_300,c_fill`;
 export const TRANSFORMATION_FULL_BLOG = `w_872,c_scale`;
