@@ -1,6 +1,7 @@
 import { graphql, StaticQuery } from 'gatsby';
 import * as React from 'react';
 import MainLayout from '../../layouts/main-layout/main-layout';
+import Header from '../../layouts/partials/header';
 import { applyTransform, TRANSFORMATION_4BY3 } from '../../utils/image';
 import * as styles from './groups.module.scss';
 
@@ -35,18 +36,8 @@ const Groups = () => {
                                <MainLayout>
                                  <article>
                                    <div className="container">
-                                     <div className="columns">
-                                       <div className="column is-8 is-offset-2">
-                                         <header className="header">
-                                           <h2>Grupy</h2>
-                                           <strong className="header--subtitle">
-                                             <p>W naszej placówce działają trzy grupy przedszkolne, w których dzieci
-                                                podzielone są ze względu na
-                                                wiek.</p>
-                                           </strong>
-                                         </header>
-                                       </div>
-                                     </div>
+                                     <Header title="Grupy"
+                                             subtitle="W naszej placówce działają trzy grupy przedszkolne, w których dzieci podzielone są ze względu na wiek."/>
                                      {data.allMarkdownRemark.edges.map((edge, index) => {
                                        const even = index % 2 !== 0;
                                        const text = (

@@ -1,12 +1,12 @@
 import partialRight from 'lodash/partialRight';
 import React, { useState } from 'react';
-import { formatDate } from '../utils/date';
 import {
   applyTransform,
   TRANSFORMATION_4BY3,
   TRANSFORMATION_FULL_BLOG,
   TRANSFORMATION_FULL_SCREEN
 } from '../utils/image';
+import Header from './partials/header';
 import Lightbox from './partials/lightbox/lightbox';
 
 const BlogLikeLayout = ({ title, subtitle, date, images = [], children }) => {
@@ -16,17 +16,11 @@ const BlogLikeLayout = ({ title, subtitle, date, images = [], children }) => {
   const fullScreenTransform = partialRight(applyTransform, TRANSFORMATION_FULL_SCREEN);
   return (
           <article className="container">
+            <Header title={title}
+                    subtitle={subtitle}
+                    date={date}/>
             <div className="columns">
               <div className="column is-8 is-offset-2">
-                <header className="header">
-                  <h2>{title}</h2>
-                  <strong className="header--subtitle">
-                    <p>{subtitle}</p>
-                  </strong>
-                  {date && (
-                          <aside className="mb-5 is-size-6">{formatDate(date)}</aside>
-                  )}
-                </header>
                 {firstImage && (
                         <img className="mb-5"
                              src={applyTransform(firstImage, TRANSFORMATION_FULL_BLOG)}

@@ -1,6 +1,7 @@
 import { graphql, Link, StaticQuery } from 'gatsby';
 import * as React from 'react';
 import MainLayout from '../layouts/main-layout/main-layout';
+import Header from '../layouts/partials/header';
 import { applyTransform, TRANSFORMATION_4BY3 } from '../utils/image';
 import * as styles from './gallery.module.scss';
 
@@ -30,17 +31,9 @@ const Gallery = () => {
           `}
                        render={data => (
                                <MainLayout>
-                                 <div className="container has-text-centered">
-                                   <div className="columns">
-                                     <div className="column is-8 is-offset-2">
-                                       <header className="header">
-                                         <h2>Galeria</h2>
-                                         <strong className="header--subtitle">
-                                           &nbsp;
-                                         </strong>
-                                       </header>
-                                     </div>
-                                   </div>
+                                 <div className="container">
+                                   <Header title="Galeria"
+                                           subtitle=" "/>
                                    <div className="columns is-multiline">
                                      {data.allMarkdownRemark.edges.map(edge => {
                                        const { node } = edge;

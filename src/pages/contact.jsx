@@ -1,6 +1,7 @@
 import React, { useCallback, useState } from 'react';
 import { GoogleReCaptcha, GoogleReCaptchaProvider } from 'react-google-recaptcha-v3';
 import MainLayout from '../layouts/main-layout/main-layout';
+import Header from '../layouts/partials/header';
 
 const EMAIL_REGEX = /^[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])$/;
 const BODY_MIN = 10;
@@ -68,13 +69,7 @@ const Contact = () => {
                   reCaptchaKey="6LerEtoaAAAAAEm-6Qvq5OBvOoZMcEzuORP3Z7sQ">
             <MainLayout>
               <div className="container">
-                <div className="columns">
-                  <div className="column is-8 is-offset-2">
-                    <header className="header">
-                      <h2>Kontakt</h2>
-                    </header>
-                  </div>
-                </div>
+                <Header title="Kontakt"/>
                 <div className="columns">
                   <div className="column is-6 is-offset-3">
                     {!isSubmitted && (

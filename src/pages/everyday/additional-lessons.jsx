@@ -1,5 +1,6 @@
 import * as React from 'react';
 import MainLayout from '../../layouts/main-layout/main-layout';
+import Header from '../../layouts/partials/header';
 import image1 from './additional-lessons-assets/image-1.png';
 import image2 from './additional-lessons-assets/image-2.png';
 import image3 from './additional-lessons-assets/image-3.png';
@@ -12,19 +13,8 @@ const AdditionalLessons = () => {
   return (
           <MainLayout>
             <div className="container">
-              <div className="columns">
-                <div className="column is-8 is-offset-2">
-                  <header className="header">
-                    <h2>Zajęcia dodatkowe</h2>
-                    <strong className="header--subtitle">
-                      Oprócz codziennych zajęć dydaktycznych staramy się, by każdy dzień w przedszkolu
-                      był dla dzieci atrakcyjny. Stąd potrzeba poszerzania naszej oferty o zajęcia dodatkowe.
-                    </strong>
-                  </header>
-                </div>
-              </div>
-            </div>
-            <div className="container">
+              <Header title="Zajęcia dodatkowe"
+                      subtitle="Oprócz codziennych zajęć dydaktycznych staramy się, by każdy dzień w przedszkolu był dla dzieci atrakcyjny. Stąd potrzeba poszerzania naszej oferty o zajęcia dodatkowe"/>
               <div className="columns is-variable is-8">
                 <div className="column is-5-desktop is-full-touch is-offset-1-desktop">
                   <p>

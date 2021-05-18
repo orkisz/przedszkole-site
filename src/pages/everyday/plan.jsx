@@ -1,19 +1,16 @@
 import * as React from 'react';
 import MainLayout from '../../layouts/main-layout/main-layout';
+import Header from '../../layouts/partials/header';
 import * as styles from './plan.module.scss';
 
 const Blog = () => {
   return (
           <MainLayout>
             <div className="container">
+              <Header title="Plan dnia"
+                      subtitle="Dzienny rozkład zajęć wg koncepcji bł. E. Bojanowskiego"/>
               <div className="columns">
                 <div className="column is-8 is-offset-2">
-                  <header className="header">
-                    <h2>Plan dnia</h2>
-                    <strong className="header--subtitle">
-                      Dzienny rozkład zajęć wg koncepcji bł. E. Bojanowskiego
-                    </strong>
-                  </header>
                   <div className={`${styles.dayPart} ${styles.blue}`}>
                     <div className={styles.partHeading}>6:30 – 8:10 Schodzenie się dzieci.</div>
                     <div className={styles.details}>
@@ -66,7 +63,7 @@ const Blog = () => {
                     </div>
                   </div>
                   <div className={`${styles.dayPart} ${styles.red}`}>
-                    <div className={styles.partHeading}>14:00 – 14:20  Podwieczorek</div>
+                    <div className={styles.partHeading}>14:00 – 14:20 Podwieczorek</div>
                     <div className={styles.details}>
                       <ul className="round">
                         <li>Czynności higieniczne, przygotowanie do podwieczorku.</li>
@@ -74,7 +71,9 @@ const Blog = () => {
                     </div>
                   </div>
                   <div className={`${styles.dayPart} ${styles.green}`}>
-                    <div className={styles.partHeading}>14:20 – 16:30 Swobodna aktywność dzieci wg ich pomysłów i zainteresowań.</div>
+                    <div className={styles.partHeading}>14:20 – 16:30 Swobodna aktywność dzieci wg ich pomysłów i
+                                                        zainteresowań.
+                    </div>
                     <div className={styles.details}>
                       <ul className="round">
                         <li>Zabawy na powietrzu, zabawy ruchowe na placu zabaw.</li>
