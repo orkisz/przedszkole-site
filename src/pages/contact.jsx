@@ -65,7 +65,7 @@ const Contact = () => {
 
   return (
           <GoogleReCaptchaProvider
-                  reCaptchaKey="6LczDNcaAAAAAHxkRKQbnJSoFW7J3IwkNU-z95TU">
+                  reCaptchaKey="6LerEtoaAAAAAEm-6Qvq5OBvOoZMcEzuORP3Z7sQ">
             <MainLayout>
               <div className="container">
                 <div className="columns">
@@ -172,9 +172,8 @@ const Contact = () => {
                             <div className="has-text-centered">Twoja wiadomość została wysłana.</div>
                     )}
                   </div>
-                  <GoogleReCaptcha
-                          onVerify={handleVerify}
-                  />
+                  <GoogleReCaptcha onVerify={handleVerify}
+                                   action="email"/>
                 </div>
               </div>
             </MainLayout>
