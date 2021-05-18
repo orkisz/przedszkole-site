@@ -50,14 +50,16 @@ const handler = async (event) => {
     };
   }
 
-  try {
-    validateLength('name', name, NAME_MIN_LENGTH, NAME_MAX_LENGTH);
-  } catch (error) {
-    console.error(error);
-    return {
-      statusCode: 400,
-      body: error.message
-    };
+  if (name) {
+    try {
+      validateLength('name', name, NAME_MIN_LENGTH, NAME_MAX_LENGTH);
+    } catch (error) {
+      console.error(error);
+      return {
+        statusCode: 400,
+        body: error.message
+      };
+    }
   }
 
   try {
