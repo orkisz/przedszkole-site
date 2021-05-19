@@ -130,4 +130,30 @@ collections:
                 label: 'Zdjęcie'
                 widget: 'image'
                 required: false
-
+      - name: 'events'
+        label: 'Wydarzenia'
+        file: 'content/pages/events.yml'
+        fields:
+          - name: 'event'
+            label: 'Wydarzenie'
+            widget: 'list'
+            summary: '{{fields.title}}'
+            fields:
+              - name: 'title'
+                label: 'Nazwa wydarzenia'
+                widget: 'string'
+              - name: 'start'
+                label: 'Data rozpoczęcia'
+                widget: 'datetime'
+                default: ''
+                date_format: 'DD.MM.YYYY'
+                time_format: 'HH:mm'
+                format: 'LLL'
+              - name: 'End'
+                label: 'Data zakończenia'
+                widget: 'datetime'
+                default: ''
+                date_format: 'DD.MM.YYYY'
+                time_format: 'HH:mm'
+                format: 'LLL'
+                required: false

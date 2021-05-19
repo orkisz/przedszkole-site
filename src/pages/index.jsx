@@ -47,7 +47,7 @@ const IndexPage = () => {
   return (
           <MainLayout footerClassName="">
             <section className={`hero is-large ${styles.hero}`}>
-              <div className="hero-body">
+              <div className={`hero-body ${styles.heroBody}`}>
                 <div className="container">
                   <div className="columns">
                     <div className="column is-half-desktop is-full-touch">
@@ -57,7 +57,8 @@ const IndexPage = () => {
                       <h1 className="mt-3 mb-6">
                         Razem bawimy się, uczymy i rośniemy!
                       </h1>
-                      <button className="button is-primary is-medium is-rounded">Dowiedz się wiecej</button>
+                      <Link className="button is-primary is-medium is-rounded"
+                            to="/everyday/groups">Dowiedz się wiecej</Link>
                     </div>
                   </div>
                 </div>

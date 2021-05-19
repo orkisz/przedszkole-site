@@ -77,13 +77,16 @@ const Contact = () => {
                                   onSubmit={submit}>
                               <div className="field is-horizontal">
                                 <div className="field-label is-normal">
-                                  <label className="label">Imię</label>
+                                  <label className="label"
+                                         htmlFor="nameControl">Imię
+                                  </label>
                                 </div>
                                 <div className="field-body">
                                   <div className="field">
                                     <p className="control">
                                       <input className={`input ${nameTouched && !nameLengthValid ? 'is-danger' : ''}`}
                                              type="text"
+                                             id="nameControl"
                                              value={name}
                                              onChange={e => setName(e.target.value)}
                                              onBlur={() => setNameTouched(true)}/>
@@ -98,13 +101,16 @@ const Contact = () => {
                               </div>
                               <div className="field is-horizontal">
                                 <div className="field-label is-normal">
-                                  <label className="label">*E-Mail</label>
+                                  <label className="label"
+                                         htmlFor="emailControl">*E-Mail
+                                  </label>
                                 </div>
                                 <div className="field-body">
                                   <div className="field">
                                     <p className="control">
                                       <input className={`input ${emailTouched && (!email || !emailRegexValid) ? 'is-danger' : ''}`}
                                              type="email"
+                                             id="emailControl"
                                              value={email}
                                              onChange={e => setEmail(e.target.value)}
                                              onBlur={() => setEmailTouched(true)}
@@ -125,17 +131,20 @@ const Contact = () => {
                               </div>
                               <div className="field is-horizontal">
                                 <div className="field-label is-normal">
-                                  <label className="label">*Treść</label>
+                                  <label className="label"
+                                         htmlFor="bodyControl">*Treść
+                                  </label>
                                 </div>
                                 <div className="field-body">
                                   <div className="field">
                                     <p className="control">
-                            <textarea className={`textarea has-fixed-size ${bodyTouched && (!body || !bodyLengthValid) ? 'is-danger' : ''}`}
-                                      value={body}
-                                      onChange={e => setBody(e.target.value)}
-                                      onBlur={() => setBodyTouched(true)}
-                                      required
-                                      rows="10"/>
+                                      <textarea className={`textarea has-fixed-size ${bodyTouched && (!body || !bodyLengthValid) ? 'is-danger' : ''}`}
+                                                id="bodyControl"
+                                                value={body}
+                                                onChange={e => setBody(e.target.value)}
+                                                onBlur={() => setBodyTouched(true)}
+                                                required
+                                                rows="10"/>
                                     </p>
                                     {bodyTouched && !body && (
                                             <p className="help is-danger">

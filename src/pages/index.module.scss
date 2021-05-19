@@ -56,3 +56,9 @@
     display: inline;
   }
 }
+
+.hero-body {
+  @include tablet() {
+    padding: 12.9rem 1.5rem !important;
+  }
+}

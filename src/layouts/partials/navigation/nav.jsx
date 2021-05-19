@@ -104,10 +104,11 @@ class Navigation extends React.Component {
                               to="/about/patron">
                           Patron
                         </Link>
-                        <Link className="navbar-item"
-                              to="/about/statutory">
+                        <a className="navbar-item"
+                           href="/STATUT PRZEDSZKOLA SIÓSTR SŁUŻEBNICZEK W RUDAWIE.pdf"
+                           target="_blank">
                           Statut
-                        </Link>
+                        </a>
                         <Link className="navbar-item"
                               to="/about/mission">
                           Misja
@@ -143,9 +144,31 @@ class Navigation extends React.Component {
                         </Link>
                       </div>
                     </div>
-                    <a className="navbar-item"
-                       href="Javascript:void(0)">Strefa rodzica
-                    </a>
+                    <div className="navbar-item has-dropdown is-hoverable">
+                      <a className="navbar-link"
+                         onClick={() => this.toggleDropdown('parents')}>
+                        Strefa rodzica
+                      </a>
+
+                      <div className={`${styles.dropdown} ${ddState['parents'] ? styles.dropdownExpanded : ''} navbar-dropdown`}>
+                        <Link className="navbar-item"
+                              to="/blog">
+                          Aktualności
+                        </Link>
+                        <Link className="navbar-item"
+                              to="/parents/recruitment">
+                          Rekrutacja
+                        </Link>
+                        <Link className="navbar-item"
+                              to="/parents/adaptation">
+                          Adaptacja
+                        </Link>
+                        <Link className="navbar-item"
+                              to="/parents/growning">
+                          Rozwój i wychowanie
+                        </Link>
+                      </div>
+                    </div>
                     <Link className="navbar-item"
                           to="/gallery">
                       Galeria
