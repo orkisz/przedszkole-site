@@ -3,9 +3,11 @@ import * as React from 'react';
 import MainLayout from '../../layouts/main-layout/main-layout';
 import Header from '../../layouts/partials/header';
 import { applyTransform, TRANSFORMATION_PERSONNEL_1BY1 } from '../../utils/image';
-import * as styles from '../everyday/groups.module.scss';
+import * as styles from './personnel.module.scss';
 
 const Personnel = () => {
+  const colors = ['blue', 'green', 'yellow'];
+
   return (
           <StaticQuery query={graphql`
           query PersonnelQuery {
@@ -31,6 +33,7 @@ const Personnel = () => {
                                    {data.allPersonnel.edges[0].node.person.map((person, index) => {
                                      const { description, name, role, photo } = person;
                                      const even = index % 2 !== 0;
+                                     const colorIndex = index % 3;
                                      const textClass = photo ? 'is-7-desktop is-full-touch' : 'is-8-desktop is-offset-2-desktop is-full-touch';
                                      const text = (
                                              <div className={`column ${textClass}`}>
@@ -44,7 +47,7 @@ const Personnel = () => {
                                      const img = photo && (
                                              <div className={`column is-5-desktop ${styles.imageColumn}`}>
                                                <figure className={`image is-1by1`}>
-                                                 <img className={`is-rounded`}
+                                                 <img className={`is-rounded ${styles.image} ${styles[colors[colorIndex]]}`}
                                                       src={applyTransform(photo[0], TRANSFORMATION_PERSONNEL_1BY1)}
                                                       alt={name}/>
                                                </figure>

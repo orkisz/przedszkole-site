@@ -1,0 +1,29 @@
+@import "src/styles/variables";
+@import "~bulma/sass/utilities/mixins";
+
+.image {
+  $self: &;
+
+  border: 4px dashed;
+  padding: 5px;
+
+  &.blue {
+      border-color: $blue;
+  }
+
+  &.yellow {
+    border-color: $yellow;
+  }
+
+  &.green {
+    border-color: $green;
+  }
+}
+
+.image-column {
+  display: none;
+
+  @include desktop() {
+    display: block;
+  }
+}
