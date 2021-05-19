@@ -20,10 +20,32 @@
   }
 }
 
-.image-column {
-  display: none;
+.columns-reverse {
+  display: flex;
+  flex-direction: column-reverse;
 
   @include desktop() {
-    display: block;
+    flex-direction: row;
+  }
+}
+
+.columns {
+  display: flex;
+  flex-direction: column;
+
+  @include desktop() {
+    flex-direction: row;
+  }
+}
+
+.image-wrap {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0 1rem;
+
+  @include desktop() {
+    max-width: none;
+    margin: 0;
+    padding: 0;
   }
 }
