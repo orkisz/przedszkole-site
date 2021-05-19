@@ -28,13 +28,17 @@ const Personnel = () => {
                                  <div className="container">
                                    <Header title="Kadra"
                                            subtitle="Poznajmy się lepiej! Wychowawcy w naszym przedszkolu to nie tylko doświadczeni pedagodzy, ale osoby życzliwe i pełne pasji w pracy z dziećmi."/>
-                                   {/*<pre>{JSON.stringify(data)}</pre>*/}
                                    {data.allPersonnel.edges[0].node.person.map((person, index) => {
                                      const { description, name, role, photo } = person;
                                      const even = index % 2 !== 0;
+                                     const textClass = photo ? 'is-7-desktop is-full-touch' : 'is-8-desktop is-offset-2-desktop is-full-touch';
                                      const text = (
-                                             <div className={`column has-text-justified is-7-desktop is-full-touch`}>
-                                               {description}
+                                             <div className={`column ${textClass}`}>
+                                               <h4><p className="mb-0">{role}</p></h4>
+                                               <h2><p>{name}</p></h2>
+                                               <p className="mt-5 has-text-justified">
+                                                 {description}
+                                               </p>
                                              </div>
                                      );
                                      const img = photo && (
@@ -52,13 +56,9 @@ const Personnel = () => {
                                      }
 
                                      return (
-                                             <div key={name}>
-                                               <div className={`has-text-centered is-uppercase my-6 is-size-3 has-text-weight-bold`}>
-                                                 {name}
-                                               </div>
-                                               <div className="columns is-variable is-8">
-                                                 {elements}
-                                               </div>
+                                             <div key={name}
+                                                  className="columns is-variable is-8 my-6">
+                                               {elements}
                                              </div>
                                      )
                                    })}
