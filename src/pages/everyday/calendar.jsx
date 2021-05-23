@@ -6,20 +6,14 @@ import Header from '../../layouts/partials/header';
 import { formatDate } from '../../utils/date';
 
 const Calendar = () => {
-  const colors = ['blue', 'green', 'yellow'];
-
   return (
           <StaticQuery query={graphql`
-          query AllEventsQuery {
-            allEvents {
-              edges {
-                node {
-                  event {
-                    title
-                    start
-                    end
-                  }
-                }
+          query EventsQuery {
+            events {
+              event {
+                title
+                start
+                end
               }
             }
           }
@@ -34,7 +28,7 @@ const Calendar = () => {
                                    <div className="column is-8 is-offset-2">
                                      <table className="table is-fullwidth is-striped">
                                        <tbody>
-                                       {data.allEvents.edges[0].node.event
+                                       {data.events.event
                                                .map(event => {
                                                  const { start, end } = event;
                                                  return {

@@ -157,3 +157,10 @@ collections:
                 time_format: 'HH:mm'
                 required: false
                 picker_utc: true
+      - name: 'development'
+        label: 'Rozwój i wychowanie'
+        file: 'content/pages/development.yml'
+        fields:
+          - name: 'content'
+            label: 'Treść'
+            widget: 'markdown'

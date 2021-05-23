@@ -11,16 +11,12 @@ const Personnel = () => {
   return (
           <StaticQuery query={graphql`
           query PersonnelQuery {
-            allPersonnel {
-              edges {
-                node {
-                  person {
-                    description
-                    name
-                    photo
-                    role
-                  }
-                }
+            personnel {
+              person {
+                description
+                name
+                photo
+                role
               }
             }
           }
@@ -30,7 +26,7 @@ const Personnel = () => {
                                  <div className="container">
                                    <Header title="Kadra"
                                            subtitle="Poznajmy się lepiej! Wychowawcy w naszym przedszkolu to nie tylko doświadczeni pedagodzy, ale osoby życzliwe i pełne pasji w pracy z dziećmi."/>
-                                   {data.allPersonnel.edges[0].node.person.map((person, index) => {
+                                   {data.personnel.person.map((person, index) => {
                                      const { description, name, role, photo } = person;
                                      const even = index % 2 !== 0;
                                      const colorIndex = index % 3;

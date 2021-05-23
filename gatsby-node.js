@@ -1,5 +1,12 @@
 const path = require(`path`);
 const { createFilePath } = require(`gatsby-source-filesystem`)
+const marked = require('marked');
+const createDOMPurify = require('dompurify');
+const { JSDOM } = require('jsdom');
+
+const window = new JSDOM('').window;
+const DOMPurify = createDOMPurify(window);
+
 
 exports.createPages = async ({ actions, graphql }) => {
   const { createPage } = actions;
@@ -103,5 +110,12 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
         value: relativeFilePath
       });
     }
+  } else if (node.internal.type === 'development') {
+    const formatted = DOMPurify.sanitize(marked(node.content));
+    createNodeField({
+      node,
+      name: 'formatted',
+      value: formatted
+    });
   }
 }
