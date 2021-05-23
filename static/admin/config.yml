@@ -148,12 +148,12 @@ collections:
                 default: ''
                 date_format: 'DD.MM.YYYY'
                 time_format: 'HH:mm'
-                format: 'LLL'
-              - name: 'End'
+                picker_utc: true
+              - name: 'end'
                 label: 'Data zakończenia'
                 widget: 'datetime'
                 default: ''
                 date_format: 'DD.MM.YYYY'
                 time_format: 'HH:mm'
-                format: 'LLL'
                 required: false
+                picker_utc: true
