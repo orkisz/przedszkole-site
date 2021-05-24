@@ -160,7 +160,7 @@ const Contact = () => {
                                 </div>
                               </div>
                               <div className="has-text-centered">
-                                <button className={`button is-primary is-medium is-rounded ${submitting ? 'is-loading' : ''}`}
+                                <button className={`button is-primary is-medium is-rounded is-outlined ${submitting ? 'is-loading' : ''}`}
                                         type="submit"
                                         disabled={!formValid}>Wyślij
                                 </button>

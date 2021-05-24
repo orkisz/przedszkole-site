@@ -50,7 +50,7 @@ const BlogArea = () => {
                                    ))}
                                  </div>
                                  <div className="has-text-centered mt-6 mb-3">
-                                   <Link className="button is-primary is-large is-rounded"
+                                   <Link className="button is-primary is-large is-rounded is-outlined"
                                          to="/blog">
                                      Zobacz wszystkie artykuły
                                    </Link>

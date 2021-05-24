@@ -136,7 +136,7 @@ class Navigation extends React.Component {
                         </Link>
                         <Link className="navbar-item"
                               to="/everyday/calendar">
-                          Kalendarium
+                          Kalendarium wydarzeń
                         </Link>
                         <Link className="navbar-item"
                               to="/everyday/additional-lessons">
