@@ -1,10 +1,13 @@
 @import "~bulma/sass/utilities/mixins";
 
-$card-height: 650px;
 $dark-bg-height: 18px;
 
 .featured-card {
-  color: white;
+  color: $white;
+
+  @include desktop() {
+    flex: 1 !important;
+  }
 }
 
 .outer-card, .inner-card {
@@ -57,12 +60,12 @@ $dark-bg-height: 18px;
   }
 
   .outer-card {
-    height: $card-height;
+    height: 100%;
   }
 
   .inner-card {
     flex-direction: column;
-    height: $card-height - $dark-bg-height;
+    height: calc(100% - #{ $dark-bg-height });
     padding: 40px;
   }
 
