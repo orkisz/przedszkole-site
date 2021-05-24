@@ -171,6 +171,10 @@ class Navigation extends React.Component {
                               to="/parents/development">
                           Rozwój i wychowanie
                         </Link>
+                        <Link className="navbar-item"
+                              to="/parents/documents">
+                          Dokumenty
+                        </Link>
                       </div>
                     </div>
                     <Link className="navbar-item"
