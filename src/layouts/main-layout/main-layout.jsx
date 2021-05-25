@@ -54,15 +54,17 @@ const MainLayout = ({ footerClassName = 'mt-6', children }) => {
                                                  <FontAwesomeIcon icon={faPhone}
                                                                   size="2x"
                                                                   listItem/>
-                                                 <span>+48 12 283 80 50</span>
+                                                 <span>
+                                                   <a href="tel:+48122838050">+48 12 283 80 50</a>
+                                                 </span>
                                                </li>
                                                <li className={styles.contactsListItem}>
                                                  <FontAwesomeIcon icon={faEnvelope}
                                                                   size="2x"
                                                                   listItem/>
                                                  <span>
-                                               <a href="mailto:przedszkole.rudawa@sluzebniczkikr.pl">przedszkole.rudawa@sluzebniczkikr.pl</a>
-                                               </span>
+                                                   <a href="mailto:przedszkole.rudawa@sluzebniczkikr.pl">przedszkole.rudawa@sluzebniczkikr.pl</a>
+                                                 </span>
                                                </li>
                                                <li className={styles.contactsListItem}>
                                                  <FontAwesomeIcon icon={faMapMarkerAlt}
