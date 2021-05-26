@@ -191,3 +191,15 @@ ul.round {
 .grecaptcha-badge {
   z-index: 2;
 }
+
+.button.is-main.is-outlined {
+  background-color: transparent;
+  border-color: $lightBlue;
+  color: $lightBlue;
+
+  &:hover {
+    background-color: $lightBlue;
+    border-color: $lightBlue;
+    color: $white;
+  }
+}

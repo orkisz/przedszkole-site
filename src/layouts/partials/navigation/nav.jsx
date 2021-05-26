@@ -1,6 +1,6 @@
 import { Link } from 'gatsby';
 import React from 'react';
-import logo from './logo.png';
+import logo from '../../../images/logo.png';
 import * as styles from './nav.module.scss';
 
 class Navigation extends React.Component {

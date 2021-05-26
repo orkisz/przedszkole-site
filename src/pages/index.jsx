@@ -7,7 +7,7 @@ import GroupsAccordion from '../layouts/partials/groups-accordion';
 import '../styles/styles.scss';
 import * as styles from './index.module.scss';
 import learnByPlayImage from './learn-by-play.png';
-import missionImage from './mission.jpg';
+import missionImage from './mission.png';
 import surroundingsImage from './surroundings.png';
 import teachersImage from './teachers.png';
 import valuesImage from './values.png';
@@ -57,7 +57,7 @@ const IndexPage = () => {
                       <h1 className="mt-3 mb-6">
                         Razem bawimy się, uczymy i rośniemy!
                       </h1>
-                      <Link className="button is-primary is-medium is-rounded is-outlined"
+                      <Link className="button is-main is-medium is-rounded is-outlined"
                             to="/everyday/groups">Dowiedz się wiecej</Link>
                     </div>
                   </div>
@@ -105,7 +105,7 @@ const IndexPage = () => {
                         formy zajęć sprawiają, że dzieci czują się u nas bezpieczne i szczęśliwe.
                     </p>
                     <div className="mt-6 has-text-centered-mobile">
-                      <Link className="button is-primary is-large is-rounded is-outlined"
+                      <Link className="button is-main is-medium is-rounded is-outlined"
                             to="/about/mission">Misja przedszkola</Link>
                     </div>
                   </div>

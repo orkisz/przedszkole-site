@@ -6,7 +6,7 @@ import * as React from 'react'
 import { Helmet } from 'react-helmet';
 import '../../styles/styles.scss';
 import Navigation from '../partials/navigation/nav';
-import logoImage from './logo.png';
+import logoImage from '../../images/logo.png';
 import * as styles from './main-layout.module.scss';
 
 const MainLayout = ({ footerClassName = 'mt-6', children }) => {
