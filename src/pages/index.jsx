@@ -57,7 +57,7 @@ const IndexPage = () => {
                       <h1 className="mt-3 mb-6">
                         Razem bawimy się, uczymy i rośniemy!
                       </h1>
-                      <Link className="button is-main is-medium is-rounded is-outlined"
+                      <Link className="button is-main is-medium is-rounded"
                             to="/everyday/groups">Dowiedz się wiecej</Link>
                     </div>
                   </div>
@@ -105,7 +105,7 @@ const IndexPage = () => {
                         formy zajęć sprawiają, że dzieci czują się u nas bezpieczne i szczęśliwe.
                     </p>
                     <div className="mt-6 has-text-centered-mobile">
-                      <Link className="button is-main is-medium is-rounded is-outlined"
+                      <Link className="button is-main is-medium is-rounded"
                             to="/about/mission">Misja przedszkola</Link>
                     </div>
                   </div>

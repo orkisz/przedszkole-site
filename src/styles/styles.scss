@@ -192,14 +192,27 @@ ul.round {
   z-index: 2;
 }
 
-.button.is-main.is-outlined {
-  background-color: transparent;
-  border-color: $lightBlue;
-  color: $lightBlue;
-
-  &:hover {
+.button {
+  &.is-main {
     background-color: $lightBlue;
     border-color: $lightBlue;
     color: $white;
+
+    &:hover {
+      background-color: $blue-darken;
+      border-color: $blue-darken;
+    }
+
+    &.is-outlined {
+      background-color: transparent;
+      border-color: $lightBlue;
+      color: $lightBlue;
+
+      &:hover {
+        background-color: $lightBlue;
+        border-color: $lightBlue;
+        color: $white;
+      }
+    }
   }
 }
