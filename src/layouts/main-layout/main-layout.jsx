@@ -85,7 +85,7 @@ const MainLayout = ({ footerClassName = 'mt-6', children }) => {
                                      </div>
                                    </section>
                                    <section className={`${styles.bottomFooter} has-text-centered`}>
-                                     <span className={styles.separated}>Copyright &copy; 2021 Niepubliczne Przedszkole Sióstr Służebniczek Zgromadzenia NMP NP</span>
+                                     <span className={styles.separated}>Copyright &copy; 2021 Katarzyna i Krzysztof Orkisz</span>
                                      <a className="plain"
                                         href="https://www.facebook.com/Przedszkole-Niepubliczne-Si%C3%B3str-S%C5%82u%C5%BCebniczek-NMP-NP-w-Rudawie-111121330268531"
                                         target="_blank">
