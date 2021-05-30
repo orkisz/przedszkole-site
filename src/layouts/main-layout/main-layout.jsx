@@ -4,9 +4,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { graphql, StaticQuery } from 'gatsby';
 import * as React from 'react'
 import { Helmet } from 'react-helmet';
+import logoImage from '../../images/logo.png';
+import iconImage from '../../images/icon.png';
 import '../../styles/styles.scss';
 import Navigation from '../partials/navigation/nav';
-import logoImage from '../../images/logo.png';
 import * as styles from './main-layout.module.scss';
 
 const MainLayout = ({ footerClassName = 'mt-6', children }) => {
@@ -29,6 +30,28 @@ const MainLayout = ({ footerClassName = 'mt-6', children }) => {
                                <>
                                  <Helmet title={data.site.siteMetadata.title}
                                          bodyAttributes={{ class: 'has-navbar-fixed-top' }}
+                                         meta={[
+                                           {
+                                             name: 'description',
+                                             content: 'Nasze Przedszkole wspiera rodziców w integralnym wychowaniu dzieci w duchu wartości chrześcijańskich wg koncepcji pedagogicznej bł. Edmunda Bojanowskiego.'
+                                           },
+                                           {
+                                             name: 'keywords',
+                                             content: 'przedszkole Rudawa Siostry Służebniczki NMP'
+                                           },
+                                           {
+                                             name: 'og:title',
+                                             content: data.site.siteMetadata.title
+                                           },
+                                           {
+                                             name: 'og:description',
+                                             content: 'Nasze Przedszkole wspiera rodziców w integralnym wychowaniu dzieci w duchu wartości chrześcijańskich wg koncepcji pedagogicznej bł. Edmunda Bojanowskiego.'
+                                           },
+                                           {
+                                             name: 'og:image',
+                                             content: iconImage
+                                           }
+                                         ]}
                                          defer={false}/>
                                  <Navigation/>
                                  <div className={styles.contentWrapper}>
