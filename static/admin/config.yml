@@ -123,6 +123,7 @@ collections:
               - name: 'description'
                 label: 'Opis'
                 widget: 'text'
+                required: false
               - name: 'role'
                 label: 'Rola'
                 widget: 'string'
