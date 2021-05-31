@@ -3,7 +3,7 @@ backend:
   #  name: git-gateway
   #  branch: master
   name: github
-  repo: orkisz/przedszkole-site
+  repo: Przedszkole-rudawa/przedszkole-site
 
 locale: pl
 
