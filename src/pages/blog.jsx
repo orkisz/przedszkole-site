@@ -2,6 +2,7 @@ import { graphql, StaticQuery } from 'gatsby';
 import * as React from 'react';
 import MainLayout from '../layouts/main-layout/main-layout';
 import BlogCard from '../layouts/partials/blog-card/blog-card';
+import Header from '../layouts/partials/header';
 
 const Blog = () => {
   return (
@@ -31,8 +32,8 @@ const Blog = () => {
           `}
                        render={data => (
                                <MainLayout>
+                                 <Header title="Aktualności"/>
                                  <div className="container has-text-centered">
-                                   <h2 className="my-6">Aktualności</h2>
                                    <div className="columns is-multiline features">
                                      {data.allMarkdownRemark.edges.map(edge => (
                                              <BlogCard node={edge.node}

@@ -2,6 +2,7 @@ import { graphql } from 'gatsby';
 import partialRight from 'lodash/partialRight';
 import React, { useState } from 'react';
 import MainLayout from '../layouts/main-layout/main-layout';
+import Header from '../layouts/partials/header';
 import Lightbox from '../layouts/partials/lightbox/lightbox';
 import { formatDate } from '../utils/date';
 import { applyTransform, TRANSFORMATION_4BY3, TRANSFORMATION_FULL_SCREEN } from '../utils/image';
@@ -16,8 +17,8 @@ const GalleryPage = ({ data }) => {
   const fullScreenTransform = partialRight(applyTransform, TRANSFORMATION_FULL_SCREEN);
   return (
           <MainLayout>
+            <Header title={title}/>
             <div className="container has-text-centered">
-              <h2 className="header">{title}</h2>
               <aside className="mb-6 mt-3 is-size-6">{formatDate(date)}</aside>
               <div className="columns is-multiline">
                 {imagesList.map((image, index) => {

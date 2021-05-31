@@ -5,8 +5,9 @@
 
 1.  **Install dependencies**
 
-    * NodeJS
+    * NodeJS >= 14
     * IDE like VS Code / WebStorm / Atom
+    * netlify-cli `npm i -g netlify-cli`
 
 2.  **Start developing.**
 
@@ -14,7 +15,7 @@
 
     ```shell
     cd przedszkole-site/
-    npm run develop
+    netlify dev
     ```
 
 3.  **Open the code and start customizing!**

@@ -17,13 +17,13 @@ const Development = () => {
           `}
                        render={data => (
                                <MainLayout>
+                                 <Header title="Rozwój i wychowanie"/>
                                  <div className="container">
-                                   <Header title="Rozwój i wychowanie"/>
-                                 </div>
-                                 <div className="columns">
-                                   <div className="column is-8 is-offset-2">
-                                     <div className="content"
-                                          dangerouslySetInnerHTML={{ __html: data.development.fields.formatted }}>
+                                   <div className="columns">
+                                     <div className="column is-8 is-offset-2">
+                                       <div className="content"
+                                            dangerouslySetInnerHTML={{ __html: data.development.fields.formatted }}>
+                                       </div>
                                      </div>
                                    </div>
                                  </div>

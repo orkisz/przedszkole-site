@@ -6,9 +6,9 @@ import * as styles from './plan.module.scss';
 const Blog = () => {
   return (
           <MainLayout>
+            <Header title="Plan dnia"
+                    subtitle="Dzienny rozkład zajęć wg koncepcji bł. E. Bojanowskiego"/>
             <div className="container">
-              <Header title="Plan dnia"
-                      subtitle="Dzienny rozkład zajęć wg koncepcji bł. E. Bojanowskiego"/>
               <div className="columns">
                 <div className="column is-8 is-offset-2">
                   <div className={`${styles.dayPart} ${styles.blue}`}>

@@ -68,8 +68,8 @@ const Contact = () => {
           <GoogleReCaptchaProvider
                   reCaptchaKey="6LerEtoaAAAAAEm-6Qvq5OBvOoZMcEzuORP3Z7sQ">
             <MainLayout>
+              <Header title="Kontakt"/>
               <div className="container">
-                <Header title="Kontakt"/>
                 <div className="columns">
                   <div className="column is-6 is-offset-3">
                     {!isSubmitted && (

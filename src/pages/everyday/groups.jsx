@@ -34,44 +34,42 @@ const Groups = () => {
           `}
                        render={data => (
                                <MainLayout>
-                                 <article>
-                                   <div className="container">
-                                     <Header title="Grupy"
-                                             subtitle="W naszej placówce działają trzy grupy przedszkolne, w których dzieci podzielone są ze względu na wiek."/>
-                                     {data.allMarkdownRemark.edges.map((edge, index) => {
-                                       const even = index % 2 !== 0;
-                                       const text = (
-                                               <div className={`column has-text-justified is-7-desktop is-full-touch`}>
-                                                 <div className="content"
-                                                      dangerouslySetInnerHTML={{ __html: edge.node.html }}/>
-                                               </div>
-                                       );
-                                       const img = (
-                                               <div className={`column is-5-desktop ${styles.imageColumn}`}>
-                                                 <figure className={`image is-4by3 fancy-image ${groupColors[index]} ${even ? '' : 'fancy-reverse'}`}>
-                                                   <img src={applyTransform(edge.node.frontmatter.photo[0], TRANSFORMATION_4BY3)}
-                                                        alt={edge.node.frontmatter.name}/>
-                                                 </figure>
-                                               </div>
-                                       );
-                                       let elements = [text, img];
-                                       if (even) {
-                                         elements = elements.reverse();
-                                       }
+                                 <Header title="Grupy"
+                                         subtitle="W naszej placówce działają trzy grupy przedszkolne, w których dzieci podzielone są ze względu na wiek."/>
+                                 <div className="container">
+                                   {data.allMarkdownRemark.edges.map((edge, index) => {
+                                     const even = index % 2 !== 0;
+                                     const text = (
+                                             <div className={`column has-text-justified is-7-desktop is-full-touch`}>
+                                               <div className="content"
+                                                    dangerouslySetInnerHTML={{ __html: edge.node.html }}/>
+                                             </div>
+                                     );
+                                     const img = (
+                                             <div className={`column is-5-desktop ${styles.imageColumn}`}>
+                                               <figure className={`image is-4by3 fancy-image ${groupColors[index]} ${even ? '' : 'fancy-reverse'}`}>
+                                                 <img src={applyTransform(edge.node.frontmatter.photo[0], TRANSFORMATION_4BY3)}
+                                                      alt={edge.node.frontmatter.name}/>
+                                               </figure>
+                                             </div>
+                                     );
+                                     let elements = [text, img];
+                                     if (even) {
+                                       elements = elements.reverse();
+                                     }
 
-                                       return (
-                                               <div key={edge.node.frontmatter.name}>
-                                                 <div className={`has-text-centered is-uppercase my-6 is-size-3 has-text-weight-bold my-custom-color-${groupColors[index]}`}>
-                                                   {edge.node.frontmatter.name}
-                                                 </div>
-                                                 <div className="columns is-variable is-8">
-                                                   {elements}
-                                                 </div>
+                                     return (
+                                             <div key={edge.node.frontmatter.name}>
+                                               <div className={`has-text-centered is-uppercase my-6 is-size-3 has-text-weight-bold my-custom-color-${groupColors[index]}`}>
+                                                 {edge.node.frontmatter.name}
                                                </div>
-                                       )
-                                     })}
-                                   </div>
-                                 </article>
+                                               <div className="columns is-variable is-8">
+                                                 {elements}
+                                               </div>
+                                             </div>
+                                     )
+                                   })}
+                                 </div>
                                </MainLayout>
                        )}/>
   );

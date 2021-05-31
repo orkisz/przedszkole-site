@@ -31,9 +31,8 @@ const Gallery = () => {
           `}
                        render={data => (
                                <MainLayout>
+                                 <Header title="Galeria"/>
                                  <div className="container">
-                                   <Header title="Galeria"
-                                           subtitle=" "/>
                                    <div className="columns is-multiline">
                                      {data.allMarkdownRemark.edges.map(edge => {
                                        const { node } = edge;

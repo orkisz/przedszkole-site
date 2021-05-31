@@ -7,8 +7,8 @@ import Header from '../../layouts/partials/header';
 const Documents = () => {
   return (
           <MainLayout>
+            <Header title="Dokumenty"/>
             <div className="container">
-              <Header title="Dokumenty"/>
               <div className="columns">
                 <div className="column is-8 is-offset-2">
                   <ul>

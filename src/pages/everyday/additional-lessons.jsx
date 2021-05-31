@@ -12,9 +12,10 @@ import * as styles from './additional-lessons.module.scss';
 const AdditionalLessons = () => {
   return (
           <MainLayout>
-            <div className="container">
+
               <Header title="Zajęcia dodatkowe"
                       subtitle="Oprócz codziennych zajęć dydaktycznych staramy się, by każdy dzień w przedszkolu był dla dzieci atrakcyjny. Stąd potrzeba poszerzania naszej oferty o zajęcia dodatkowe"/>
+            <div className="container">
               <div className="columns is-variable is-8">
                 <div className="column is-5-desktop is-full-touch is-offset-1-desktop">
                   <p>

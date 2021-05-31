@@ -22,47 +22,50 @@ const Personnel = () => {
           }
           `}
                        render={data => (
-                               <MainLayout>
-                                 <div className="container">
-                                   <Header title="Kadra"
-                                           subtitle="Poznajmy się lepiej! Wychowawcy w naszym przedszkolu to nie tylko doświadczeni pedagodzy, ale osoby życzliwe i pełne pasji w pracy z dziećmi."/>
-                                   {data.personnel.person.map((person, index) => {
-                                     const { description, name, role, photo } = person;
-                                     const even = index % 2 !== 0;
-                                     const colorIndex = index % 3;
-                                     const textClass = photo ? 'is-7-desktop' : 'is-8-desktop is-offset-2-desktop';
-                                     const text = (
-                                             <div className={`column ${textClass}`}>
-                                               <h4><p className="mb-0">{role}</p></h4>
-                                               <h2><p>{name}</p></h2>
-                                               <p className="mt-5 has-text-justified">
-                                                 {description}
-                                               </p>
-                                             </div>
-                                     );
-                                     const img = photo && (
-                                             <div className={`column is-5-desktop`}>
-                                               <div className={styles.imageWrap}>
-                                                 <figure className={`image is-1by1`}>
-                                                   <img className={`is-rounded ${styles.image} ${styles[colors[colorIndex]]}`}
-                                                        src={applyTransform(photo[0], TRANSFORMATION_PERSONNEL_1BY1)}
-                                                        alt={name}/>
-                                                 </figure>
+                               <MainLayout footerClassName={styles.footer}>
+                                 <Header title="Kadra"
+                                         subtitle="Poznajmy się lepiej! Wychowawcy w naszym przedszkolu to nie tylko doświadczeni pedagodzy, ale osoby życzliwe i pełne pasji w pracy z dziećmi."
+                                         containerStyle={styles.header}/>
+                                 <div className="dark-background py-6">
+                                   <div className="container">
+                                     {data.personnel.person.map((person, index, arr) => {
+                                       const { description, name, role, photo } = person;
+                                       const even = index % 2 !== 0;
+                                       const colorIndex = index % 3;
+                                       const textClass = photo ? 'is-7-desktop' : 'is-8-desktop is-offset-2-desktop';
+                                       const text = (
+                                               <div className={`column ${textClass}`}>
+                                                 <h4><p className="mb-0">{role}</p></h4>
+                                                 <h2><p>{name}</p></h2>
+                                                 <p className="mt-5 has-text-justified">
+                                                   {description}
+                                                 </p>
                                                </div>
-                                             </div>
-                                     );
-                                     let elements = [text, img];
-                                     if (even) {
-                                       elements = elements.reverse();
-                                     }
+                                       );
+                                       const img = photo && (
+                                               <div className={`column is-5-desktop`}>
+                                                 <div className={styles.imageWrap}>
+                                                   <figure className={`image is-1by1`}>
+                                                     <img className={`is-rounded ${styles.image} ${styles[colors[colorIndex]]}`}
+                                                          src={applyTransform(photo[0], TRANSFORMATION_PERSONNEL_1BY1)}
+                                                          alt={name}/>
+                                                   </figure>
+                                                 </div>
+                                               </div>
+                                       );
+                                       let elements = [text, img];
+                                       if (even) {
+                                         elements = elements.reverse();
+                                       }
 
-                                     return (
-                                             <div key={name}
-                                                  className={`columns is-variable is-8 my-6 ${even ? styles.columns : styles.columnsReverse}`}>
-                                               {elements}
-                                             </div>
-                                     )
-                                   })}
+                                       return (
+                                               <div key={name}
+                                                    className={`columns is-variable is-8 ${index === 0 ? 'mb-6' : (index === arr.length - 1 ? 'mt-6' : 'my-6')} ${even ? styles.columns : styles.columnsReverse}`}>
+                                                 {elements}
+                                               </div>
+                                       )
+                                     })}
+                                   </div>
                                  </div>
                                </MainLayout>
                        )}/>

@@ -4,18 +4,20 @@ import Header from './partials/header';
 const SimpleTwoColumnLayout = ({ title, subtitle, children }) => {
   const [left, right] = React.Children.toArray(children);
   return (
-          <article className="container">
+          <>
             <Header title={title}
                     subtitle={subtitle}/>
-            <div className="columns is-variable is-8">
-              <div className="column is-half has-text-justified">
-                {left}
+            <article className="container">
+              <div className="columns is-variable is-8">
+                <div className="column is-half has-text-justified">
+                  {left}
+                </div>
+                <div className="column is-half has-text-justified">
+                  {right}
+                </div>
               </div>
-              <div className="column is-half has-text-justified">
-                {right}
-              </div>
-            </div>
-          </article>
+            </article>
+          </>
   );
 };
 
