@@ -14,6 +14,7 @@ import valuesImage from './values.png';
 
 const Features = [
   {
+    key: 'values',
     header: <>Wartości chrześcijańskie</>,
     body: <>Program nauczania opieramy na&nbsp;koncepcji pedagogicznej naszego patrona bł.&nbsp;Edmunda
             Bojanowskiego</>,
@@ -21,6 +22,7 @@ const Features = [
     image: valuesImage
   },
   {
+    key: 'learnByPlay',
     header: <>Nauka <br className={styles.featureCardLineBreak}/>i zabawa</>,
     body: <>Poprzez zabawę dzieci poznają świat i&nbsp;budują relacje z&nbsp;rówieśnikami. Zajęcia dostosowujemy
             do&nbsp;Ich
@@ -29,12 +31,15 @@ const Features = [
     image: learnByPlayImage
   },
   {
+    key: 'teachers',
     header: <>Troskliwi nauczyciele</>,
     body: <>Nasi wychowawcy to nie&nbsp;tylko pedagodzy z&nbsp;doświadczeniem w&nbsp;pracy z&nbsp;dziećmi,
             ale&nbsp;osoby pełne empatii i&nbsp;zaangażowania</>,
     color: 'red',
     image: teachersImage
-  }, {
+  },
+  {
+    key: 'surroudings',
     header: <>Przyjazne otoczenie</>,
     body: <>Kolorowe sale, piękny, duży plac zabaw, zaciszna kaplica to&nbsp;wszystko buduje poczucie
             bezpieczeństwa i&nbsp;pobudza do&nbsp;aktywności</>,
@@ -72,6 +77,7 @@ const IndexPage = () => {
               <div className="columns is-desktop">
                 {Features.map(featureDef => (
                         <FeaturedCard className="column is-full-touch is-one-quarter-desktop"
+                                      key={featureDef.key}
                                       color={featureDef.color}
                                       image={featureDef.image}>
                           <header>{featureDef.header}</header>

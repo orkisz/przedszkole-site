@@ -46,6 +46,14 @@ module.exports = {
       options: {
         modulePath: `${__dirname}/src/cms/netlifycms-init.js`,
       }
+    },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [
+          "G-QFDCKHV9ZF", // Google Analytics / GA
+        ]
+      }
     }
   ]
 };
