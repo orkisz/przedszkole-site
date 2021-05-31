@@ -13,8 +13,8 @@ public_folder: /img
 media_library:
   name: cloudinary
   config:
-    cloud_name: dswesmbkz
-    api_key: 145566431588812
+    cloud_name: db6nheyow
+    api_key: 588868629731616
     multiple: true
 
 collections:
