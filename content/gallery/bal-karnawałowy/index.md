@@ -1,6 +1,6 @@
 ---
-title: Bal karnawałowy
-date: 2021-04-25T12:13:06.600Z
+title: Nasze przedszkole
+date: 2021-05-31T16:02:18.355Z
 imagesList:
   - - https://res.cloudinary.com/dswesmbkz/image/upload/v1619352995/bal%20karnawa%C5%82owy/20120930_160133_tptzha.jpg
   - - https://res.cloudinary.com/dswesmbkz/image/upload/v1619352995/bal%20karnawa%C5%82owy/20121118_144544_0_hdjmeh.jpg
