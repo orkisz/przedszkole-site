@@ -34,7 +34,8 @@ const Personnel = () => {
                                        const colorIndex = index % 3;
                                        const textClass = photo ? 'is-7-desktop' : 'is-8-desktop is-offset-2-desktop';
                                        const text = (
-                                               <div className={`column ${textClass}`}>
+                                               <div key={`${name}-desc`}
+                                                    className={`column ${textClass}`}>
                                                  <h4><p className="mb-0">{role}</p></h4>
                                                  <h2><p>{name}</p></h2>
                                                  <p className="mt-5 has-text-justified">
@@ -43,7 +44,8 @@ const Personnel = () => {
                                                </div>
                                        );
                                        const img = photo && (
-                                               <div className={`column is-5-desktop`}>
+                                               <div key={`${name}-img`}
+                                                    className={`column is-5-desktop`}>
                                                  <div className={styles.imageWrap}>
                                                    <figure className={`image is-1by1`}>
                                                      <img className={`is-rounded ${styles.image} ${styles[colors[colorIndex]]}`}
