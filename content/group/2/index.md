@@ -9,7 +9,7 @@ description: Jesteśmy najmłodszą grupą i właśnie rozpoczynamy naszą przyg
   przedszkolu czekają na nas niezwykłe przygody
 image: sloneczka.png
 photo:
-  - https://res.cloudinary.com/dswesmbkz/image/upload/v1620679675/grupy/image_2_tr8lau.png
+  - https://res.cloudinary.com/db6nheyow/image/upload/v1622539587/grupy/sredniaki.png
 order: 2
 ---
 Nazwa naszej grupy nie jest przypadkowa. Jesteśmy bystrymi,
