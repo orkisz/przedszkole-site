@@ -9,3 +9,11 @@ export function getFirstParagraph(html = '') {
 export function stripHtmlTags(html = '') {
   return html.replace(HTML_TAGS_REGEX, '');
 }
+
+export function addTargetBlankToAllLinks(html = '') {
+  const $ = load(html);
+  $('a[href^=http]').each(function () {
+    $(this).attr('target', '_blank');
+  });
+  return $.html();
+}
