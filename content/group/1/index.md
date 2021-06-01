@@ -2,7 +2,7 @@
 name: Odkrywcy
 image: sloneczka.png
 photo:
-  - https://res.cloudinary.com/dswesmbkz/image/upload/v1620679675/grupy/image_2_tr8lau.png
+  - https://res.cloudinary.com/db6nheyow/image/upload/v1622539587/grupy/maluszki.png
 order: 1
 ---
 Jesteśmy maluszkami, nasza  grupa liczy 24 dzieci. We wrześniu, po
