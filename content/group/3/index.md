@@ -9,7 +9,7 @@ description: Jesteśmy najmłodszą grupą i właśnie rozpoczynamy naszą przyg
   przedszkolu czekają na nas niezwykłe przygody
 image: sloneczka.png
 photo:
-  - https://res.cloudinary.com/dswesmbkz/image/upload/v1620679675/grupy/image_2_tr8lau.png
+  - https://res.cloudinary.com/db6nheyow/image/upload/v1622539587/grupy/starszaki.png
 order: 3
 ---
 Witamy w świecie pełnym SŁOŃCA! Nasza grupa nosi nazwę SŁONECZKA. W grupie jest 16 dzieci, 9 dziewczynek i 7 chłopców. Mamy piękną salę z widokiem na przedszkolny ogród i plac zabaw. W sali każdy z nas ma swoją szufladkę na rysunki i różne skarby, mamy mnóstwo zabawek i gier!
