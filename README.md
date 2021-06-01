@@ -1,5 +1,5 @@
 # Przedszkole Sióstr Służebniczek w Rudawie
-[![Netlify Status](https://api.netlify.com/api/v1/badges/59d55900-1a4a-468a-bebc-06bee3fb82bc/deploy-status)](https://app.netlify.com/sites/epic-easley-d99b2b/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7adaabcf-3fa3-4ebe-ac20-d6f8bc48a0d9/deploy-status)](https://app.netlify.com/sites/friendly-cray-005473/deploys)
 
 ## 🚀 Quick start
 

@@ -10,9 +10,9 @@ const DETAILS_MIN_LENGTH = 10;
 const DETAILS_MAX_LENGTH = 1e3;
 
 const handler = async (event) => {
-  const { SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASSWORD, CAPTCHA_KEY } = process.env;
+  const { SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASSWORD, SMTP_TO, CAPTCHA_KEY } = process.env;
 
-  if (!SMTP_HOST || !SMTP_PORT || !SMTP_USER || !SMTP_PASSWORD || !CAPTCHA_KEY) {
+  if (!SMTP_HOST || !SMTP_PORT || !SMTP_USER || !SMTP_PASSWORD || !SMTP_TO || !CAPTCHA_KEY) {
     console.error('environment variables not set');
     return {
       statusCode: 500,
@@ -84,7 +84,7 @@ const handler = async (event) => {
 
   const descriptor = {
     from: SMTP_USER,
-    to: SMTP_USER,
+    to: SMTP_TO,
     subject: `${name || email} wysłał(a) wiadomość ze strony Przedszkola`,
     text: body,
     replyTo: `"${name}" <${email}>`

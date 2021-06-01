@@ -66,7 +66,7 @@ const Contact = () => {
 
   return (
           <GoogleReCaptchaProvider
-                  reCaptchaKey="6LerEtoaAAAAAEm-6Qvq5OBvOoZMcEzuORP3Z7sQ">
+                  reCaptchaKey="6LejLwUbAAAAAMbIPNpTA4_b40MfFwGidKBO1SjC">
             <MainLayout>
               <Header title="Kontakt"/>
               <div className="container">
