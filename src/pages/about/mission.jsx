@@ -6,33 +6,30 @@ const Blog = () => {
   return (
           <MainLayout>
             <SimpleTwoColumnLayout title="Misja przedszkola"
-                                   subtitle="Nasze Przedszkole wspiera rodziców w integralnym wychowaniu dzieci w duchu wartości chrześcijańskich wg koncepcji pedagogicznej bł. Edmunda Bojanowskiego.">
+                                   subtitle="Nasze Przedszkole wspiera rodziców w&nbsp;integralnym wychowaniu dzieci w&nbsp;duchu wartości chrześcijańskich wg koncepcji pedagogicznej bł. Edmunda Bojanowskiego.">
               <>
                 <p>
-                  Wychowawcy i cała społeczność przedszkola dbają o rodzinną atmosferę w placówce, w której dzieci
-                  wychowywane są w oparciu o patriotyzm i szacunek dla tradycji, oraz poprzez bezpośrednie doświadczenia
-                  i działania. Indywidualne podejście do dziecka pomaga nam odkryć jego zdolności, wspomagać w
-                  trudnościach i wychowywać do twórczej współpracy z innymi. Pragniemy wychować dzieci świadome własnej
-                  wartości i wrażliwe na potrzeby innych. Wysoka jakość kształcenia, prymat zabawy i ruchu oraz ciekawe
-                  metody i formy zajęć sprawiają, że dzieci czują się u nas bezpieczne i szczęśliwe.
+                  Wychowawcy i&nbsp;cała społeczność przedszkola dbają o&nbsp;rodzinną atmosferę w&nbsp;placówce, w&nbsp;której dzieci
+                  wychowywane są w&nbsp;oparciu o&nbsp;patriotyzm i&nbsp;szacunek dla tradycji, oraz poprzez bezpośrednie doświadczenia
+                  i&nbsp;działania. Indywidualne podejście do dziecka pomaga nam odkryć jego zdolności, wspomagać w&nbsp;trudnościach i&nbsp;wychowywać do twórczej współpracy z&nbsp;innymi. Pragniemy wychować dzieci świadome własnej
+                  wartości i&nbsp;wrażliwe na potrzeby innych. Wysoka jakość kształcenia, prymat zabawy i&nbsp;ruchu oraz ciekawe
+                  metody i&nbsp;formy zajęć sprawiają, że dzieci czują się u&nbsp;nas bezpieczne i&nbsp;szczęśliwe.
                 </p>
                 <p>
-                  Wierzymy w miłość i dobro zasiane przez Boga w sercu każdego człowieka. Pragniemy by nasi podopieczni
-                  czuli się kochani i akceptowani, by mogli z odwagą i twórczo podejmować życiowe wyzwania i rozwijać
-                  się fizycznie, intelektualnie i duchowo.
+                  Wierzymy w&nbsp;miłość i&nbsp;dobro zasiane przez Boga w&nbsp;sercu każdego człowieka. Pragniemy by nasi podopieczni
+                  czuli się kochani i&nbsp;akceptowani, by mogli z&nbsp;odwagą i&nbsp;twórczo podejmować życiowe wyzwania i&nbsp;rozwijać
+                  się fizycznie, intelektualnie i&nbsp;duchowo.
                 </p>
               </>
               <>
                 <p>
                   Naszą troską otaczamy nie tylko
-                  dzieci, ale także ich rodziny, chcemy angażować rodziców w życie przedszkola, by świadomie i
-                  odpowiedzialnie wychowywali dzieci.
+                  dzieci, ale także ich rodziny, chcemy angażować rodziców w&nbsp;życie przedszkola, by świadomie i&nbsp;odpowiedzialnie wychowywali dzieci.
                 </p>
                 <p>
                   Chcemy, by nasze przedszkole kształciło dzieci na wysokim poziomie, zarówno intelektualnie, fizycznie
-                  jak i duchowo, by odważnie i twórczo weszli w nowe obowiązki. Pragniemy, by w naszym przedszkolu
-                  dzieci, rodzice i pracownicy tworzyli wspólnotę, w której mogą się rozwijać, wzrastać duchowo i
-                  współdziałać w oparciu o wiarę i najwyższe wartości, mając na względzie troskę o spójne wychowanie
+                  jak i&nbsp;duchowo, by odważnie i&nbsp;twórczo weszli w&nbsp;nowe obowiązki. Pragniemy, by w&nbsp;naszym przedszkolu
+                  dzieci, rodzice i&nbsp;pracownicy tworzyli wspólnotę, w&nbsp;której mogą się rozwijać, wzrastać duchowo i&nbsp;współdziałać w&nbsp;oparciu o&nbsp;wiarę i&nbsp;najwyższe wartości, mając na względzie troskę o&nbsp;spójne wychowanie
                   najmłodszego pokolenia.
                 </p>
               </>

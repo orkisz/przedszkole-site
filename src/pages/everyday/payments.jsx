@@ -7,20 +7,18 @@ const Blog = () => {
           <MainLayout>
             <SimpleTwoColumnLayout title="Opłaty">
               <>
-                <p>Czesne w przedszkolu wynosi 130 zł/mc. W czesne wliczona jest opłata za zajęcia dodatkowe, warsztaty,
+                <p>Czesne w&nbsp;przedszkolu wynosi 130 zł/mc. W&nbsp;czesne wliczona jest opłata za zajęcia dodatkowe, warsztaty,
                    teatrzyki. Dzienna stawka żywieniowa przelewana po zakończonym miesiącu do firmy Cateringowej wynosi
                    12
-                   zł. Dodatkowo rodzice dwa razy w roku uiszczają 30 zł opłaty na tzw. wyprawkę, w którą jest wliczony
+                   zł. Dodatkowo rodzice dwa razy w&nbsp;roku uiszczają 30 zł opłaty na tzw. wyprawkę, w&nbsp;którą jest wliczony
                    zakup artykułów plastycznych, oraz higienicznych. Na początku roku szkolnego rodzice zakupują
                    podręczniki, oraz opłacają ubezpieczenie dziecka.</p>
               </>
               <>
-                <p>Dzieci mają możliwość uczestniczyć w terapii logopedycznej. Cotygodniowe, półgodzinne spotkanie
+                <p>Dzieci mają możliwość uczestniczyć w&nbsp;terapii logopedycznej. Cotygodniowe, półgodzinne spotkanie
                    opłacane przez rodziców kosztuje 25 zł. </p>
-                <p>Dla rodziców pragnących wychowywać dzieci w duchu wartości chrześcijańskich, którzy borykają się z
-                   trudnościami finansowymi a chcą posłać swoje dziecko do naszego przedszkola - jest możliwe zwolnienie
-                   z
-                   części lub całości czesnego.</p>
+                <p>Dla rodziców pragnących wychowywać dzieci w&nbsp;duchu wartości chrześcijańskich, którzy borykają się z&nbsp;trudnościami finansowymi a&nbsp;chcą posłać swoje dziecko do naszego przedszkola - jest możliwe zwolnienie
+                   z&nbsp;części lub całości czesnego.</p>
               </>
             </SimpleTwoColumnLayout>
           </MainLayout>

@@ -24,7 +24,7 @@ const Personnel = () => {
                        render={data => (
                                <MainLayout footerClassName={styles.footer}>
                                  <Header title="Kadra"
-                                         subtitle="Poznajmy się lepiej! Wychowawcy w naszym przedszkolu to nie tylko doświadczeni pedagodzy, ale osoby życzliwe i pełne pasji w pracy z dziećmi."
+                                         subtitle="Poznajmy się lepiej! Wychowawcy w&nbsp;naszym przedszkolu to nie tylko doświadczeni pedagodzy, ale osoby życzliwe i&nbsp;pełne pasji w&nbsp;pracy z&nbsp;dziećmi."
                                          containerStyle={styles.header}/>
                                  <div className="dark-background py-6">
                                    <div className="container">

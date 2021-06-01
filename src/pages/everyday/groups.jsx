@@ -35,7 +35,7 @@ const Groups = () => {
                        render={data => (
                                <MainLayout>
                                  <Header title="Grupy"
-                                         subtitle="W naszej placówce działają trzy grupy przedszkolne, w których dzieci podzielone są ze względu na wiek."/>
+                                         subtitle="W naszej placówce działają trzy grupy przedszkolne, w&nbsp;których dzieci podzielone są ze względu na wiek."/>
                                  <div className="container">
                                    {data.allMarkdownRemark.edges.map((edge, index) => {
                                      const even = index % 2 !== 0;

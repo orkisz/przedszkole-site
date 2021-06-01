@@ -15,10 +15,10 @@ const Blog = () => {
                     <div className={styles.partHeading}>6:30 – 8:10 Schodzenie się dzieci.</div>
                     <div className={styles.details}>
                       <ul className="round">
-                        <li>Przywitanie się z nauczycielką pozdrowieniem chrześcijańskim i z dziećmi.</li>
+                        <li>Przywitanie się z&nbsp;nauczycielką pozdrowieniem chrześcijańskim i&nbsp;z dziećmi.</li>
                         <li>Zabawy dowolne wg zainteresowań dzieci.</li>
-                        <li>Praca wyrównawczo-korekcyjna, indywidualna lub w małych zespołach.</li>
-                        <li>Czynności porządkowo-gospodarcze w sali.</li>
+                        <li>Praca wyrównawczo-korekcyjna, indywidualna lub w&nbsp;małych zespołach.</li>
+                        <li>Czynności porządkowo-gospodarcze w&nbsp;sali.</li>
                       </ul>
                     </div>
                   </div>
@@ -26,7 +26,7 @@ const Blog = () => {
                     <div className={styles.partHeading}>8:10 - 9:00 Ćwiczenia poranne, zabawy ruchowe.</div>
                     <div className={styles.details}>
                       <ul className="round">
-                        <li>Wspólna modlitwa w kaplicy, wprowadzenie w tematykę dnia.</li>
+                        <li>Wspólna modlitwa w&nbsp;kaplicy, wprowadzenie w&nbsp;tematykę dnia.</li>
                         <li>Przygotowanie do śniadania, krótka modlitwa, śniadanie.</li>
                       </ul>
                     </div>
@@ -39,7 +39,7 @@ const Blog = () => {
                     <div className={styles.details}>
                       <ul className="round">
                         <li>Pobyt na świeżym powietrzu, spacery, zabawy ruchowe.</li>
-                        <li>Indywidualna lub zespołowa praca wyrównawcza, praca z dzieckiem zdolnym.</li>
+                        <li>Indywidualna lub zespołowa praca wyrównawcza, praca z&nbsp;dzieckiem zdolnym.</li>
                       </ul>
                     </div>
                   </div>
@@ -48,7 +48,7 @@ const Blog = () => {
                     <div className={styles.details}>
                       <ul className="round">
                         <li>Relaksacja.</li>
-                        <li>Słuchanie opowiadanych bajek i czytanej literatury dziecięcej.</li>
+                        <li>Słuchanie opowiadanych bajek i&nbsp;czytanej literatury dziecięcej.</li>
                       </ul>
                     </div>
                   </div>
@@ -56,8 +56,8 @@ const Blog = () => {
                     <div className={styles.partHeading}>13:00 – 14:00 Zabawy swobodne dzieci / Zajęcia praktyczne</div>
                     <div className={styles.details}>
                       <ul className="round">
-                        <li>Prace w ogrodzie, obserwacje przyrodnicze.</li>
-                        <li>Zabawy na powietrzu, gry sportowe i zabawy ruchowe na placu zabaw.</li>
+                        <li>Prace w&nbsp;ogrodzie, obserwacje przyrodnicze.</li>
+                        <li>Zabawy na powietrzu, gry sportowe i&nbsp;zabawy ruchowe na placu zabaw.</li>
                         <li>Zajęcia dodatkowe.</li>
                       </ul>
                     </div>
@@ -71,14 +71,13 @@ const Blog = () => {
                     </div>
                   </div>
                   <div className={`${styles.dayPart} ${styles.green}`}>
-                    <div className={styles.partHeading}>14:20 – 16:30 Swobodna aktywność dzieci wg ich pomysłów i
-                                                        zainteresowań.
+                    <div className={styles.partHeading}>14:20 – 16:30 Swobodna aktywność dzieci wg ich pomysłów i&nbsp;zainteresowań.
                     </div>
                     <div className={styles.details}>
                       <ul className="round">
                         <li>Zabawy na powietrzu, zabawy ruchowe na placu zabaw.</li>
                         <li>Ćwiczenia utrwalające wiadomości.</li>
-                        <li>Pożegnanie z nauczycielką, z dziećmi i rozchodzenie się do domu.</li>
+                        <li>Pożegnanie z&nbsp;nauczycielką, z&nbsp;dziećmi i&nbsp;rozchodzenie się do domu.</li>
                       </ul>
                     </div>
                   </div>
