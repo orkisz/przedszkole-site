@@ -2,6 +2,7 @@ import { graphql, StaticQuery } from 'gatsby';
 import * as React from 'react';
 import MainLayout from '../../layouts/main-layout/main-layout';
 import Header from '../../layouts/partials/header';
+import { fixOrphans } from '../../utils/html';
 import { applyTransform, TRANSFORMATION_4BY3 } from '../../utils/image';
 import * as styles from './groups.module.scss';
 
@@ -42,7 +43,7 @@ const Groups = () => {
                                      const text = (
                                              <div className={`column has-text-justified is-7-desktop is-full-touch`}>
                                                <div className="content"
-                                                    dangerouslySetInnerHTML={{ __html: edge.node.html }}/>
+                                                    dangerouslySetInnerHTML={{ __html: fixOrphans(edge.node.html) }}/>
                                              </div>
                                      );
                                      const img = (

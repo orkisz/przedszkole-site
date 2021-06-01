@@ -2,6 +2,7 @@ import { graphql, StaticQuery } from 'gatsby';
 import * as React from 'react';
 import MainLayout from '../../layouts/main-layout/main-layout';
 import Header from '../../layouts/partials/header';
+import { fixOrphans } from '../../utils/html';
 import { applyTransform, TRANSFORMATION_PERSONNEL_1BY1 } from '../../utils/image';
 import * as styles from './personnel.module.scss';
 
@@ -36,10 +37,11 @@ const Personnel = () => {
                                        const text = (
                                                <div key={`${name}-desc`}
                                                     className={`column ${textClass}`}>
-                                                 <h4><p className="mb-0">{role}</p></h4>
-                                                 <h2><p>{name}</p></h2>
-                                                 <p className="mt-5 has-text-justified">
-                                                   {description}
+                                                 <h4><p className="mb-0"
+                                                        dangerouslySetInnerHTML={{ __html: fixOrphans(role) }}/></h4>
+                                                 <h2><p dangerouslySetInnerHTML={{ __html: fixOrphans(name) }}/></h2>
+                                                 <p className="mt-5 has-text-justified"
+                                                    dangerouslySetInnerHTML={{ __html: fixOrphans(description) }}>
                                                  </p>
                                                </div>
                                        );
