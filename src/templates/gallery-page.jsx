@@ -4,7 +4,6 @@ import React, { useState } from 'react';
 import MainLayout from '../layouts/main-layout/main-layout';
 import Header from '../layouts/partials/header';
 import Lightbox from '../layouts/partials/lightbox/lightbox';
-import { formatDate } from '../utils/date';
 import { applyTransform, TRANSFORMATION_4BY3, TRANSFORMATION_FULL_SCREEN } from '../utils/image';
 import * as styles from './gallery-page.module.scss';
 
@@ -17,9 +16,9 @@ const GalleryPage = ({ data }) => {
   const fullScreenTransform = partialRight(applyTransform, TRANSFORMATION_FULL_SCREEN);
   return (
           <MainLayout>
-            <Header title={title}/>
+            <Header title={title}
+                    date={date}/>
             <div className="container has-text-centered">
-              <aside className="mb-6 mt-3 is-size-6">{formatDate(date)}</aside>
               <div className="columns is-multiline">
                 {imagesList.map((image, index) => {
                   const transformedUrl = applyTransform(image, TRANSFORMATION_4BY3);
