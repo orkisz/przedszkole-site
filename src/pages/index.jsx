@@ -60,7 +60,7 @@ const IndexPage = () => {
                         Witamy w naszym przedszkolu
                       </h4>
                       <h1 className="mt-3 mb-6">
-                        Razem bawimy się, uczymy i rośniemy!
+                        Razem bawimy się, uczymy i wzrastamy!
                       </h1>
                       <Link className="button is-main is-medium is-rounded"
                             to="/everyday/groups">Dowiedz się wiecej</Link>
