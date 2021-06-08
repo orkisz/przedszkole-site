@@ -38,10 +38,15 @@
     cursor: pointer;
     z-index: 1;
     transition: opacity .5s ease-in-out;
+    border-top: 2px solid $mainAccent;
 
     &:hover {
       opacity: .8;
       transition: opacity .5s ease-in-out;
+    }
+
+    @include desktop() {
+      border-top: none;
     }
   }
 
