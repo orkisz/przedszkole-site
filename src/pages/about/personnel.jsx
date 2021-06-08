@@ -32,7 +32,7 @@ const Personnel = () => {
                                        const { description, name, role, photo } = person;
                                        const even = index % 2 !== 0;
                                        const colorIndex = index % 3;
-                                       const textClass = photo ? 'is-7-desktop' : 'is-8-desktop is-offset-2-desktop';
+                                       const textClass = photo ? 'is-8-desktop' : 'is-8-desktop is-offset-2-desktop';
                                        const text = (
                                                <div className={`column ${textClass}`}>
                                                  <h4><p className="mb-0">{role}</p></h4>
@@ -43,7 +43,7 @@ const Personnel = () => {
                                                </div>
                                        );
                                        const img = photo && (
-                                               <div className={`column is-5-desktop`}>
+                                               <div className={`column is-4-desktop`}>
                                                  <div className={styles.imageWrap}>
                                                    <figure className={`image is-1by1`}>
                                                      <img className={`is-rounded ${styles.image} ${styles[colors[colorIndex]]}`}
@@ -60,7 +60,7 @@ const Personnel = () => {
 
                                        return (
                                                <div key={name}
-                                                    className={`columns is-variable is-8 ${index === 0 ? 'mb-6' : (index === arr.length - 1 ? 'mt-6' : 'my-6')} ${even ? styles.columns : styles.columnsReverse}`}>
+                                                    className={`columns is-variable is-8 ${index === 0 ? 'mb-5' : (index === arr.length - 1 ? 'mt-5' : 'my-5')} ${even ? styles.columns : styles.columnsReverse}`}>
                                                  {elements}
                                                </div>
                                        )
