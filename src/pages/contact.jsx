@@ -80,6 +80,7 @@ const Contact = () => {
                                   <label className="label"
                                          htmlFor="nameControl">Imię
                                   </label>
+                                  <span className="is-size-7">(opcjonalnie)</span>
                                 </div>
                                 <div className="field-body">
                                   <div className="field">

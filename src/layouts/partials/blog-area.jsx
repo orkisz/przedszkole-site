@@ -34,13 +34,13 @@ const BlogArea = () => {
                                <div className="container pb-6">
                                  <div className="has-text-centered">
                                    <h4 className={styles.header}>
-                                     Co nowego w przedszkolu?
+                                     Co nowego w&nbsp;przedszkolu?
                                    </h4>
                                    <h2 className="my-3">
                                      Aktualności
                                    </h2>
                                    <strong className="is-block is-size-6 mb-6">
-                                     Zapraszamy do zapoznania się z ostatnimi wydarzeniami z życia przedszkola
+                                     Zapraszamy do zapoznania się z&nbsp;ostatnimi wydarzeniami z&nbsp;życia przedszkola
                                    </strong>
                                  </div>
                                  <div className="columns features">

@@ -2,6 +2,7 @@ import { graphql, StaticQuery } from 'gatsby';
 import * as React from 'react';
 import MainLayout from '../../layouts/main-layout/main-layout';
 import Header from '../../layouts/partials/header';
+import { fixOrphans } from '../../utils/html';
 import { applyTransform, TRANSFORMATION_PERSONNEL_1BY1 } from '../../utils/image';
 import * as styles from './personnel.module.scss';
 
@@ -24,7 +25,7 @@ const Personnel = () => {
                        render={data => (
                                <MainLayout footerClassName={styles.footer}>
                                  <Header title="Kadra"
-                                         subtitle="Poznajmy się lepiej! Wychowawcy w naszym przedszkolu to nie tylko doświadczeni pedagodzy, ale osoby życzliwe i pełne pasji w pracy z dziećmi."
+                                         subtitle="Poznajmy się lepiej! Wychowawcy w&nbsp;naszym przedszkolu to nie tylko doświadczeni pedagodzy, ale osoby życzliwe i&nbsp;pełne pasji w&nbsp;pracy z&nbsp;dziećmi."
                                          containerStyle={styles.header}/>
                                  <div className="dark-background py-6">
                                    <div className="container">
@@ -34,16 +35,19 @@ const Personnel = () => {
                                        const colorIndex = index % 3;
                                        const textClass = photo ? 'is-8-desktop' : 'is-8-desktop is-offset-2-desktop';
                                        const text = (
-                                               <div className={`column ${textClass}`}>
-                                                 <h4><p className="mb-0">{role}</p></h4>
-                                                 <h2><p>{name}</p></h2>
-                                                 <p className="mt-5 has-text-justified">
-                                                   {description}
+                                               <div key={`${name}-desc`}
+                                                    className={`column ${textClass}`}>
+                                                 <h4><p className="mb-0"
+                                                        dangerouslySetInnerHTML={{ __html: fixOrphans(role) }}/></h4>
+                                                 <h2><p dangerouslySetInnerHTML={{ __html: fixOrphans(name) }}/></h2>
+                                                 <p className="mt-5 has-text-justified"
+                                                    dangerouslySetInnerHTML={{ __html: fixOrphans(description) }}>
                                                  </p>
                                                </div>
                                        );
                                        const img = photo && (
-                                               <div className={`column is-4-desktop`}>
+                                               <div key={`${name}-img`}
+                                                    className={`column is-4-desktop`}>
                                                  <div className={styles.imageWrap}>
                                                    <figure className={`image is-1by1`}>
                                                      <img className={`is-rounded ${styles.image} ${styles[colors[colorIndex]]}`}

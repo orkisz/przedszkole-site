@@ -92,7 +92,7 @@ class Navigation extends React.Component {
                     <div className="navbar-item has-dropdown is-hoverable">
                       <a className="navbar-link"
                          onClick={() => this.toggleDropdown('about')}>
-                        O nas
+                        O&nbsp;nas
                       </a>
 
                       <div className={`${styles.dropdown} ${ddState['about'] ? styles.dropdownExpanded : ''} navbar-dropdown`}>
@@ -122,7 +122,7 @@ class Navigation extends React.Component {
                     <div className="navbar-item has-dropdown is-hoverable">
                       <a className="navbar-link"
                          onClick={() => this.toggleDropdown('everyday')}>
-                        Z życia przedszkola
+                        Z&nbsp;życia przedszkola
                       </a>
 
                       <div className={`${styles.dropdown} ${ddState['everyday'] ? styles.dropdownExpanded : ''} navbar-dropdown`}>
@@ -169,7 +169,7 @@ class Navigation extends React.Component {
                         </Link>
                         <Link className="navbar-item"
                               to="/parents/development">
-                          Rozwój i wychowanie
+                          Rozwój i&nbsp;wychowanie
                         </Link>
                         <Link className="navbar-item"
                               to="/parents/documents">
