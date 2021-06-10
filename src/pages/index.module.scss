@@ -1,11 +1,41 @@
 @import "src/styles/variables";
 @import "~bulma/sass/utilities/mixins";
 
+$waveHeight: 50px;
+
 .hero {
-  background-image: url("./hero_desktop.jpg");
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: center;
+  .hero-columns {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: $waveHeight;
+
+    @include tablet() {
+      flex-direction: row;
+      padding-bottom: 0;
+    }
+  }
+
+  .hero-body {
+    @include tablet() {
+      padding: calc(6.5rem - #{$waveHeight}) 1.5rem 6.5rem 1.5rem !important;
+    }
+  }
+
+  .hero-image {
+    height: 100%;
+    background-image: url("./image_hero.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 225px;
+    background-position-x: center;
+    background-position-y: center;
+  }
+}
+
+.wave {
+  background-image: url("./image_wave.png");
+  height: $waveHeight;
+  margin-top: -44px;
 }
 
 .groups-section {
@@ -54,11 +84,5 @@
 @include desktop() {
   .feature-card-line-break {
     display: inline;
-  }
-}
-
-.hero-body {
-  @include tablet() {
-    padding: 10rem 1.5rem !important;
   }
 }

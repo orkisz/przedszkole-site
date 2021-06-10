@@ -51,24 +51,34 @@ const Features = [
 const IndexPage = () => {
   return (
           <MainLayout footerClassName="">
-            <section className={`hero is-large ${styles.hero}`}>
+            <section className={`hero is-large ${styles.hero} dark-background`}>
               <div className={`hero-body ${styles.heroBody}`}>
                 <div className="container">
-                  <div className="columns">
-                    <div className="column is-half-desktop is-full-touch">
+                  <div className={`columns ${styles.heroColumns}`}>
+                    <div className="column is-half">
                       <h4>
                         Witamy w&nbsp;naszym przedszkolu
                       </h4>
-                      <h1 className="mt-3 mb-6">
+                      <h1 className="mt-3 mb-5">
                         Razem bawimy się, uczymy i&nbsp;wzrastamy!
                       </h1>
+                      <p className="my-custom-color-main-accent mb-6 mx-0">
+                        Przedszkole Niepubliczne Zgromadzenia Sióstr Służebniczek NMP NP w&nbsp;Rudawie,
+                        wcześniej nazywane „Ochronką” to miejsce z&nbsp;długoletnią tradycją w&nbsp;wychowaniu
+                        małych mieszkańców Rudawy i&nbsp;okolicznych miejscowości.
+                      </p>
                       <Link className="button is-main is-medium is-rounded"
                             to="/everyday/groups">Dowiedz się wiecej</Link>
+                    </div>
+                    <div className="column is-half">
+                      <div className={styles.heroImage}></div>
                     </div>
                   </div>
                 </div>
               </div>
             </section>
+            <section className={styles.wave}
+                     aria-hidden="true"/>
             <section className="container has-text-centered my-6">
               <h4>Poznajmy się lepiej</h4>
               <h2 className="mt-4">Naszym priorytetem jest <br/>wszechstronny rozwój każdego dziecka</h2>
@@ -101,12 +111,14 @@ const IndexPage = () => {
                   <div className="column is-7-desktop has-text-justified">
                     <p> Nasze Przedszkole wspiera rodziców w&nbsp;integralnym wychowaniu dzieci w&nbsp;duchu
                         wartości chrześcijańskich wg koncepcji pedagogicznej bł. Edmunda Bojanowskiego.
-                        Wychowawcy i&nbsp;cała społeczność przedszkola dbają o&nbsp;rodzinną atmosferę w&nbsp;placówce, w&nbsp;której dzieci wychowywane są w&nbsp;oparciu o&nbsp;patriotyzm i&nbsp;szacunek dla
+                        Wychowawcy i&nbsp;cała społeczność przedszkola dbają o&nbsp;rodzinną atmosferę w&nbsp;placówce,
+                        w&nbsp;której dzieci wychowywane są w&nbsp;oparciu o&nbsp;patriotyzm i&nbsp;szacunek dla
                         tradycji, oraz poprzez bezpośrednie doświadczenia i&nbsp;działania.
                         Indywidualne podejście do dziecka pomaga nam odkryć jego zdolności,
                         wspomagać w&nbsp;trudnościach i&nbsp;wychowywać do twórczej współpracy z&nbsp;innymi.
                         Pragniemy wychować dzieci świadome własnej wartości i&nbsp;wrażliwe na potrzeby
-                        innych. Wysoka jakość kształcenia, prymat zabawy i&nbsp;ruchu oraz ciekawe metody i&nbsp;formy zajęć sprawiają, że dzieci czują się u&nbsp;nas bezpieczne i&nbsp;szczęśliwe.
+                        innych. Wysoka jakość kształcenia, prymat zabawy i&nbsp;ruchu oraz ciekawe metody i&nbsp;formy
+                        zajęć sprawiają, że dzieci czują się u&nbsp;nas bezpieczne i&nbsp;szczęśliwe.
                     </p>
                     <div className="mt-6 has-text-centered-mobile">
                       <Link className="button is-main is-medium is-rounded"
