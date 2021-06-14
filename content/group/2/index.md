@@ -7,7 +7,8 @@ description: Jesteśmy najmłodszą grupą i właśnie rozpoczynamy naszą przyg
   chodzimy na spacery i bawimy się na placu zabaw. Bardzo lubimy kontakt z
   przyrodą. Chociaż czasem trudno nam się rozstać z rodzicami, to wiemy, że w
   przedszkolu czekają na nas niezwykłe przygody
-image: sloneczka.png
+image:
+  - https://res.cloudinary.com/dswesmbkz/image/upload/v1623652545/grupy/logo_bystrzaki_r2tkcz.jpg
 photo:
   - https://res.cloudinary.com/dswesmbkz/image/upload/v1620679675/grupy/image_2_tr8lau.png
 order: 2
