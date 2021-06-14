@@ -1,6 +1,7 @@
 ---
 name: Odkrywcy
-image: sloneczka.png
+image:
+  - https://res.cloudinary.com/db6nheyow/image/upload/v1623393852/grupy/logo_odkrywcy_zcigxk.jpg
 photo:
   - https://res.cloudinary.com/db6nheyow/image/upload/v1622539587/grupy/maluszki.png
 order: 1

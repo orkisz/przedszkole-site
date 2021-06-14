@@ -1,13 +1,7 @@
 ---
 name: Bystrzaki
-description: Jesteśmy najmłodszą grupą i właśnie rozpoczynamy naszą przygodę z
-  przedszkolem. Nazywamy się Odkrywcy – a nazwa przecież zobowiązuje. Pełni
-  zapału i ciekawi świata zamierzamy odkrywać coraz to nowe rzeczy. Lubimy się
-  bawić i uczyć, a każdy kolejny dzień wydaje się być coraz ciekawszy. Często
-  chodzimy na spacery i bawimy się na placu zabaw. Bardzo lubimy kontakt z
-  przyrodą. Chociaż czasem trudno nam się rozstać z rodzicami, to wiemy, że w
-  przedszkolu czekają na nas niezwykłe przygody
-image: sloneczka.png
+image:
+  - https://res.cloudinary.com/db6nheyow/image/upload/v1623393852/grupy/logo_bystrzaki_hthxhj.jpg
 photo:
   - https://res.cloudinary.com/db6nheyow/image/upload/v1622561022/grupy/%C5%9Bredniaki/177554564_519362162777777_2595827562225001294_n_p7uc3g.jpg
 order: 2

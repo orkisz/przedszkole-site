@@ -1,13 +1,7 @@
 ---
 name: Słoneczka
-description: Jesteśmy najmłodszą grupą i właśnie rozpoczynamy naszą przygodę z
-  przedszkolem. Nazywamy się Odkrywcy – a nazwa przecież zobowiązuje. Pełni
-  zapału i ciekawi świata zamierzamy odkrywać coraz to nowe rzeczy. Lubimy się
-  bawić i uczyć, a każdy kolejny dzień wydaje się być coraz ciekawszy. Często
-  chodzimy na spacery i bawimy się na placu zabaw. Bardzo lubimy kontakt z
-  przyrodą. Chociaż czasem trudno nam się rozstać z rodzicami, to wiemy, że w
-  przedszkolu czekają na nas niezwykłe przygody
-image: sloneczka.png
+image:
+  - https://res.cloudinary.com/db6nheyow/image/upload/v1623393852/grupy/logo_sloneczka_yl4fit.jpg
 photo:
   - https://res.cloudinary.com/db6nheyow/image/upload/v1622539587/grupy/starszaki.png
 order: 3

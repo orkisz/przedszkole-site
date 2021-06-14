@@ -18,9 +18,7 @@ const GroupsAccordion = () => {
                 node {
                   frontmatter {
                     name
-                    image {
-                      publicURL
-                    }
+                    image
                   }
                   html
                   id
@@ -36,7 +34,7 @@ const GroupsAccordion = () => {
                                    return (
                                            <AccordionItem key={edge.node.id}
                                                           title={edge.node.frontmatter.name}
-                                                          image={edge.node.frontmatter.image.publicURL}
+                                                          image={edge.node.frontmatter.image[0]}
                                                           headClassName={styles[`accordionItem${index + 1}`]}
                                                           contentClassName={styles.accordionContent}>
                                              {firstPara}

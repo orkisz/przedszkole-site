@@ -21,9 +21,7 @@ const Groups = () => {
                 node {
                   frontmatter {
                     name
-                    image {
-                      publicURL
-                    }
+                    image
                     photo
                   }
                   html
