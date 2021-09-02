@@ -1,28 +1,5 @@
 group:
-  - name: Grupa 3
-    body: >-
-      Witamy w świecie pełnym SŁOŃCA! Nasza grupa nosi nazwę SŁONECZKA. W grupie
-      jest 16 dzieci, 9 dziewczynek i 7 chłopców. Mamy piękną salę z widokiem na
-      przedszkolny ogród i plac zabaw. W sali każdy z nas ma swoją szufladkę na
-      rysunki i różne skarby, mamy mnóstwo zabawek i gier!
-
-
-      No i najważniejsze - mamy też chomiczka, któremu daliśmy na imię Duduś. Przy nim uczymy się delikatności, sumienności i odpowiedzialności.
-
-
-      W naszej grupie nie ma czasu na nudę! Zawsze jest wesoło, a nasze nauczycielki codziennie wymyślają nam ciekawe aktywności. Jesteśmy żywiołową grupą, w której mamy wielu wspaniałych przyjaciół. Codziennie otwieramy serca Panu Bogu, bo chcemy, aby w nich zamieszkał. Modlimy się w różnych porach dnia, śpiewamy religijne piosenki i słuchamy fragmentów Pisma Świętego. Kiedy tylko możemy chodzimy na spacery, bawimy się na placu zabaw przedszkolnym i przede wszystkim jesteśmy bardzo samodzielni – w końcu mamy już 5 lat! Znamy kodeks przedszkolaka i dzielnie go przestrzegamy. Szanujemy nasze zabawki, książki, pomagamy sobie wzajemnie i jesteśmy dla siebie życzliwi.
-
-
-      Najbardziej lubimy zabawy ruchowe i konstrukcyjne. Jesteśmy w tym naprawdę dobrzy! Lubimy też gry planszowe i zabawy plastyczne. W przedszkolu można nas usłyszeć z daleka, bo śpiewamy naprawdę głośno. Bardzo lubimy nasze przedszkole i smutno nam, kiedy nie możemy do niego przychodzić!
-    image:
-      - https://res.cloudinary.com/dswesmbkz/image/upload/v1623652545/grupy/logo_bystrzaki_r2tkcz.jpg
-    photo:
-      - https://res.cloudinary.com/dswesmbkz/image/upload/v1620679675/grupy/image_2_tr8lau.png
-  - image:
-      - https://res.cloudinary.com/dswesmbkz/image/upload/v1623652545/grupy/logo_bystrzaki_r2tkcz.jpg
-    photo:
-      - https://res.cloudinary.com/dswesmbkz/image/upload/v1620679675/grupy/image_2_tr8lau.png
-    name: Grupa 1
+  - name: Odkrywcy
     body: >-
       Jesteśmy maluszkami, nasza grupa liczy 24 dzieci. We wrześniu, po zaledwie
       kilku dniach marudzenia i paru wylanych łezkach szybko przekonaliśmy się,
@@ -34,7 +11,12 @@ group:
 
 
       Codziennie po śniadaniu wędrujemy do kaplicy, gdzie spotykamy się z Panem Jezusem i zapraszamy Go do naszych serc. Z każdym dniem stajemy się coraz bardziej samodzielni, pomocni i koleżeńscy.
-  - name: Grupa 2
+    image:
+      - https://res.cloudinary.com/db6nheyow/image/upload/v1623393852/grupy/logo_odkrywcy_zcigxk.jpg
+    photo:
+      - https://res.cloudinary.com/db6nheyow/image/upload/v1622539587/grupy/maluszki.png
+
+  - name: Bystrzaki
     body: >-
       Nazwa naszej grupy nie jest przypadkowa. Jesteśmy bystrymi, pomysłowymi i
       kreatywnymi czterolatkami. Lubimy zajęcia pozwalające nam doświadczać,
@@ -68,6 +50,26 @@ group:
 
       Bożą miłość w sercach mamy!
     image:
-      - https://res.cloudinary.com/dswesmbkz/image/upload/v1623652545/grupy/logo_bystrzaki_r2tkcz.jpg
+      - https://res.cloudinary.com/db6nheyow/image/upload/v1623393852/grupy/logo_bystrzaki_hthxhj.jpg
     photo:
-      - https://res.cloudinary.com/dswesmbkz/image/upload/v1620679675/grupy/image_2_tr8lau.png
+      - https://res.cloudinary.com/db6nheyow/image/upload/v1622561022/grupy/%C5%9Bredniaki/177554564_519362162777777_2595827562225001294_n_p7uc3g.jpg
+
+  - name: Słoneczka
+    body: >-
+      Witamy w świecie pełnym SŁOŃCA! Nasza grupa nosi nazwę SŁONECZKA. W grupie
+      jest 16 dzieci, 9 dziewczynek i 7 chłopców. Mamy piękną salę z widokiem na
+      przedszkolny ogród i plac zabaw. W sali każdy z nas ma swoją szufladkę na
+      rysunki i różne skarby, mamy mnóstwo zabawek i gier!
+
+
+      No i najważniejsze - mamy też chomiczka, któremu daliśmy na imię Duduś. Przy nim uczymy się delikatności, sumienności i odpowiedzialności.
+
+
+      W naszej grupie nie ma czasu na nudę! Zawsze jest wesoło, a nasze nauczycielki codziennie wymyślają nam ciekawe aktywności. Jesteśmy żywiołową grupą, w której mamy wielu wspaniałych przyjaciół. Codziennie otwieramy serca Panu Bogu, bo chcemy, aby w nich zamieszkał. Modlimy się w różnych porach dnia, śpiewamy religijne piosenki i słuchamy fragmentów Pisma Świętego. Kiedy tylko możemy chodzimy na spacery, bawimy się na placu zabaw przedszkolnym i przede wszystkim jesteśmy bardzo samodzielni – w końcu mamy już 5 lat! Znamy kodeks przedszkolaka i dzielnie go przestrzegamy. Szanujemy nasze zabawki, książki, pomagamy sobie wzajemnie i jesteśmy dla siebie życzliwi.
+
+
+      Najbardziej lubimy zabawy ruchowe i konstrukcyjne. Jesteśmy w tym naprawdę dobrzy! Lubimy też gry planszowe i zabawy plastyczne. W przedszkolu można nas usłyszeć z daleka, bo śpiewamy naprawdę głośno. Bardzo lubimy nasze przedszkole i smutno nam, kiedy nie możemy do niego przychodzić!
+    image:
+      - https://res.cloudinary.com/db6nheyow/image/upload/v1623393852/grupy/logo_sloneczka_yl4fit.jpg
+    photo:
+      - https://res.cloudinary.com/db6nheyow/image/upload/v1622539587/grupy/starszaki.png
