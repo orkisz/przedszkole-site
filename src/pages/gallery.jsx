@@ -2,6 +2,7 @@ import { graphql, Link, StaticQuery } from 'gatsby';
 import * as React from 'react';
 import MainLayout from '../layouts/main-layout/main-layout';
 import Header from '../layouts/partials/header';
+import { fixOrphans } from '../utils/html';
 import { applyTransform, TRANSFORMATION_4BY3 } from '../utils/image';
 import * as styles from './gallery.module.scss';
 
@@ -36,7 +37,7 @@ const Gallery = () => {
                                    <div className="columns is-multiline">
                                      {data.allMarkdownRemark.edges.map(edge => {
                                        const { node } = edge;
-                                       const { title, date, imagesList } = node.frontmatter;
+                                       const { title, imagesList } = node.frontmatter;
                                        const firstImg = imagesList[0][0];
                                        const transformedUrl = applyTransform(firstImg, TRANSFORMATION_4BY3);
                                        return (
@@ -51,7 +52,8 @@ const Gallery = () => {
                                                      </figure>
                                                    </div>
                                                    <div className={`${styles.cardContent} card-content`}>
-                                                     <div className="title is-4">{title}</div>
+                                                     <div className="title is-4"
+                                                          dangerouslySetInnerHTML={{ __html: fixOrphans(title) }}/>
                                                    </div>
                                                  </div>
                                                </Link>

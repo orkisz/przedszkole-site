@@ -117,5 +117,14 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       name: 'formatted',
       value: formatted
     });
+  } else if (node.internal.type === 'groups') {
+    createNodeField({
+      node,
+      name: 'groupFormatted',
+      value: node.group.map(group => ({
+        ...group,
+        body: DOMPurify.sanitize(marked(group.body))
+      }))
+    });
   }
 }

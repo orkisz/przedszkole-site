@@ -1,14 +1,14 @@
 import { Link, navigate } from 'gatsby';
 import React from 'react';
 import { formatDate } from '../../../utils/date';
-import { stripHtmlTags } from '../../../utils/html';
+import { fixOrphans, stripHtmlTags } from '../../../utils/html';
 import { applyTransform, TRANSFORMATION_5BY3 } from '../../../utils/image';
 import * as styles from './blog-card.module.scss';
 
 const BlogCard = ({ node }) => {
   let heading = stripHtmlTags(node.html);
   const spaceIdx = heading.substr(0, 200).lastIndexOf(' ');
-  heading = heading.substring(0, spaceIdx).replace(/\W+$/, '').trim() + '...';
+  heading = fixOrphans(heading.substring(0, spaceIdx).replace(/\W+$/, '').trim()) + '...';
 
   return (
           <div className="column is-4">
@@ -28,8 +28,8 @@ const BlogCard = ({ node }) => {
                 <h4 className={`${styles.title} my-3`}
                     role="link"
                     onClick={() => navigate(node.fields.slug)}>{node.frontmatter.title}</h4>
-                <div className="content mb-6">
-                  <p>{heading}</p>
+                <div className="content mb-6 has-text-left">
+                  <p dangerouslySetInnerHTML={{ __html: heading}}/>
                 </div>
                 <Link className={styles.link}
                       to={node.fields.slug}>czytaj więcej</Link>

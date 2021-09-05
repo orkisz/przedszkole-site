@@ -41,6 +41,7 @@ const Calendar = () => {
                                                    const now = moment();
                                                    return start.isAfter(now) || (end && end.isAfter(now));
                                                  })
+                                                 .sort((a, b) => a.start.toDate() - b.start.toDate())
                                                  .map(({ start, end, title }) => {
                                                    return (
                                                            <tr>

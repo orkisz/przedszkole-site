@@ -37,7 +37,8 @@ const BlogLikeLayout = ({ title, subtitle, date, images = [], children }) => {
                   {!!restImages.length && (
                           <div className="columns">
                             {restImages.map((img, imgIdx) => (
-                                    <div className="column is-4">
+                                    <div key={img}
+                                         className="column is-4">
                                       <figure className="image is-4by3">
                                         <img src={applyTransform(img, TRANSFORMATION_4BY3)}
                                              alt={`${title}: Obraz nr ${imgIdx + 2}`}

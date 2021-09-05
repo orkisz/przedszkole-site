@@ -57,6 +57,7 @@ $dark-bg-height: 18px;
 
   .title {
     font-size: 1.3rem;
+    line-height: 1.8rem;
   }
 
   .outer-card {
@@ -82,8 +83,8 @@ $dark-bg-height: 18px;
 
 @include fullhd() {
   .title {
-    font-size: 2rem;
-    line-height: 2.1875rem;
+    font-size: 1.625rem;
+    line-height: 2rem;
     margin-bottom: 40px;
   }
 }

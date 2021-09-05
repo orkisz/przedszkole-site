@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { graphql, StaticQuery } from 'gatsby';
 import * as React from 'react'
 import { Helmet } from 'react-helmet';
-import logoImage from '../../images/logo.png';
+import logoImage from '../../images/logo_footer.png';
 import iconImage from '../../images/icon.png';
 import '../../styles/styles.scss';
 import Navigation from '../partials/navigation/nav';
@@ -33,7 +33,7 @@ const MainLayout = ({ footerClassName = 'mt-6', children }) => {
                                          meta={[
                                            {
                                              name: 'description',
-                                             content: 'Nasze Przedszkole wspiera rodziców w integralnym wychowaniu dzieci w duchu wartości chrześcijańskich wg koncepcji pedagogicznej bł. Edmunda Bojanowskiego.'
+                                             content: 'Nasze Przedszkole wspiera rodziców w&nbsp;integralnym wychowaniu dzieci w&nbsp;duchu wartości chrześcijańskich wg koncepcji pedagogicznej bł. Edmunda Bojanowskiego.'
                                            },
                                            {
                                              name: 'keywords',
@@ -45,7 +45,7 @@ const MainLayout = ({ footerClassName = 'mt-6', children }) => {
                                            },
                                            {
                                              name: 'og:description',
-                                             content: 'Nasze Przedszkole wspiera rodziców w integralnym wychowaniu dzieci w duchu wartości chrześcijańskich wg koncepcji pedagogicznej bł. Edmunda Bojanowskiego.'
+                                             content: 'Nasze Przedszkole wspiera rodziców w&nbsp;integralnym wychowaniu dzieci w&nbsp;duchu wartości chrześcijańskich wg koncepcji pedagogicznej bł. Edmunda Bojanowskiego.'
                                            },
                                            {
                                              name: 'og:image',
@@ -108,7 +108,7 @@ const MainLayout = ({ footerClassName = 'mt-6', children }) => {
                                      </div>
                                    </section>
                                    <section className={`${styles.bottomFooter} has-text-centered`}>
-                                     <span className={styles.separated}>Copyright &copy; 2021 Katarzyna i Krzysztof Orkisz</span>
+                                     <span className={styles.separated}>Copyright &copy; 2021 Katarzyna i&nbsp;Krzysztof Orkisz</span>
                                      <a className="plain"
                                         href="https://www.facebook.com/Przedszkole-Niepubliczne-Si%C3%B3str-S%C5%82u%C5%BCebniczek-NMP-NP-w-Rudawie-111121330268531"
                                         target="_blank">

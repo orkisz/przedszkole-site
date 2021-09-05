@@ -22,27 +22,6 @@ person:
       w kuchni.
     photo:
       - https://res.cloudinary.com/dswesmbkz/image/upload/v1621367481/Kadra/image_3_drjzey.png
-  - role: Wychowawca w grupie Słoneczek
-    name: Weronika Tarnawska
-    description: Jestem absolwentką Uniwersytetu Pedagogicznego w Krakowie na
-      kierunku Pedagogika Przedszkolna i Wczesnoszkolna.  Ukończyłam również
-      studia podyplomowe na kierunku Logopedia. Zdobyłam umiejętności z zakresu
-      TUS oraz wychowania w myśl Pozytywnej Dyscypliny. Bardzo lubię się
-      rozwijać, toteż nieustannie poszerzam swoją wiedzę i umiejętności. Jestem
-      zapatrzona w koncepcję pedagogiczną bł. Edmunda Bojanowskiego i nią
-      kierowana staram się wspierać rozwój dzieci każdego dnia. W swojej pracy
-      nie wyobrażam sobie nie przekazywać dzieciom prawd o Panu Bogu. Pragnę
-      dawać im to, co sama od Niego otrzymuję. Swoją pracę traktuję w głównej
-      mierze jako służbę drugiemu człowiekowi. Rozwój osoby jest dla mnie
-      niezwykle interesującym i ważnym procesem. Prowadzę konto na Instagramie
-      @moje.edmundowe.przedszkole gdzie dzielę się różnymi pomysłami twórczymi,
-      ale też naszą przedszkolną codziennością. Uwielbiam rozmawiać z dziećmi,
-      zwłaszcza na trudne, życiowe tematy. Lubię pobudzać swoją i dziecięcą
-      kreatywność. Przyjemność sprawia mi wywoływanie radości u dzieci i
-      wzbudzanie w nich zaciekawienia. Uwielbiam pływać, ukończyłam kurs
-      ratownika wodnego. Lubię też ręczne robótki – haft i szycie zabawek.
-    photo:
-      - https://res.cloudinary.com/dswesmbkz/image/upload/v1621367481/Kadra/image_4_crgiiu.png
   - role: Wychowawca w grupie Bystrzaków
     name: Dominika Borkiewicz
     description: >-
@@ -54,19 +33,6 @@ person:
       pedagogiczną oraz studia magisterskie na kierunku Pedagogika przedszkolna i wczesnoszkolna. W pracy staram się tworzyć taką atmosferę i warunki, które zapewniają właściwy rozwój fizyczny i psychiczny dzieci.  Praca z dziećmi sprawia mi ogromną radość, codziennie przynosi nowe doświadczenia – nie jest wyłącznie moim zawodem, ale również pasją. Chciałabym, aby czas spędzony w przedszkolu był dla dzieci wesoły i twórczy. Interesuję się wychowaniem przez sztukę, literaturą dziecięcą, grą na gitarze oraz pleceniem dekoracji ze sznurków.
     photo:
       - https://res.cloudinary.com/dswesmbkz/image/upload/v1621367481/Kadra/image_5_jkdbzg.png
-  - role: Wychowawca w grupie Bystrzaków
-    name: Monika Ziomek
-    description: "Ukończyłam Studia magisterskie Zarządzanie i marketing, Studia
-      Podyplomowe: Edukacja wczesnoszkolna i przedszkolna, oraz Przygotowanie
-      pedagogiczne do pracy nauczycielskiej. Praca z dziećmi daje mi ogromną
-      satysfakcję i codziennie przynosi nowe doświadczenia. Ważne jest dla mnie
-      budowanie atmosfery zaufania i bezpieczeństwa, która pomaga we
-      wszechstronnym rozwoju dzieci. Istotą pracy wychowawczej jest moim zdaniem
-      zaangażowanie oraz ciepły stosunek  do dzieci. Każde dziecko potrzebuje
-      uwagi, życzliwości i akceptacji. Największą nagrodą jest dla mnie uśmiech
-      moich podopiecznych. Jestem osobą pogodną, cierpliwą i wyrozumiałą. Staram
-      się poznawać indywidualne potrzeby dzieci. Wolny czas lubię spędzać z całą
-      rodziną w ogrodzie, pielęgnując rośliny."
   - role: Wychowawca w grupie Słoneczek
     name: s. Joanna Bugańska
     description: "Mottem, którym, staram się kierować w życiu są słowa patrona
@@ -103,3 +69,43 @@ person:
       cierpliwości.
     photo:
       - https://res.cloudinary.com/dswesmbkz/image/upload/v1621367481/Kadra/image_7_lmfavp.png
+  - role: Wychowawca w grupie Słoneczek
+    name: Weronika Tarnawska
+    description: Jestem absolwentką Uniwersytetu Pedagogicznego w Krakowie na
+      kierunku Pedagogika Przedszkolna i Wczesnoszkolna.  Ukończyłam również
+      studia podyplomowe na kierunku Logopedia. Zdobyłam umiejętności z zakresu
+      TUS oraz wychowania w myśl Pozytywnej Dyscypliny. Bardzo lubię się
+      rozwijać, toteż nieustannie poszerzam swoją wiedzę i umiejętności. Jestem
+      zapatrzona w koncepcję pedagogiczną bł. Edmunda Bojanowskiego i nią
+      kierowana staram się wspierać rozwój dzieci każdego dnia. W swojej pracy
+      nie wyobrażam sobie nie przekazywać dzieciom prawd o Panu Bogu. Pragnę
+      dawać im to, co sama od Niego otrzymuję. Swoją pracę traktuję w głównej
+      mierze jako służbę drugiemu człowiekowi. Rozwój osoby jest dla mnie
+      niezwykle interesującym i ważnym procesem. Prowadzę konto na Instagramie
+      @moje.edmundowe.przedszkole gdzie dzielę się różnymi pomysłami twórczymi,
+      ale też naszą przedszkolną codziennością. Uwielbiam rozmawiać z dziećmi,
+      zwłaszcza na trudne, życiowe tematy. Lubię pobudzać swoją i dziecięcą
+      kreatywność. Przyjemność sprawia mi wywoływanie radości u dzieci i
+      wzbudzanie w nich zaciekawienia. Uwielbiam pływać, ukończyłam kurs
+      ratownika wodnego. Lubię też ręczne robótki – haft i szycie zabawek.
+    photo:
+      - https://res.cloudinary.com/dswesmbkz/image/upload/v1621367481/Kadra/image_4_crgiiu.png
+  - role: Wychowawca w grupie Bystrzaków
+    name: Monika Ziomek
+    description: "Ukończyłam Studia magisterskie Zarządzanie i marketing, Studia
+      Podyplomowe: Edukacja wczesnoszkolna i przedszkolna, oraz Przygotowanie
+      pedagogiczne do pracy nauczycielskiej. Praca z dziećmi daje mi ogromną
+      satysfakcję i codziennie przynosi nowe doświadczenia. Ważne jest dla mnie
+      budowanie atmosfery zaufania i bezpieczeństwa, która pomaga we
+      wszechstronnym rozwoju dzieci. Istotą pracy wychowawczej jest moim zdaniem
+      zaangażowanie oraz ciepły stosunek  do dzieci. Każde dziecko potrzebuje
+      uwagi, życzliwości i akceptacji. Największą nagrodą jest dla mnie uśmiech
+      moich podopiecznych. Jestem osobą pogodną, cierpliwą i wyrozumiałą. Staram
+      się poznawać indywidualne potrzeby dzieci. Wolny czas lubię spędzać z całą
+      rodziną w ogrodzie, pielęgnując rośliny."
+  - name: Renata Byczek
+    role: Pracownik obsługi
+  - name: Karolina Niemiec
+    role: Pracownik obsługi
+  - name: Maria Strączek
+    role: Pracownik obsługi
