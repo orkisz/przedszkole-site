@@ -109,3 +109,18 @@ person:
     role: Pracownik obsługi
   - name: Maria Strączek
     role: Pracownik obsługi
+  - name: Osoba Testowa
+    description: "Ukończyłam Studia magisterskie Zarządzanie i marketing, Studia
+      Podyplomowe: Edukacja wczesnoszkolna i przedszkolna, oraz Przygotowanie
+      pedagogiczne do pracy nauczycielskiej. Praca z dziećmi daje mi ogromną
+      satysfakcję i codziennie przynosi nowe doświadczenia. Ważne jest dla mnie
+      budowanie atmosfery zaufania i bezpieczeństwa, która pomaga we
+      wszechstronnym rozwoju dzieci. Istotą pracy wychowawczej jest moim zdaniem
+      zaangażowanie oraz ciepły stosunek  do dzieci. Każde dziecko potrzebuje
+      uwagi, życzliwości i akceptacji. Największą nagrodą jest dla mnie uśmiech
+      moich podopiecznych. Jestem osobą pogodną, cierpliwą i wyrozumiałą. Staram
+      się poznawać indywidualne potrzeby dzieci. Wolny czas lubię spędzać z całą
+      rodziną w ogrodzie, pielęgnując rośliny."
+    role: Test
+    photo:
+      - https://res.cloudinary.com/dswesmbkz/image/upload/v1617653074/P1010214_pl8pwm.jpg
