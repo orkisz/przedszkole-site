@@ -14,4 +14,5 @@ imagesList:
   - - https://res.cloudinary.com/db6nheyow/image/upload/v1622540539/galeria/nasze%20przedszkole/179413535_756060791771071_7617356529166938969_n_vmlvw1.jpg
   - - https://res.cloudinary.com/db6nheyow/image/upload/v1622540538/galeria/nasze%20przedszkole/178890647_3660498180840969_1789903187502893845_n_hcqjsw.jpg
   - - https://res.cloudinary.com/db6nheyow/image/upload/v1622540538/galeria/nasze%20przedszkole/178919624_312690157035880_5593611404369988264_n_mopihl.jpg
+  - - https://res.cloudinary.com/dswesmbkz/image/upload/v1617651228/sample.jpg
 ---
