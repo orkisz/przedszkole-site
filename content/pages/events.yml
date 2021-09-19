@@ -23,3 +23,6 @@ event:
   - start: 2021-09-02T17:00:00.000Z
     end: ""
     title: Zebranie organizacyjne dla Rodziców Bystrzaków
+  - start: 2021-10-21T00:00:00.000Z
+    end: 2021-10-22T00:00:00.000Z
+    title: Wydarzenie testowe
