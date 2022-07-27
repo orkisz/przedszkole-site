@@ -1,6 +1,6 @@
 const path = require(`path`);
 const { createFilePath } = require(`gatsby-source-filesystem`)
-const marked = require('marked');
+const { parse } = require('marked');
 const createDOMPurify = require('dompurify');
 const { JSDOM } = require('jsdom');
 
@@ -111,7 +111,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       });
     }
   } else if (node.internal.type === 'development') {
-    const formatted = DOMPurify.sanitize(marked(node.content));
+    const formatted = DOMPurify.sanitize(parse(node.content));
     createNodeField({
       node,
       name: 'formatted',
@@ -123,7 +123,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       name: 'groupFormatted',
       value: node.group.map(group => ({
         ...group,
-        body: DOMPurify.sanitize(marked(group.body))
+        body: DOMPurify.sanitize(parse(group.body))
       }))
     });
   }

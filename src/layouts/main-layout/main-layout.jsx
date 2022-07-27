@@ -54,9 +54,9 @@ const MainLayout = ({ footerClassName = 'mt-6', children }) => {
                                          ]}
                                          defer={false}/>
                                  <Navigation/>
-                                 <div className={styles.contentWrapper}>
+                                 <main className={styles.contentWrapper}>
                                    {children}
-                                 </div>
+                                 </main>
                                  <footer className={footerClassName}>
                                    <section className={styles.topFooter}>
                                      <div className={styles.leftBg}/>
